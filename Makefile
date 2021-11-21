@@ -10,13 +10,13 @@ FRAMEWORKVERSION=release-1
 
 WEBSITE := ${shell cat website.txt }
 
+all:
+
 install:
 	@wget -O libs/GPML2RDF-3.0.0-SNAPSHOT-jar-with-dependencies.jar https://github.com/wikipathways/wikipathways-curation-template/releases/download/${FRAMEWORKVERSION}/GPML2RDF-3.0.0-SNAPSHOT-jar-with-dependencies.jar
 	@wget -O libs/jena-arq-3.17.0.jar https://github.com/wikipathways/wikipathways-curation-template/releases/download/${FRAMEWORKVERSION}/jena-arq-3.17.0.jar
 	@wget -O libs/wikipathways.curator-1-SNAPSHOT-jar-with-dependencies.jar https://github.com/wikipathways/wikipathways-curation-template/releases/download/${FRAMEWORKVERSION}/wikipathways.curator-1-SNAPSHOT-jar-with-dependencies.jar
 	@wget -O libs/slf4j-simple-1.7.32.jar https://search.maven.org/remotecontent?filepath=org/slf4j/slf4j-simple/1.7.32/slf4j-simple-1.7.32.jar
-
-all:
 
 pathways.json:
 	@curl -o pathways.json -X GET --header "Accept: application/json" "https://webservice.wikipathways.org/getCurationTagsByName?tagName=${COLLECTION}&format=json"
