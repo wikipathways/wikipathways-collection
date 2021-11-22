@@ -24,6 +24,8 @@ pathways.json:
 pathways.txt: pathways.json
 	@cat pathways.json | jq '.tags[] .pathway .id' | sed -s 's/"//g'| sort > pathways.txt
 
+rdf: ${WPRDFS} ${GPMLRDFS}
+
 gpml: ${GPMLS}
 
 sbml: ${SBMLS}
