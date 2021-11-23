@@ -1,6 +1,7 @@
 COLLECTION="Curation%3AAnalysisCollection"
 GPMLS := ${shell cat pathways.txt | sed -e 's/\(.*\)/gpml\/\1.gpml/' }
 WPRDFS := ${shell cat pathways.txt | sed -e 's/\(.*\)/wp\/Human\/\1.ttl/' }
+PMIDS := ${shell cat pathways.txt | sed -e 's/\(.*\)/pmid\/\1.pmid/' }
 GPMLRDFS := ${shell cat pathways.txt | sed -e 's/\(.*\)/wp\/gpml\/Human\/\1.ttl/' }
 REPORTS := ${shell cat pathways.txt | sed -e 's/\(.*\)/reports\/\1.md/' }
 SBMLS := ${shell cat pathways.txt | sed -e 's/\(.*\)/sbml\/\1.sbml/' } ${shell cat pathways.txt | sed -e 's/\(.*\)/sbml\/\1.txt/' }
@@ -25,11 +26,9 @@ pathways.txt: pathways.json
 	@cat pathways.json | jq '.tags[] .pathway .id' | sed -s 's/"//g'| sort > pathways.txt
 
 rdf: ${WPRDFS} ${GPMLRDFS}
-
+pmids: ${PMIDS}
 gpml: ${GPMLS}
-
 sbml: ${SBMLS}
-
 svg: ${SVGS}
 
 clean:
@@ -37,6 +36,10 @@ clean:
 
 distclean: clean
 	@rm libs/*.jar
+
+pmid/%.pmid: gpml/%.gpml
+	@echo "Extracting PubMed identifiers from $@ ..."
+	@xpath -q -e '/Pathway/Biopax/bp:PublicationXref[./bp:DB="PubMed"]/bp:ID/text()' $< > $@
 
 gpml/%.gpml:
 	@echo "Git fetching $@ ..."
