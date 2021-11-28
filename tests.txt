@@ -15,7 +15,7 @@ ChEBIMetabolitesTests.all
 ChemSpiderTests.all
 #ChemSpiderTests.outdatedIdentifiers
 #ChemSpiderTests.chemSpiderIDsNotNumbers
-CovidDiseaseMapsTests.all
+#CovidDiseaseMapsTests.all
 #CovidDiseaseMapsTests.interactionsWithoutReferences
 #CovidDiseaseMapsTests.missingHGNC
 DataNodesTests.all
@@ -23,12 +23,12 @@ DataNodesTests.all
 #DataNodesTests.unknownTypes_knownDatasource
 #DataNodesTests.unknownTypes_Reactome
 #DataNodesTests.unknownTypes
-EnsemblTests.all
+#EnsemblTests.all
 #EnsemblTests.outdatedIdentifiers
-#EnsemblTests.wrongEnsemblIDForHumanSpecies
-#EnsemblTests.wrongEnsemblIDForRatSpecies
-#EnsemblTests.wrongEnsemblIDForCowSpecies
-#EnsemblTests.wrongEnsemblIDForMouseSpecies
+EnsemblTests.wrongEnsemblIDForHumanSpecies
+EnsemblTests.wrongEnsemblIDForRatSpecies
+EnsemblTests.wrongEnsemblIDForCowSpecies
+EnsemblTests.wrongEnsemblIDForMouseSpecies
 #GeneralTests.all
 GeneralTests.titlesShortEnough
 GeneralTests.weirdCharacterTitles
