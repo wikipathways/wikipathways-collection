@@ -38,7 +38,7 @@ distclean: clean
 
 pmid/%.pmid: gpml/%.gpml
 	@echo "Extracting PubMed identifiers from $@ ..."
-	@xpath -q -e '/Pathway/Biopax/bp:PublicationXref[./bp:DB="PubMed"]/bp:ID/text()' $< > $@
+	@xpath -q -e '/Pathway/Biopax/bp:PublicationXref[./bp:DB="PubMed"]/bp:ID/text()' $< | sort -n | uniq > $@
 
 gpml/%.gpml:
 	@echo "Git fetching $@ ..."
