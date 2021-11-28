@@ -19,10 +19,7 @@
 * HMDBSecMetabolitesTests: all 3 tests OK!
 * InteractionTests: all 7 tests OK!
 * KEGGMetaboliteTests: all 2 tests OK!
-* LIPIDMAPSTests
-    * retiredIdentifiers: .. all OK!
-    * onlyLIPIDMAPS: .x we found 1 problem(s):
-        * [Expected a LIPID MAPS identifier, but found other identifiers: 4](#48cc60bb)
+* LIPIDMAPSTests: all 1 tests OK!
 * MetabolitesTests: all 14 tests OK!
 * MetaboliteStructureTests: all 2 tests OK!
 * OudatedDataSourcesTests: all 7 tests OK!
@@ -37,21 +34,9 @@
 ## Summary
 
 * Number of test classes: 21
-* Number of tests: 103
-* Number of assertions: 207
-* Number of fails: 1
+* Number of tests: 102
+* Number of assertions: 205
+* Number of fails: 0
 
 ## Fails
-
-<a name="48cc60bb" />
-
-## LIPIDMAPSTests.onlyLIPIDMAPS
-
-Expected a LIPID MAPS identifier, but found other identifiers: 4
-```
-http://www.wikipathways.org/instance/WP3.gp_r120028 6-HITC has 7991398 from Chemspider but expected a LIPID MAPS identifier
-http://www.wikipathways.org/instance/WP3.gp_r120028 Caffeic acid phenethyl ester has CHEBI:8062 from ChEBI but expected a LIPID MAPS identifier
-http://www.wikipathways.org/instance/WP3.gp_r120028 Curcumin has HMDB0002269 from HMDB but expected a LIPID MAPS identifier
-http://www.wikipathways.org/instance/WP3.gp_r120028 Sulforaphane has HMDB0005792 from HMDB but expected a LIPID MAPS identifier
-```
 
