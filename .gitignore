@@ -1,0 +1,7 @@
+libs/
+reports/*.txt
+gpml/
+wp/
+derby.log
+index.md
+**/*.class
