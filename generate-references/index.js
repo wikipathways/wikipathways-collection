@@ -5,7 +5,9 @@ require('@citation-js/plugin-pubmed')
 require('@citation-js/plugin-csl')
 
 function readCsv (file, pubmeds) {
-    for (const line of file.split('\n').slice(1)) {
+    const lines = file.match(/("([^"]|"")*"|[^\n"]+)+/g)
+    if (!lines) console.log(`"${file}"`)
+    for (const line of lines.slice(1)) {
         if (!line.length) continue
         const reference = line.split(',')
         const id = reference.pop()
@@ -27,7 +29,7 @@ function escapeCsvValue (value) {
 async function format (pubmed) {
     return (await Cite.async(pubmed, { forceType: '@pubmed/id' })).format('bibliography', {
         template: 'vancouver'
-    })
+    }).trim().replace(/^1.\s+/, '')
 }
 
 const PMID_DIR = path.join(__dirname, '..', 'pmid')
@@ -36,7 +38,7 @@ const CSV_DIR = path.join(PMID_DIR, 'references')
 async function main () {
     const cache = new Map()
 
-    let csvFiles = await fs.readdir(CSV_DIR)
+    let csvFiles = (await fs.readdir(CSV_DIR)).filter(file => file.endsWith('.csv'))
     csvFiles = await Promise.all(csvFiles.map(file => fs.readFile(path.join(CSV_DIR, file), 'utf8')))
     csvFiles.forEach(file => readCsv(file, cache))
 
@@ -62,7 +64,7 @@ async function main () {
             }
             csv.push([cache.get(pubmed), pubmed])
         }
-        await fs.writeFile(path.join(CSV_DIR, `${id}-references.csv`), csv.join('\n'))
+        await fs.writeFile(path.join(CSV_DIR, `${id}-references.csv`), csv.join('\n') + '\n')
     }
 }
 
