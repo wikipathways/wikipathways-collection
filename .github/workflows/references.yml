@@ -1,10 +1,10 @@
-name: github pages
+name: Generate Pubmed references
 
 on:
   workflow_dispatch:
 
 jobs:
-  deploy:
+  pubmed:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
@@ -34,5 +34,6 @@ jobs:
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
-          git commit -am 'Update PMID references'
+          git add pmid/references
+          git commit -m 'Update PMID references'
           git push
