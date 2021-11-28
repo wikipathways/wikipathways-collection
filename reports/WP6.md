@@ -11,23 +11,13 @@
 * CASMetabolitesTests: all 2 tests OK!
 * ChEBIMetabolitesTests: all 4 tests OK!
 * ChemSpiderTests: all 2 tests OK!
-* CovidDiseaseMapsTests
-    * interactionsWithoutReferences: .x we found 1 problem(s):
-        * [Interactions without literature references: 23](#9701cd03)
-    * missingHGNC: .. all OK!
 * DataNodesTests
     * dataNodesWithoutIdentifier: .x we found 1 problem(s):
         * [The following DataNodes have no identifier: 3](#d2d32fa2)
     * unknownTypes_knownDatasource: .. all OK!
     * unknownTypes: .. all OK!
     * unknownTypes_Reactome: .. all OK!
-* EnsemblTests
-    * outdatedIdentifiers: .x. we found 1 problem(s):
-        * [Expected more than 0 Ensembl identifiers](#f44398b7)
-    * wrongEnsemblIDForHumanSpecies: .. all OK!
-    * wrongEnsemblIDForRatSpecies: .. all OK!
-    * wrongEnsemblIDForCowSpecies: .. all OK!
-    * wrongEnsemblIDForMouseSpecies: .. all OK!
+* EnsemblTests: all 4 tests OK!
 * GeneralTests: all 13 tests OK!
 * GeneTests: all 3 tests OK!
 * HMDBMetabolitesTests
@@ -45,7 +35,7 @@
     * possibleTranslocations: .. all OK!
     * noProteinProteinConversions: .. all OK!
 * KEGGMetaboliteTests: all 2 tests OK!
-* LIPIDMAPSTests: all 1 tests OK!
+* LIPIDMAPSTests: all 2 tests OK!
 * MetabolitesTests: all 14 tests OK!
 * MetaboliteStructureTests: all 2 tests OK!
 * OudatedDataSourcesTests: all 7 tests OK!
@@ -53,51 +43,18 @@
 * ProteinsTests: all 2 tests OK!
 * PubChemMetabolitesTests: all 3 tests OK!
 * ReferencesTests: all 3 tests OK!
-* UniProtTests: all 4 tests OK!
+* UniProtTests: all 5 tests OK!
 * WikidataTests: all 14 tests OK!
 
 
 ## Summary
 
-* Number of test classes: 22
-* Number of tests: 104
-* Number of assertions: 210
-* Number of fails: 5
+* Number of test classes: 21
+* Number of tests: 103
+* Number of assertions: 207
+* Number of fails: 3
 
 ## Fails
-
-<a name="9701cd03" />
-
-## CovidDiseaseMapsTests.interactionsWithoutReferences
-
-Interactions without literature references: 23
-```
-http://www.wikipathways.org/instance/WP6.gp_r116713 -> http://rdf.wikipathways.org/Pathway/WP6.gp_r116713/WP/Interaction/f6b70
-http://www.wikipathways.org/instance/WP6.gp_r116713 -> http://rdf.wikipathways.org/Pathway/WP6.gp_r116713/WP/Interaction/ef6eb
-http://www.wikipathways.org/instance/WP6.gp_r116713 -> http://rdf.wikipathways.org/Pathway/WP6.gp_r116713/WP/Interaction/ce6a4
-http://www.wikipathways.org/instance/WP6.gp_r116713 -> http://rdf.wikipathways.org/Pathway/WP6.gp_r116713/WP/Interaction/bf387
-http://www.wikipathways.org/instance/WP6.gp_r116713 -> http://rdf.wikipathways.org/Pathway/WP6.gp_r116713/WP/Interaction/a934b
-http://www.wikipathways.org/instance/WP6.gp_r116713 -> http://rdf.wikipathways.org/Pathway/WP6.gp_r116713/WP/Interaction/c5f7b
-http://www.wikipathways.org/instance/WP6.gp_r116713 -> http://rdf.wikipathways.org/Pathway/WP6.gp_r116713/WP/Interaction/b11f1
-http://www.wikipathways.org/instance/WP6.gp_r116713 -> http://rdf.wikipathways.org/Pathway/WP6.gp_r116713/WP/Interaction/d5bba
-http://www.wikipathways.org/instance/WP6.gp_r116713 -> http://rdf.wikipathways.org/Pathway/WP6.gp_r116713/WP/Interaction/f3bd3
-http://www.wikipathways.org/instance/WP6.gp_r116713 -> http://rdf.wikipathways.org/Pathway/WP6.gp_r116713/WP/Interaction/c0e26
-http://www.wikipathways.org/instance/WP6.gp_r116713 -> http://rdf.wikipathways.org/Pathway/WP6.gp_r116713/WP/Interaction/b7461
-http://www.wikipathways.org/instance/WP6.gp_r116713 -> http://rdf.wikipathways.org/Pathway/WP6.gp_r116713/WP/Interaction/b6e3f
-http://www.wikipathways.org/instance/WP6.gp_r116713 -> http://rdf.wikipathways.org/Pathway/WP6.gp_r116713/WP/Interaction/a7ae2
-http://www.wikipathways.org/instance/WP6.gp_r116713 -> http://rdf.wikipathways.org/Pathway/WP6.gp_r116713/WP/Interaction/cb1a9
-http://www.wikipathways.org/instance/WP6.gp_r116713 -> http://rdf.wikipathways.org/Pathway/WP6.gp_r116713/WP/Interaction/bc992
-http://www.wikipathways.org/instance/WP6.gp_r116713 -> http://rdf.wikipathways.org/Pathway/WP6.gp_r116713/WP/Interaction/e6589
-http://www.wikipathways.org/instance/WP6.gp_r116713 -> http://rdf.wikipathways.org/Pathway/WP6.gp_r116713/WP/Interaction/a0082
-http://www.wikipathways.org/instance/WP6.gp_r116713 -> http://rdf.wikipathways.org/Pathway/WP6.gp_r116713/WP/Interaction/e3df6
-http://www.wikipathways.org/instance/WP6.gp_r116713 -> http://rdf.wikipathways.org/Pathway/WP6.gp_r116713/WP/Interaction/d1669
-http://www.wikipathways.org/instance/WP6.gp_r116713 -> http://rdf.wikipathways.org/Pathway/WP6.gp_r116713/WP/Interaction/a636b
-http://www.wikipathways.org/instance/WP6.gp_r116713 -> http://rdf.wikipathways.org/Pathway/WP6.gp_r116713/WP/Interaction/f84e0
-http://www.wikipathways.org/instance/WP6.gp_r116713 -> http://rdf.wikipathways.org/Pathway/WP6.gp_r116713/WP/Interaction/e0bd1
-http://www.wikipathways.org/instance/WP6.gp_r116713 -> http://rdf.wikipathways.org/Pathway/WP6.gp_r116713/WP/Interaction/fa073
-```
-
-More details at [https://wikipathways.github.io/WikiPathwaysCurator/CovidDiseaseMapsTests/interactionsWithoutReferences](https://wikipathways.github.io/WikiPathwaysCurator/CovidDiseaseMapsTests/interactionsWithoutReferences)
 
 <a name="d2d32fa2" />
 
@@ -110,11 +67,6 @@ http://www.wikipathways.org/instance/WP6.gp_r116713 http://rdf.wikipathways.org/
 http://www.wikipathways.org/instance/WP6.gp_r116713 http://rdf.wikipathways.org/Pathway/WP6.gp_r116713/DataNode/f05 (p110)
 ```
 
-<a name="f44398b7" />
-
-## EnsemblTests.outdatedIdentifiers
-
-Expected more than 0 Ensembl identifiers
 <a name="ad154c1e" />
 
 ## HMDBMetabolitesTests.correctFormat

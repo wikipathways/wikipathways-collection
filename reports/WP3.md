@@ -11,19 +11,18 @@
 * CASMetabolitesTests: all 2 tests OK!
 * ChEBIMetabolitesTests: all 4 tests OK!
 * ChemSpiderTests: all 2 tests OK!
-* CovidDiseaseMapsTests
-    * interactionsWithoutReferences: .x we found 1 problem(s):
-        * [Interactions without literature references: 6](#2e295934)
-    * missingHGNC: .. all OK!
 * DataNodesTests: all 4 tests OK!
-* EnsemblTests: all 5 tests OK!
+* EnsemblTests: all 4 tests OK!
 * GeneralTests: all 13 tests OK!
 * GeneTests: all 3 tests OK!
 * HMDBMetabolitesTests: all 2 tests OK!
 * HMDBSecMetabolitesTests: all 3 tests OK!
 * InteractionTests: all 7 tests OK!
 * KEGGMetaboliteTests: all 2 tests OK!
-* LIPIDMAPSTests: all 1 tests OK!
+* LIPIDMAPSTests
+    * retiredIdentifiers: .. all OK!
+    * onlyLIPIDMAPS: .x we found 1 problem(s):
+        * [Expected a LIPID MAPS identifier, but found other identifiers: 4](#48cc60bb)
 * MetabolitesTests: all 14 tests OK!
 * MetaboliteStructureTests: all 2 tests OK!
 * OudatedDataSourcesTests: all 7 tests OK!
@@ -31,32 +30,28 @@
 * ProteinsTests: all 2 tests OK!
 * PubChemMetabolitesTests: all 3 tests OK!
 * ReferencesTests: all 3 tests OK!
-* UniProtTests: all 4 tests OK!
+* UniProtTests: all 5 tests OK!
 * WikidataTests: all 14 tests OK!
 
 
 ## Summary
 
-* Number of test classes: 22
-* Number of tests: 104
-* Number of assertions: 210
+* Number of test classes: 21
+* Number of tests: 103
+* Number of assertions: 207
 * Number of fails: 1
 
 ## Fails
 
-<a name="2e295934" />
+<a name="48cc60bb" />
 
-## CovidDiseaseMapsTests.interactionsWithoutReferences
+## LIPIDMAPSTests.onlyLIPIDMAPS
 
-Interactions without literature references: 6
+Expected a LIPID MAPS identifier, but found other identifiers: 4
 ```
-http://www.wikipathways.org/instance/WP3.gp_r120028 -> http://rdf.wikipathways.org/Pathway/WP3.gp_r120028/WP/Interaction/f0473
-http://www.wikipathways.org/instance/WP3.gp_r120028 -> http://rdf.wikipathways.org/Pathway/WP3.gp_r120028/ComplexBinding/c915f
-http://www.wikipathways.org/instance/WP3.gp_r120028 -> http://rdf.wikipathways.org/Pathway/WP3.gp_r120028/WP/Interaction/bff9c
-http://www.wikipathways.org/instance/WP3.gp_r120028 -> http://rdf.wikipathways.org/Pathway/WP3.gp_r120028/ComplexBinding/f8512
-http://www.wikipathways.org/instance/WP3.gp_r120028 -> http://rdf.wikipathways.org/Pathway/WP3.gp_r120028/WP/Interaction/bcfe7
-http://www.wikipathways.org/instance/WP3.gp_r120028 -> http://rdf.wikipathways.org/Pathway/WP3.gp_r120028/WP/Interaction/bd859
+http://www.wikipathways.org/instance/WP3.gp_r120028 6-HITC has 7991398 from Chemspider but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP3.gp_r120028 Caffeic acid phenethyl ester has CHEBI:8062 from ChEBI but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP3.gp_r120028 Curcumin has HMDB0002269 from HMDB but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP3.gp_r120028 Sulforaphane has HMDB0005792 from HMDB but expected a LIPID MAPS identifier
 ```
-
-More details at [https://wikipathways.github.io/WikiPathwaysCurator/CovidDiseaseMapsTests/interactionsWithoutReferences](https://wikipathways.github.io/WikiPathwaysCurator/CovidDiseaseMapsTests/interactionsWithoutReferences)
 

@@ -11,25 +11,18 @@
 * CASMetabolitesTests: all 2 tests OK!
 * ChEBIMetabolitesTests: all 4 tests OK!
 * ChemSpiderTests: all 2 tests OK!
-* CovidDiseaseMapsTests
-    * interactionsWithoutReferences: .x we found 1 problem(s):
-        * [Interactions without literature references: 4](#2e295932)
-    * missingHGNC: .. all OK!
 * DataNodesTests: all 4 tests OK!
-* EnsemblTests
-    * outdatedIdentifiers: .x. we found 1 problem(s):
-        * [Expected more than 0 Ensembl identifiers](#f44398b7)
-    * wrongEnsemblIDForHumanSpecies: .. all OK!
-    * wrongEnsemblIDForRatSpecies: .. all OK!
-    * wrongEnsemblIDForCowSpecies: .. all OK!
-    * wrongEnsemblIDForMouseSpecies: .. all OK!
+* EnsemblTests: all 4 tests OK!
 * GeneralTests: all 13 tests OK!
 * GeneTests: all 3 tests OK!
 * HMDBMetabolitesTests: all 2 tests OK!
 * HMDBSecMetabolitesTests: all 3 tests OK!
 * InteractionTests: all 7 tests OK!
 * KEGGMetaboliteTests: all 2 tests OK!
-* LIPIDMAPSTests: all 1 tests OK!
+* LIPIDMAPSTests
+    * retiredIdentifiers: .. all OK!
+    * onlyLIPIDMAPS: .x we found 1 problem(s):
+        * [Expected a LIPID MAPS identifier, but found other identifiers: 12](#d0bfb67a)
 * MetabolitesTests: all 14 tests OK!
 * MetaboliteStructureTests: all 2 tests OK!
 * OudatedDataSourcesTests: all 7 tests OK!
@@ -37,35 +30,36 @@
 * ProteinsTests: all 2 tests OK!
 * PubChemMetabolitesTests: all 3 tests OK!
 * ReferencesTests: all 3 tests OK!
-* UniProtTests: all 4 tests OK!
+* UniProtTests: all 5 tests OK!
 * WikidataTests: all 14 tests OK!
 
 
 ## Summary
 
-* Number of test classes: 22
-* Number of tests: 104
-* Number of assertions: 210
-* Number of fails: 2
+* Number of test classes: 21
+* Number of tests: 103
+* Number of assertions: 207
+* Number of fails: 1
 
 ## Fails
 
-<a name="2e295932" />
+<a name="d0bfb67a" />
 
-## CovidDiseaseMapsTests.interactionsWithoutReferences
+## LIPIDMAPSTests.onlyLIPIDMAPS
 
-Interactions without literature references: 4
+Expected a LIPID MAPS identifier, but found other identifiers: 12
 ```
-http://www.wikipathways.org/instance/WP2.gp_r118865 -> http://rdf.wikipathways.org/Pathway/WP2.gp_r118865/WP/Interaction/idc25f80c2
-http://www.wikipathways.org/instance/WP2.gp_r118865 -> http://rdf.wikipathways.org/Pathway/WP2.gp_r118865/WP/Interaction/id508ce097
-http://www.wikipathways.org/instance/WP2.gp_r118865 -> http://rdf.wikipathways.org/Pathway/WP2.gp_r118865/WP/Interaction/id3bdea818
-http://www.wikipathways.org/instance/WP2.gp_r118865 -> http://rdf.wikipathways.org/Pathway/WP2.gp_r118865/WP/Interaction/idb5df2fca
+http://www.wikipathways.org/instance/WP2.gp_r118865 2-aceto-lactate has 13999770 from PubChem-compound but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP2.gp_r118865 NADPH has 53-57-6 from CAS but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP2.gp_r118865 L-glutamate has 56-86-0 from CAS but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP2.gp_r118865 2-keto-isovalerate has CHEBI:11851 from ChEBI but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP2.gp_r118865 2 pyruvate has CHEBI:15361 from ChEBI but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP2.gp_r118865 H2O has CHEBI:15377 from ChEBI but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP2.gp_r118865 H+ has CHEBI:15378 from ChEBI but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP2.gp_r118865 L-valine has CHEBI:16414 from ChEBI but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP2.gp_r118865 CO2 has CHEBI:16526 from ChEBI but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP2.gp_r118865 2-oxoglutarate has CHEBI:16810 from ChEBI but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP2.gp_r118865 2,3-dihydroxy-isovalerate has CHEBI:49072 from ChEBI but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP2.gp_r118865 NADP has HMDB0000217 from HMDB but expected a LIPID MAPS identifier
 ```
 
-More details at [https://wikipathways.github.io/WikiPathwaysCurator/CovidDiseaseMapsTests/interactionsWithoutReferences](https://wikipathways.github.io/WikiPathwaysCurator/CovidDiseaseMapsTests/interactionsWithoutReferences)
-
-<a name="f44398b7" />
-
-## EnsemblTests.outdatedIdentifiers
-
-Expected more than 0 Ensembl identifiers

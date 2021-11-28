@@ -11,18 +11,8 @@
 * CASMetabolitesTests: all 2 tests OK!
 * ChEBIMetabolitesTests: all 4 tests OK!
 * ChemSpiderTests: all 2 tests OK!
-* CovidDiseaseMapsTests
-    * interactionsWithoutReferences: .x we found 1 problem(s):
-        * [Interactions without literature references: 7](#2e295935)
-    * missingHGNC: .. all OK!
 * DataNodesTests: all 4 tests OK!
-* EnsemblTests
-    * outdatedIdentifiers: .x. we found 1 problem(s):
-        * [Expected more than 0 Ensembl identifiers](#f44398b7)
-    * wrongEnsemblIDForHumanSpecies: .. all OK!
-    * wrongEnsemblIDForRatSpecies: .. all OK!
-    * wrongEnsemblIDForCowSpecies: .. all OK!
-    * wrongEnsemblIDForMouseSpecies: .. all OK!
+* EnsemblTests: all 4 tests OK!
 * GeneralTests: all 13 tests OK!
 * GeneTests: all 3 tests OK!
 * HMDBMetabolitesTests
@@ -32,7 +22,10 @@
 * HMDBSecMetabolitesTests: all 3 tests OK!
 * InteractionTests: all 7 tests OK!
 * KEGGMetaboliteTests: all 2 tests OK!
-* LIPIDMAPSTests: all 1 tests OK!
+* LIPIDMAPSTests
+    * retiredIdentifiers: .. all OK!
+    * onlyLIPIDMAPS: .x we found 1 problem(s):
+        * [Expected a LIPID MAPS identifier, but found other identifiers: 16](#d0bfb67e)
 * MetabolitesTests: all 14 tests OK!
 * MetaboliteStructureTests: all 2 tests OK!
 * OudatedDataSourcesTests: all 7 tests OK!
@@ -44,46 +37,48 @@
     * zeroPubMedIDs: .. all OK!
     * atLeastOneReference: .x we found 1 problem(s):
         * [Found 1 pathways with zero references](#35eb778e)
-* UniProtTests: all 4 tests OK!
+* UniProtTests: all 5 tests OK!
 * WikidataTests: all 14 tests OK!
 
 
 ## Summary
 
-* Number of test classes: 22
-* Number of tests: 104
-* Number of assertions: 210
-* Number of fails: 4
+* Number of test classes: 21
+* Number of tests: 103
+* Number of assertions: 207
+* Number of fails: 3
 
 ## Fails
 
-<a name="2e295935" />
-
-## CovidDiseaseMapsTests.interactionsWithoutReferences
-
-Interactions without literature references: 7
-```
-http://www.wikipathways.org/instance/WP7.gp_r117342 -> http://rdf.wikipathways.org/Pathway/WP7.gp_r117342/WP/Interaction/id91c64162
-http://www.wikipathways.org/instance/WP7.gp_r117342 -> http://rdf.wikipathways.org/Pathway/WP7.gp_r117342/WP/Interaction/id891210f
-http://www.wikipathways.org/instance/WP7.gp_r117342 -> http://rdf.wikipathways.org/Pathway/WP7.gp_r117342/WP/Interaction/id9ee1a56c
-http://www.wikipathways.org/instance/WP7.gp_r117342 -> http://rdf.wikipathways.org/Pathway/WP7.gp_r117342/WP/Interaction/id4405d52c
-http://www.wikipathways.org/instance/WP7.gp_r117342 -> http://rdf.wikipathways.org/Pathway/WP7.gp_r117342/WP/Interaction/id7c8cf452
-http://www.wikipathways.org/instance/WP7.gp_r117342 -> http://rdf.wikipathways.org/Pathway/WP7.gp_r117342/WP/Interaction/idf4fd699
-http://www.wikipathways.org/instance/WP7.gp_r117342 -> http://rdf.wikipathways.org/Pathway/WP7.gp_r117342/WP/Interaction/idbd9e74ec
-```
-
-More details at [https://wikipathways.github.io/WikiPathwaysCurator/CovidDiseaseMapsTests/interactionsWithoutReferences](https://wikipathways.github.io/WikiPathwaysCurator/CovidDiseaseMapsTests/interactionsWithoutReferences)
-
-<a name="f44398b7" />
-
-## EnsemblTests.outdatedIdentifiers
-
-Expected more than 0 Ensembl identifiers
 <a name="ad154c1e" />
 
 ## HMDBMetabolitesTests.correctFormat
 
 I expected more than zero HMDB identifiers.
+<a name="d0bfb67e" />
+
+## LIPIDMAPSTests.onlyLIPIDMAPS
+
+Expected a LIPID MAPS identifier, but found other identifiers: 16
+```
+http://www.wikipathways.org/instance/WP7.gp_r117342 phosphate has 14265-44-2 from CAS but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP7.gp_r117342 ATP has 1927-31-7 from CAS but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP7.gp_r117342 pyrophosphate has 2466-09-3 from CAS but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP7.gp_r117342 adenosine-3',5'-bisphosphate has 3805-37-6 from CAS but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP7.gp_r117342 L-cysteine has 52-90-4 from CAS but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP7.gp_r117342 3 NADPH has 53-57-6 from CAS but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP7.gp_r117342 NADPH has 53-57-6 from CAS but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP7.gp_r117342 cystathionine has 535-34-2 from CAS but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP7.gp_r117342 L-serine has 56-45-1 from CAS but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP7.gp_r117342 ADP has 58-64-0 from CAS but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP7.gp_r117342 homocysteine has 6027-13-0 from CAS but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP7.gp_r117342 L-methionine has 63-68-3 from CAS but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP7.gp_r117342 acetate has 64-19-7 from CAS but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP7.gp_r117342 Coenzyme A has 64885-97-8 from CAS but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP7.gp_r117342 homoserine has 672-15-1 from CAS but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP7.gp_r117342 acetyl-CoA has 72-89-9 from CAS but expected a LIPID MAPS identifier
+```
+
 <a name="35eb778e" />
 
 ## ReferencesTests.atLeastOneReference
