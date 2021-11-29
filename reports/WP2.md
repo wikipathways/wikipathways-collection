@@ -19,7 +19,10 @@
 * HMDBSecMetabolitesTests: all 3 tests OK!
 * InteractionTests: all 7 tests OK!
 * KEGGMetaboliteTests: all 2 tests OK!
-* LIPIDMAPSTests: all 1 tests OK!
+* LIPIDMAPSTests
+    * retiredIdentifiers: .. all OK!
+    * onlyLIPIDMAPS: .x we found 1 problem(s):
+        * [Expected a LIPID MAPS identifier, but found other identifiers: 12](#d0bfb67a)
 * MetabolitesTests: all 14 tests OK!
 * MetaboliteStructureTests: all 2 tests OK!
 * OudatedDataSourcesTests: all 7 tests OK!
@@ -34,9 +37,29 @@
 ## Summary
 
 * Number of test classes: 21
-* Number of tests: 102
-* Number of assertions: 205
-* Number of fails: 0
+* Number of tests: 103
+* Number of assertions: 207
+* Number of fails: 1
 
 ## Fails
+
+<a name="d0bfb67a" />
+
+## LIPIDMAPSTests.onlyLIPIDMAPS
+
+Expected a LIPID MAPS identifier, but found other identifiers: 12
+```
+http://www.wikipathways.org/instance/WP2.gp_r118865 2-aceto-lactate has 13999770 from PubChem-compound but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP2.gp_r118865 NADPH has 53-57-6 from CAS but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP2.gp_r118865 L-glutamate has 56-86-0 from CAS but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP2.gp_r118865 2-keto-isovalerate has CHEBI:11851 from ChEBI but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP2.gp_r118865 2 pyruvate has CHEBI:15361 from ChEBI but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP2.gp_r118865 H2O has CHEBI:15377 from ChEBI but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP2.gp_r118865 H+ has CHEBI:15378 from ChEBI but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP2.gp_r118865 L-valine has CHEBI:16414 from ChEBI but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP2.gp_r118865 CO2 has CHEBI:16526 from ChEBI but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP2.gp_r118865 2-oxoglutarate has CHEBI:16810 from ChEBI but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP2.gp_r118865 2,3-dihydroxy-isovalerate has CHEBI:49072 from ChEBI but expected a LIPID MAPS identifier
+http://www.wikipathways.org/instance/WP2.gp_r118865 NADP has HMDB0000217 from HMDB but expected a LIPID MAPS identifier
+```
 
