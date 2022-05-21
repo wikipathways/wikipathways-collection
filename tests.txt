@@ -48,7 +48,7 @@ GeneTests.all
 #GeneTests.entrezGeneIdentifiersNotNumber
 #GeneTests.affyProbeIdentifiersNotCorrect
 #GeneTests.outdatedIdentifiers
-HMDBMetabolitesTests.all
+#HMDBMetabolitesTests.all
 #HMDBMetabolitesTests.outdatedIdentifiers
 #HMDBMetabolitesTests.correctFormat
 HMDBSecMetabolitesTests.all
