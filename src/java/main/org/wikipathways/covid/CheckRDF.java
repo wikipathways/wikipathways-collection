@@ -23,23 +23,17 @@ public class CheckRDF {
         String wpFile     = args[0];
         String reportFile = args[1];
         String gpmlFile = wpFile.replace("wp/Human", "wp/gpml/Human");
-        String sbmlFile = wpFile.replace("wp/Human", "sbml").replace(".ttl",".sbml");
-        String notesFile = sbmlFile.replace(".sbml",".txt");
-        String svgFile  = sbmlFile.replace(".sbml",".svg");
         String wpid     = wpFile.substring(9,wpFile.indexOf(".ttl"));
 
         PrintWriter report = new PrintWriter(reportFile);
         PrintWriter reportStatus = new PrintWriter(reportFile.replace(".md",".txt"));
         PrintWriter reportJSON = new PrintWriter(reportFile.replace(".md",".json"));
 
-        report.println("<img style=\"float: right; width: 200px\" src=\"../logo.png\" />");
+        report.println("<img style=\"float: right; width: 200px\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Wplogo_with_text_500.png/640px-Wplogo_with_text_500.png\" />");
 
         report.println("# WikiPathways " + wpid + "\n");
         report.println("* WikiPathways: [" + wpid + "](https://identifiers.org/wikipathways:" + wpid + ")");
         report.println("* Scholia: [" + wpid + "](https://scholia.toolforge.org/wikipathways/" + wpid + ")");
-        report.println("* WPRDF file: [" + wpFile + "](../" + wpFile + ")");
-        report.println("* GPMLRDF file: [" + gpmlFile + "](../" + gpmlFile + ")");
-        report.println("* SBML file: [" + sbmlFile + "](../" + sbmlFile + ") ([SVG](../" + svgFile + ")) ([conversion notes](../" + notesFile + "))\n");
         List<IAssertion> assertions = new ArrayList<IAssertion>();
         Model loadedData = ModelFactory.createDefaultModel();
         loadedData.read(new FileInputStream(new File(wpFile)), "", "TURTLE");

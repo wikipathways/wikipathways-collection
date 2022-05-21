@@ -1,12 +1,8 @@
-<img style="float: right; width: 200px" src="../logo.png" />
+<img style="float: right; width: 200px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Wplogo_with_text_500.png/640px-Wplogo_with_text_500.png" />
 # WikiPathways WP9
 
 * WikiPathways: [WP9](https://identifiers.org/wikipathways:WP9)
 * Scholia: [WP9](https://scholia.toolforge.org/wikipathways/WP9)
-* WPRDF file: [wp/Human/WP9.ttl](../wp/Human/WP9.ttl)
-* GPMLRDF file: [wp/gpml/Human/WP9.ttl](../wp/gpml/Human/WP9.ttl)
-* SBML file: [sbml/WP9.sbml](../sbml/WP9.sbml) ([SVG](../sbml/WP9.svg)) ([conversion notes](../sbml/WP9.txt))
-
 ## Tests
 * CASMetabolitesTests: all 2 tests OK!
 * ChEBIMetabolitesTests: all 4 tests OK!

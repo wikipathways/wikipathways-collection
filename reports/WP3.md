@@ -1,12 +1,8 @@
-<img style="float: right; width: 200px" src="../logo.png" />
+<img style="float: right; width: 200px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Wplogo_with_text_500.png/640px-Wplogo_with_text_500.png" />
 # WikiPathways WP3
 
 * WikiPathways: [WP3](https://identifiers.org/wikipathways:WP3)
 * Scholia: [WP3](https://scholia.toolforge.org/wikipathways/WP3)
-* WPRDF file: [wp/Human/WP3.ttl](../wp/Human/WP3.ttl)
-* GPMLRDF file: [wp/gpml/Human/WP3.ttl](../wp/gpml/Human/WP3.ttl)
-* SBML file: [sbml/WP3.sbml](../sbml/WP3.sbml) ([SVG](../sbml/WP3.svg)) ([conversion notes](../sbml/WP3.txt))
-
 ## Tests
 * CASMetabolitesTests: all 2 tests OK!
 * ChEBIMetabolitesTests: all 4 tests OK!

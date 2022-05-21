@@ -1,12 +1,8 @@
-<img style="float: right; width: 200px" src="../logo.png" />
+<img style="float: right; width: 200px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Wplogo_with_text_500.png/640px-Wplogo_with_text_500.png" />
 # WikiPathways WP6
 
 * WikiPathways: [WP6](https://identifiers.org/wikipathways:WP6)
 * Scholia: [WP6](https://scholia.toolforge.org/wikipathways/WP6)
-* WPRDF file: [wp/Human/WP6.ttl](../wp/Human/WP6.ttl)
-* GPMLRDF file: [wp/gpml/Human/WP6.ttl](../wp/gpml/Human/WP6.ttl)
-* SBML file: [sbml/WP6.sbml](../sbml/WP6.sbml) ([SVG](../sbml/WP6.svg)) ([conversion notes](../sbml/WP6.txt))
-
 ## Tests
 * CASMetabolitesTests: all 2 tests OK!
 * ChEBIMetabolitesTests: all 4 tests OK!

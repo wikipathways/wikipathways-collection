@@ -1,12 +1,8 @@
-<img style="float: right; width: 200px" src="../logo.png" />
+<img style="float: right; width: 200px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Wplogo_with_text_500.png/640px-Wplogo_with_text_500.png" />
 # WikiPathways WP8
 
 * WikiPathways: [WP8](https://identifiers.org/wikipathways:WP8)
 * Scholia: [WP8](https://scholia.toolforge.org/wikipathways/WP8)
-* WPRDF file: [wp/Human/WP8.ttl](../wp/Human/WP8.ttl)
-* GPMLRDF file: [wp/gpml/Human/WP8.ttl](../wp/gpml/Human/WP8.ttl)
-* SBML file: [sbml/WP8.sbml](../sbml/WP8.sbml) ([SVG](../sbml/WP8.svg)) ([conversion notes](../sbml/WP8.txt))
-
 ## Tests
 * CASMetabolitesTests: all 2 tests OK!
 * ChEBIMetabolitesTests: all 4 tests OK!
