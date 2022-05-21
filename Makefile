@@ -81,7 +81,3 @@ index.md: ${REPORTS}
 		echo -n "`echo "$$report" | sed -e 's/.md//; s/reports\///'`" >> index.md ; \
 		echo ".json\">" >> index.md ; \
 	done
-
-update:
-	@wget -O Makefile https://raw.githubusercontent.com/wikipathways/wikipathways-curation-template/main/Makefile
-	@wget -O src/java/main/org/wikipathways/covid/CheckRDF.java https://raw.githubusercontent.com/wikipathways/wikipathways-curation-template/main/src/java/main/org/wikipathways/covid/CheckRDF.java
