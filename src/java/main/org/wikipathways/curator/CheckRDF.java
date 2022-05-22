@@ -197,7 +197,11 @@ public class CheckRDF {
         reportJSON.println("  \"label\": \"curation\",");
         if (anyTestClassHasFails) {
           reportStatus.println("status=⨯");
-          reportJSON.println("  \"message\": \"" + failedAssertions.size() + " errors\",");
+          reportJSON.println("  \"message\": \"" +
+            (failedAssertions.size() == 1
+               ? "1 issue"
+               : failedAssertions.size() + " issues")
+            + "\",");
           reportJSON.println("  \"color\": \"red\"");
         } else {
           reportStatus.println("status=✓");
