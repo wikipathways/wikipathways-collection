@@ -45,6 +45,6 @@
 
 Found 1 pathways with zero references
 ```
-http://www.wikipathways.org/instance/WP7.gp_r117342 'Sulfur amino acid biosynthesis' in Saccharomyces cerevisiae has zero references; 
+http://www.wikipathways.org/instance/WP7_r117342 'Sulfur amino acid biosynthesis' in Saccharomyces cerevisiae has zero references; 
 ```
 

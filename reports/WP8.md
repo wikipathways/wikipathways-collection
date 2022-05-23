@@ -45,6 +45,6 @@
 
 Found 1 pathways with zero references
 ```
-http://www.wikipathways.org/instance/WP8.gp_r116988 'IL-9 signaling pathway' in Rattus norvegicus has zero references; 
+http://www.wikipathways.org/instance/WP8_r116988 'IL-9 signaling pathway' in Rattus norvegicus has zero references; 
 ```
 
