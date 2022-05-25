@@ -206,7 +206,7 @@ public class CheckRDF {
         } else {
           reportStatus.println("status=✓");
           reportJSON.println("  \"message\": \"success\",");
-          reportJSON.println("  \"color\": \"green\"");
+          reportJSON.println("  \"color\": \"brightgreen\"");
         }
         reportJSON.println("}");
 
