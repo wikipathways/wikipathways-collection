@@ -6,3 +6,4 @@ derby.log
 index.md
 **/*.class
 generate-references/node_modules
+tests.tmp*

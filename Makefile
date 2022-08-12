@@ -83,3 +83,11 @@ index.md: ${REPORTS}
 		echo -n "`echo "$$report" | sed -e 's/.md//; s/reports\///'`" >> index.md ; \
 		echo ".json\">" >> index.md ; \
 	done
+
+updateTests:
+	@jar tf libs/wikipathways.curator-1-SNAPSHOT.jar | grep '.class' \
+	  | grep 'nl.unimaas.bigcat.wikipathways.curator.tests' | tr / . \
+	  | sed 's/\.class//' | xargs javap -public -cp libs/wikipathways.curator-1-SNAPSHOT.jar \
+	  > tests.tmp
+	@groovy extractTests.groovy > tests.tmp2
+	@mv tests.tmp2 tests.txt
