@@ -25,8 +25,9 @@ public class CreateGPMLRDF {
     public static void main(String[] args) throws Exception {
         String gpmlFile = args[0];
         String wpid     = gpmlFile.substring(5,11);
-        String rev      = args[2];
         String outFile  = args[1];
+        String rev      = "1";
+        if (args.length > 2) rev = args[2];
 
         InputStream input = new FileInputStream(gpmlFile);
         Pathway pathway = PathwayReader.readPathway(input);
