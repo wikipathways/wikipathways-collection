@@ -15,10 +15,7 @@
 * InteractionTests: all 8 tests OK!
 * KEGGMetaboliteTests: all 2 tests OK!
 * LIPIDMAPSTests: all 1 tests OK!
-* MetaboliteStructureTests
-    * atLeastFifteenMetabolites: .x we found 1 problem(s):
-            * Expected true but found false
-    * isPartOfAPathway: .. all OK!
+* MetaboliteStructureTests: all 1 tests OK!
 * MetabolitesTests: all 15 tests OK!
 * OudatedDataSourcesTests: all 7 tests OK!
 * PathwayTests: all 6 tests OK!
@@ -32,28 +29,9 @@
 ## Summary
 
 * Number of test classes: 20
-* Number of tests: 104
-* Number of assertions: 208
-* Number of fails: 1
+* Number of tests: 103
+* Number of assertions: 206
+* Number of fails: 0
 
 ## Fails
-
-<a name="6d4291d7" />
-
-## MetaboliteStructureTests.atLeastFifteenMetabolites
-
-Unexpectedly low metabolite count: 8
-
-```
-[["mb"],
-["https://identifiers.org/chebi/CHEBI:17002"],
-["https://identifiers.org/chebi/CHEBI:17855"],
-["https://identifiers.org/hmdb/HMDB0001206"],
-["https://identifiers.org/hmdb/HMDB0000619"],
-["https://identifiers.org/chebi/CHEBI:87631"],
-["https://identifiers.org/chebi/CHEBI:35366"],
-["https://identifiers.org/chebi/CHEBI:16247"],
-["https://identifiers.org/hmdb/HMDB0000067"]
-]
-```
 
