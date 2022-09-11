@@ -15,7 +15,10 @@
 * InteractionTests: all 8 tests OK!
 * KEGGMetaboliteTests: all 2 tests OK!
 * LIPIDMAPSTests: all 1 tests OK!
-* MetaboliteStructureTests: all 2 tests OK!
+* MetaboliteStructureTests
+    * atLeastFifteenMetabolites: .x we found 1 problem(s):
+            * Expected true but found false
+    * isPartOfAPathway: .. all OK!
 * MetabolitesTests
     * metaboliteAlsoOtherType: .. all OK!
     * casNumbersNotMarkedAsMetabolite: .. all OK!
@@ -47,9 +50,25 @@
 * Number of test classes: 20
 * Number of tests: 104
 * Number of assertions: 208
-* Number of fails: 1
+* Number of fails: 2
 
 ## Fails
+
+<a name="6d42917a" />
+
+## MetaboliteStructureTests.atLeastFifteenMetabolites
+
+Unexpectedly low metabolite count: 5
+
+```
+[["mb"],
+["https://identifiers.org/cas/2644-64-6"],
+["https://identifiers.org/cas/2466-09-3"],
+["https://identifiers.org/cas/14265-44-2"],
+["https://identifiers.org/cas/56-45-1"],
+["https://identifiers.org/cas/56-81-5"]
+]
+```
 
 <a name="a4e4037e" />
 
