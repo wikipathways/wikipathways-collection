@@ -15,5 +15,7 @@ The following tools are needed:
 ```shell
 find ../wikipathways-database -name "*gpml" | grep "./pathways/" | xargs cp -t gpml
 make pathways.txt
+make rdf
+make check
 ```
 
