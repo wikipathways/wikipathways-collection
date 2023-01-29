@@ -39,10 +39,6 @@ pmid/%.pmid: gpml/%.gpml
 	@echo "Extracting PubMed identifiers from $@ ..."
 	@xpath -q -e '/Pathway/Biopax/bp:PublicationXref[./bp:DB="PubMed"]/bp:ID/text()' $< | sort -n | uniq > $@
 
-gpml/%.gpml:
-	@echo "Git fetching $@ ..."
-	@echo '$@' | sed -e 's/gpml\/\(.*\)\.gpml/\1/' | xargs bash getPathway.sh
-
 wp/Human/%.ttl: gpml/%.gpml src/java/main/org/wikipathways/curator/CreateRDF.class
 	@echo "Creating $@ WPRDF from $< ..."
 	@mkdir -p wp/Human
