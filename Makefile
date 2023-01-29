@@ -20,11 +20,8 @@ install:
 	@wget -O libs/slf4j-simple-1.7.32.jar https://search.maven.org/remotecontent?filepath=org/slf4j/slf4j-simple/1.7.32/slf4j-simple-1.7.32.jar
 	@wget -O libs/jena-arq-${JENAVERSION}.jar https://repo1.maven.org/maven2/org/apache/jena/jena-arq/${JENAVERSION}/jena-arq-${JENAVERSION}.jar
 
-pathways.json:
-	@curl -o pathways.json -X GET --header "Accept: application/json" "https://webservice.wikipathways.org/getCurationTagsByName?tagName=${COLLECTION}&format=json"
-
-pathways.txt: pathways.json
-	@cat pathways.json | jq '.tags[] .pathway .id' | sed -s 's/"//g'| sort > pathways.txt
+pathways.txt:
+	@find gpml -name "*gpml" | cut -d'/' -f2 | sort | grep "WP" | cut -d'.' -f1 | more > pathways.txt
 
 rdf: ${WPRDFS} ${GPMLRDFS}
 pmids: ${PMIDS}

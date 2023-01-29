@@ -13,6 +13,7 @@ The following tools are needed:
 ## How to run
 
 ```shell
+find ../wikipathways-database -name "*gpml" | grep "./pathways/" | xargs cp -t gpml
 make pathways.txt
 ```
 
