@@ -7,7 +7,7 @@ REPORTS := ${shell cat pathways.txt | sed -e 's/\(.*\)/reports\/\1.md/' }
 SBMLS := ${shell cat pathways.txt | sed -e 's/\(.*\)/sbml\/\1.sbml/' } ${shell cat pathways.txt | sed -e 's/\(.*\)/sbml\/\1.txt/' }
 SVGS := ${shell cat pathways.txt | sed -e 's/\(.*\)/sbml\/\1.svg/' }
 
-FRAMEWORKVERSION=release-3
+FRAMEWORKVERSION=release-5
 JENAVERSION=4.3.0
 
 WEBSITE := ${shell cat website.txt }

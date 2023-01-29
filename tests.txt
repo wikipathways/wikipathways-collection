@@ -91,6 +91,7 @@ MetabolitesTests.all
 #MetabolitesTests.tooManyInChIKeys
 #OutdatedDataSourcesTests.all
 OutdatedDataSourcesTests.discontinuedUniGene
+OutdatedDataSourcesTests.gpml2021transition
 OutdatedDataSourcesTests.noInChIDataSourceYet
 OutdatedDataSourcesTests.oldUniprotSwissProt
 #OutdatedDataSourcesTests.outdatedChemSpiderDataSource
@@ -128,6 +129,7 @@ PubChemMetabolitesTests.all
 #PubChemMetabolitesTests.nonNumericIDs
 ReferencesTests.all
 #ReferencesTests.atLeastOneReference
+#ReferencesTests.citesRetractedArticle
 #ReferencesTests.nonNumericPubMedIDs
 #ReferencesTests.zeroPubMedIDs
 UniProtTests.all
@@ -143,11 +145,13 @@ WikidataTests.all
 #WikidataTests.chemspiderCIDWithoutMapping
 #WikidataTests.duplicateWikidataMappings
 #WikidataTests.hmdbWithoutMapping
+#WikidataTests.inchikeyWithoutMapping
 #WikidataTests.kNApSAcKWithoutMapping
 #WikidataTests.keggWithoutMapping
 #WikidataTests.lipidMapsWithoutMapping
 #WikidataTests.noWikidataForGenes
 #WikidataTests.pubchemCIDWithoutMapping
 #WikidataTests.replaceWikipedia
+#WikidataTests.retiredIdentifiers
 #WikidataTests.wikDataTypo
 #WikidataTests.wikidataIdentifiersWrong
