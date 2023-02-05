@@ -21,7 +21,7 @@ install:
 	@wget -O libs/jena-arq-${JENAVERSION}.jar https://repo1.maven.org/maven2/org/apache/jena/jena-arq/${JENAVERSION}/jena-arq-${JENAVERSION}.jar
 
 pathways.txt:
-	@find gpml -name "*gpml" | cut -d'/' -f2 | sort | grep "WP" | cut -d'.' -f1 | more > pathways.txt
+	@find gpml -name "*gpml" | cut -d'/' -f2 | sort | grep "WP" | cut -d'.' -f1 > pathways.txt
 
 rdf: ${WPRDFS} ${GPMLRDFS}
 pmids: ${PMIDS}
