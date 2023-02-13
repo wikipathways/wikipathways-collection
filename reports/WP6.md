@@ -1,7 +1,7 @@
 <img style="float: right; width: 200px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Wplogo_with_text_500.png/640px-Wplogo_with_text_500.png" />
 # WikiPathways WP6
 
-* WikiPathways: [WP6](https://new.wikipathways.org/pathways/WP6)
+* WikiPathways: [WP6](https://wikipathways.org/pathways/WP6)
 * Scholia: [WP6](https://scholia.toolforge.org/wikipathways/WP6)
 ## Tests
 * CASMetabolitesTests: all 2 tests OK!
