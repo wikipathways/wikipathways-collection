@@ -138,7 +138,7 @@ UniProtTests.all
 #UniProtTests.incorrectIdentifiers
 #UniProtTests.outdatedIdentifiers
 #UniProtTests.unreviewedIdentifiers
-WikidataTests.all
+#WikidataTests.all
 #WikidataTests.casWithoutMapping
 #WikidataTests.chebiWithoutMapping
 #WikidataTests.chebiWithoutMapping_Reactome
@@ -151,7 +151,7 @@ WikidataTests.all
 #WikidataTests.lipidMapsWithoutMapping
 #WikidataTests.noWikidataForGenes
 #WikidataTests.pubchemCIDWithoutMapping
-#WikidataTests.replaceWikipedia
-#WikidataTests.retiredIdentifiers
-#WikidataTests.wikDataTypo
-#WikidataTests.wikidataIdentifiersWrong
+WikidataTests.replaceWikipedia
+WikidataTests.retiredIdentifiers
+WikidataTests.wikDataTypo
+WikidataTests.wikidataIdentifiersWrong
