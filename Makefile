@@ -1,5 +1,5 @@
 COLLECTION="Curation%3AAnalysisCollection"
-GPMLS := ${shell cat pathways.txt | sed -e 's/\(.*\)/gpml\/\1.gpml/' }
+GPMLS := ${shell cd  ../wikipathways-database/ ; git diff --name-only HEAD@{2023-03-02} | grep .gpml$ | grep ^pathways/ | sort | uniq }
 WPRDFS := ${shell cat pathways.txt | sed -e 's/\(.*\)/wp\/Human\/\1.ttl/' }
 PMIDS := ${shell cat pathways.txt | sed -e 's/\(.*\)/pmid\/\1.pmid/' }
 GPMLRDFS := ${shell cat pathways.txt | sed -e 's/\(.*\)/wp\/gpml\/Human\/\1.ttl/' }
