@@ -1,5 +1,7 @@
+PREVISOUSDATA="2023-03-17"
 COLLECTION="Curation%3AAnalysisCollection"
-GPMLS := ${shell cd  ../wikipathways-database/ ; git diff --name-only HEAD@{2023-03-02} | grep .gpml$ | grep ^pathways/ | sort | uniq }
+ORIGINALS := ${shell cd  ../wikipathways-database/ ; git diff --name-only HEAD@{${PREVISOUSDATA}} | grep .gpml$ | grep ^pathways/ | sort | uniq | sed -e 's/\(.*\)/..\/wikipathways-database\/\1/' }
+GPMLS := ${shell cd  ../wikipathways-database/ ; git diff --name-only HEAD@{${PREVISOUSDATA}} | grep .gpml$ | grep ^pathways/ | sort | uniq | cut -d'/' -f3 | sed -e 's/\(.*\)/gpml\/\1/' }
 WPRDFS := ${shell cat pathways.txt | sed -e 's/\(.*\)/wp\/Human\/\1.ttl/' }
 PMIDS := ${shell cat pathways.txt | sed -e 's/\(.*\)/pmid\/\1.pmid/' }
 GPMLRDFS := ${shell cat pathways.txt | sed -e 's/\(.*\)/wp\/gpml\/Human\/\1.ttl/' }
@@ -19,6 +21,9 @@ install:
 	@wget -O libs/wikipathways.curator-1-SNAPSHOT.jar https://github.com/wikipathways/wikipathways-curation-template/releases/download/${FRAMEWORKVERSION}/wikipathways.curator-1-SNAPSHOT.jar
 	@wget -O libs/slf4j-simple-1.7.32.jar https://search.maven.org/remotecontent?filepath=org/slf4j/slf4j-simple/1.7.32/slf4j-simple-1.7.32.jar
 	@wget -O libs/jena-arq-${JENAVERSION}.jar https://repo1.maven.org/maven2/org/apache/jena/jena-arq/${JENAVERSION}/jena-arq-${JENAVERSION}.jar
+
+updateGPMLS:
+	@cp ${ORIGINALS} gpml/.
 
 pathways.txt:
 	@find gpml -name "*gpml" | cut -d'/' -f2 | sort | grep "WP" | cut -d'.' -f1 > pathways.txt
