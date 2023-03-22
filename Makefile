@@ -1,7 +1,7 @@
-PREVISOUSDATA="2023-03-17"
+PREVIOUSDATE="2023-03-19"
 COLLECTION="Curation%3AAnalysisCollection"
-ORIGINALS := ${shell cd  ../wikipathways-database/ ; git diff --name-only HEAD@{${PREVISOUSDATA}} | grep .gpml$ | grep ^pathways/ | sort | uniq | sed -e 's/\(.*\)/..\/wikipathways-database\/\1/' }
-GPMLS := ${shell cd  ../wikipathways-database/ ; git diff --name-only HEAD@{${PREVISOUSDATA}} | grep .gpml$ | grep ^pathways/ | sort | uniq | cut -d'/' -f3 | sed -e 's/\(.*\)/gpml\/\1/' }
+ORIGINALS := ${shell cd  ../wikipathways-database/ ; git diff --name-only HEAD@{${PREVIOUSDATE}} | grep .gpml$ | grep ^pathways/ | sort | uniq | sed -e 's/\(.*\)/..\/wikipathways-database\/\1/' }
+GPMLS := ${shell cd  ../wikipathways-database/ ; git diff --name-only HEAD@{${PREVIOUSDATE}} | grep .gpml$ | grep ^pathways/ | sort | uniq | cut -d'/' -f3 | sed -e 's/\(.*\)/gpml\/\1/' }
 WPRDFS := ${shell cat pathways.txt | sed -e 's/\(.*\)/wp\/Human\/\1.ttl/' }
 PMIDS := ${shell cat pathways.txt | sed -e 's/\(.*\)/pmid\/\1.pmid/' }
 GPMLRDFS := ${shell cat pathways.txt | sed -e 's/\(.*\)/wp\/gpml\/Human\/\1.ttl/' }
@@ -14,7 +14,7 @@ JENAVERSION=4.3.0
 
 WEBSITE := ${shell cat website.txt }
 
-all:
+all: updateGPMLS rdf
 
 install:
 	@wget -O libs/GPML2RDF-3.0.0-SNAPSHOT.jar https://github.com/wikipathways/wikipathways-curation-template/releases/download/${FRAMEWORKVERSION}/GPML2RDF-3.0.0-SNAPSHOT.jar
