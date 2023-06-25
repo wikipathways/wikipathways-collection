@@ -1,0 +1,118 @@
+name: When GPML changed, do everything
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
+  cancel-in-progress: false # to allow multiple runs to queue up rather than clobber
+
+jobs:
+  # inspired by https://dev.to/scienta/get-changed-files-in-github-actions-1p36
+  changed-gpmls:
+    runs-on: ubuntu-latest
+    # Map a step output to a job output
+    outputs:
+      added-modified: ${{ steps.changes.outputs.added-modified }}
+      copied: ${{ steps.changes.outputs.copied }}
+      deleted: ${{ steps.changes.outputs.deleted }}
+      renamed: ${{ steps.changes.outputs.renamed }}
+    steps:
+        # Make sure we have some code to diff.
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          repository: wikipathways/wikipathways-database
+          path: wikipathways-database
+          fetch-depth: 0
+          ref: main
+      - name: Get changed files
+        id: changes
+        # Set outputs using the command.
+        run: |
+          echo "GPML files were changed in pull request ${{ github.event.before }} -> ${{ github.event.after }}"
+          
+          #echo "::set-output name=added-modified::$(git diff --name-only --diff-filter=AM ${{ github.event.before }} ${{ github.event.after }} | grep .gpml$ | xargs)"
+          echo "added-modified=$(git diff --name-only --diff-filter=AM ${{ github.event.before }} ${{ github.event.after }} | grep .gpml$ | xargs)" >> $GITHUB_OUTPUT
+          if git diff --name-only --diff-filter=AM ${{ github.event.before }} ${{ github.event.after }} | grep .gpml$; then
+            echo 'added or modified:'
+            git diff --name-only --diff-filter=AM ${{ github.event.before }} ${{ github.event.after }} | grep .gpml$
+          fi
+          
+          #echo "::set-output name=copied::$(git diff --name-only --diff-filter=C ${{ github.event.before }} ${{ github.event.after }} | grep .gpml$ | xargs)"
+          echo "copied=$(git diff --name-only --diff-filter=C ${{ github.event.before }} ${{ github.event.after }} | grep .gpml$ | xargs)" >> $GITHUB_OUTPUT
+          if git diff --name-only --diff-filter=C ${{ github.event.before }} ${{ github.event.after }} | grep .gpml$; then
+            echo 'copied:'
+            git diff --name-only --diff-filter=C ${{ github.event.before }} ${{ github.event.after }} | grep .gpml$
+          fi
+
+          #echo "::set-output name=deleted::$(git diff --name-only --diff-filter=D ${{ github.event.before }} ${{ github.event.after }} | grep .gpml$ | xargs)"
+          echo "deleted=$(git diff --name-only --diff-filter=D ${{ github.event.before }} ${{ github.event.after }} | grep .gpml$ | xargs)" >> $GITHUB_OUTPUT
+          if git diff --name-only --diff-filter=D ${{ github.event.before }} ${{ github.event.after }} | grep .gpml$; then
+            echo 'deleted:'
+            git diff --name-only --diff-filter=D ${{ github.event.before }} ${{ github.event.after }} | grep .gpml$
+          fi
+            
+          #echo "::set-output name=renamed::$(git diff --name-only --diff-filter=R ${{ github.event.before }} ${{ github.event.after }} | grep .gpml$ | xargs)"
+          echo "renamed=$(git diff --name-only --diff-filter=R ${{ github.event.before }} ${{ github.event.after }} | grep .gpml$ | xargs)" >> $GITHUB_OUTPUT
+          if git diff --name-only --diff-filter=R ${{ github.event.before }} ${{ github.event.after }} | grep .gpml$; then
+            echo 'renamed:'
+            git diff --name-only --diff-filter=R ${{ github.event.before }} ${{ github.event.after }} | grep .gpml$
+          fi
+          
+  metadata:
+    runs-on: ubuntu-latest
+    needs: changed-gpmls
+    # only run if gpmls were added or modified
+    if: ${{needs.changed-gpmls.outputs.added-modified}}
+    steps:
+        
+      - name: Checkout wikipathways-database repo
+        uses: actions/checkout@v3
+        with:
+          repository: wikipathways/wikipathways-database
+          path: wikipathways-database
+          fetch-depth: 1
+          ref: main
+          
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '11'
+            
+      - name: Cache meta-data-action with dependencies
+        uses: actions/cache@v3
+        id: cacheGPMLRDFJar
+        with:
+          path: ./GPML2RDF-3.0.0-SNAPSHOT.jar
+          key: cached-meta-data-action-${{ hashFiles('GPML2RDF-3.0.0-SNAPSHOT.jarr') }}
+          restore-keys: |
+            cached-meta-data-action-${{ hashFiles('GPML2RDF-3.0.0-SNAPSHOT.jar') }}
+            cached-meta-data-action-
+    
+      - if: steps.cacheMetaJar.outputs.cache-hit != 'true'
+        name: Install deps
+        run: |
+          echo "Cache not found: cached-meta-data-action"
+          if [ ! -e ./GPML2RDF-3.0.0-SNAPSHOT.jar ]; then
+            wget -O GPML2RDF-3.0.0-SNAPSHOT.jar https://github.com/wikipathways/wikipathways-curation-template/releases/download/release-7/GPML2RDF-3.0.0-SNAPSHOT.jar
+          fi
+
+      - name: Generate RDF
+        run: |
+          for f in ${{needs.changed-gpmls.outputs.added-modified}}; do
+            echo "generating RDF for "$f""
+          done
+      
+      - name: Commit report
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add pathways/WP*/WP*.{json,tsv}
+          if git diff --exit-code --staged; then
+              echo "No changes"
+          fi
