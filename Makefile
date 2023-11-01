@@ -8,6 +8,7 @@ GPMLRDFS := ${shell cat pathways.txt | sed -e 's/\(.*\)/wp\/gpml\/Human\/\1.ttl/
 REPORTS := ${shell cat pathways.txt | sed -e 's/\(.*\)/reports\/\1.md/' }
 SBMLS := ${shell cat pathways.txt | sed -e 's/\(.*\)/sbml\/\1.sbml/' } ${shell cat pathways.txt | sed -e 's/\(.*\)/sbml\/\1.txt/' }
 SVGS := ${shell cat pathways.txt | sed -e 's/\(.*\)/sbml\/\1.svg/' }
+BS := ${shell cat pathways.txt | sed -e 's/\(.*\)/bioschemas\/\1.json/' }
 
 FRAMEWORKVERSION=release-6
 JENAVERSION=4.8.0
@@ -35,6 +36,7 @@ pmids: ${PMIDS}
 gpml: ${GPMLS}
 sbml: ${SBMLS}
 svg: ${SVGS}
+bioschemas: ${BS}
 
 clean:
 	@rm -f ${GPMLS}
@@ -91,3 +93,9 @@ updateTests:
 	  > tests.tmp
 	@groovy extractTests.groovy > tests.tmp2
 	@mv tests.tmp2 tests.txt
+
+bioschemas/%.json: gpml/%.gpml
+	@echo "Creating Bioschemas JSON for $< ..."
+	@mkdir -p bioschemas
+	@java -cp libs/org.pathvisio.io.bioschemas-4.0.3.jar org.pathvisio.io.bioschemas.Convertor $< $@
+	@cat $@ | jq . > /dev/null
