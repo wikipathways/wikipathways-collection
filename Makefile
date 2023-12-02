@@ -6,7 +6,9 @@ WPRDFS := ${shell cat pathways.txt | sed -e 's/\(.*\)/wp\/Human\/\1.ttl/' }
 GPMLRDFS := ${shell cat pathways.txt | sed -e 's/\(.*\)/wp\/gpml\/Human\/\1.ttl/' }
 PMIDS := ${shell cat pathways.txt | sed -e 's/\(.*\)/pmid\/\1.pmid/' }
 NEWWPRDFS := ${shell cat pathways.txt | sed -e 's/\(.*\)/wp\/Human\/\1.ngttl/' }
+NEWWPEVAL := ${shell cat pathways.txt | sed -e 's/\(.*\)/wp\/Human\/\1.ng.eval.txt/' }
 NEWGPMLRDFS := ${shell cat pathways.txt | sed -e 's/\(.*\)/wp\/gpml\/Human\/\1.ngttl/' }
+NEWGPMLEVAL := ${shell cat pathways.txt | sed -e 's/\(.*\)/wp\/gpml\/Human\/\1.ng.eval.txt/' }
 REPORTS := ${shell cat pathways.txt | sed -e 's/\(.*\)/reports\/\1.md/' }
 SBMLS := ${shell cat pathways.txt | sed -e 's/\(.*\)/sbml\/\1.sbml/' } ${shell cat pathways.txt | sed -e 's/\(.*\)/sbml\/\1.txt/' }
 SVGS := ${shell cat pathways.txt | sed -e 's/\(.*\)/sbml\/\1.svg/' }
@@ -33,6 +35,7 @@ updateGPMLS:
 pathways.txt:
 	@find gpml -name "*gpml" | cut -d'/' -f2 | sort | grep "WP" | cut -d'.' -f1 > pathways.txt
 
+ngeval: ${NEWWPEVAL} ${NEWGPMLEVAL}
 rdfng: ${NEWWPRDFS} ${NEWGPMLRDFS}
 rdf: ${WPRDFS} ${GPMLRDFS}
 pmids: ${PMIDS}
@@ -68,6 +71,16 @@ wp/gpml/Human/%.ttl: gpml/%.gpml src/java/main/org/wikipathways/curator/CreateGP
 wp/gpml/Human/%.ngttl: gpml/%.gpml src/java/main/org/wikipathways/curator/CreateGPMLRDF.class
 	@mkdir -p wp/gpml/Human
 	@xpath -q -e "string(/Pathway/@Version)" $< | cut -d'_' -f2 | xargs java -cp libs/gpml2rdf-4.0.4-SNAPSHOT.jar org.wikipathways.wp2rdf.CreateGPMLRDF $< $@
+
+wp/Human/%.ng.eval.txt: wp/Human/%.ngttl wp/Human/%.ttl
+	@roqet -q typeStats.rq -D wp/Human/`basename $@ | cut -d'.' -f1`.ngttl -r csv > $@.1.tsv || true
+	@roqet -q typeStats.rq -D wp/Human/`basename $@ | cut -d'.' -f1`.ttl -r csv > $@.2.tsv || true
+	@diff -u $@.2.tsv $@.1.tsv > $@ || true
+
+wp/gpml/Human/%.ng.eval.txt: wp/gpml/Human/%.ngttl wp/gpml/Human/%.ttl
+	@roqet -q typeStats.rq -D wp/gpml/Human/`basename $@ | cut -d'.' -f1`.ngttl -r csv > $@.1.tsv || true
+	@roqet -q typeStats.rq -D wp/gpml/Human/`basename $@ | cut -d'.' -f1`.ttl -r csv > $@.2.tsv || true
+	@diff -u $@.2.tsv $@.1.tsv > $@ || true
 
 src/java/main/org/wikipathways/curator/CreateRDF.class: src/java/main/org/wikipathways/curator/CreateRDF.java
 	@echo "Compiling $@ ..."
