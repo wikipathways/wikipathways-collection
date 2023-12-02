@@ -3,8 +3,10 @@ COLLECTION="Curation%3AAnalysisCollection"
 ORIGINALS := ${shell cd  ../wikipathways-database/ ; git diff --diff-filter=d --name-only HEAD@{${PREVIOUSDATE}} | grep .gpml$ | grep ^pathways/ | sort | uniq | sed -e 's/\(.*\)/..\/wikipathways-database\/\1/' }
 GPMLS := ${shell cd  ../wikipathways-database/ ; git diff --diff-filter=d --name-only HEAD@{${PREVIOUSDATE}} | grep .gpml$ | grep ^pathways/ | sort | uniq | cut -d'/' -f3 | sed -e 's/\(.*\)/gpml\/\1/' }
 WPRDFS := ${shell cat pathways.txt | sed -e 's/\(.*\)/wp\/Human\/\1.ttl/' }
-PMIDS := ${shell cat pathways.txt | sed -e 's/\(.*\)/pmid\/\1.pmid/' }
 GPMLRDFS := ${shell cat pathways.txt | sed -e 's/\(.*\)/wp\/gpml\/Human\/\1.ttl/' }
+PMIDS := ${shell cat pathways.txt | sed -e 's/\(.*\)/pmid\/\1.pmid/' }
+NEWWPRDFS := ${shell cat pathways.txt | sed -e 's/\(.*\)/wp\/Human\/\1.ngttl/' }
+NEWGPMLRDFS := ${shell cat pathways.txt | sed -e 's/\(.*\)/wp\/gpml\/Human\/\1.ngttl/' }
 REPORTS := ${shell cat pathways.txt | sed -e 's/\(.*\)/reports\/\1.md/' }
 SBMLS := ${shell cat pathways.txt | sed -e 's/\(.*\)/sbml\/\1.sbml/' } ${shell cat pathways.txt | sed -e 's/\(.*\)/sbml\/\1.txt/' }
 SVGS := ${shell cat pathways.txt | sed -e 's/\(.*\)/sbml\/\1.svg/' }
@@ -31,6 +33,7 @@ updateGPMLS:
 pathways.txt:
 	@find gpml -name "*gpml" | cut -d'/' -f2 | sort | grep "WP" | cut -d'.' -f1 > pathways.txt
 
+rdfng: ${NEWWPRDFS} ${NEWGPMLRDFS}
 rdf: ${WPRDFS} ${GPMLRDFS}
 pmids: ${PMIDS}
 gpml: ${GPMLS}
@@ -53,9 +56,18 @@ wp/Human/%.ttl: gpml/%.gpml src/java/main/org/wikipathways/curator/CreateRDF.cla
 	@mkdir -p wp/Human
 	@xpath -q -e "string(/Pathway/@Version)" $< | cut -d'_' -f2 | xargs java -cp src/java/main/.:libs/GPML2RDF-3.0.0-SNAPSHOT.jar:libs/derby-10.14.2.0.jar:libs/slf4j-simple-1.7.32.jar org.wikipathways.curator.CreateRDF $< $@
 
+wp/Human/%.ngttl: gpml/%.gpml
+	@echo "Creating $@ WPRDF NG from $< ..."
+	@mkdir -p wp/Human
+	@xpath -q -e "string(/Pathway/@Version)" $< | cut -d'_' -f2 | xargs java -cp libs/gpml2rdf-4.0.4-SNAPSHOT.jar org.wikipathways.wp2rdf.CreateWPRDF $< $@
+
 wp/gpml/Human/%.ttl: gpml/%.gpml src/java/main/org/wikipathways/curator/CreateGPMLRDF.class
 	@mkdir -p wp/gpml/Human
 	@xpath -q -e "string(/Pathway/@Version)" $< | cut -d'_' -f2 | xargs java -cp src/java/main/.:libs/GPML2RDF-3.0.0-SNAPSHOT.jar:libs/derby-10.14.2.0.jar:libs/slf4j-simple-1.7.32.jar org.wikipathways.curator.CreateGPMLRDF $< $@
+
+wp/gpml/Human/%.ngttl: gpml/%.gpml src/java/main/org/wikipathways/curator/CreateGPMLRDF.class
+	@mkdir -p wp/gpml/Human
+	@xpath -q -e "string(/Pathway/@Version)" $< | cut -d'_' -f2 | xargs java -cp libs/gpml2rdf-4.0.4-SNAPSHOT.jar org.wikipathways.wp2rdf.CreateGPMLRDF $< $@
 
 src/java/main/org/wikipathways/curator/CreateRDF.class: src/java/main/org/wikipathways/curator/CreateRDF.java
 	@echo "Compiling $@ ..."
