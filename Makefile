@@ -10,6 +10,7 @@ NEWWPEVAL := ${shell cat pathways.txt | sed -e 's/\(.*\)/wp\/Human\/\1.ng.eval.t
 NEWGPMLRDFS := ${shell cat pathways.txt | sed -e 's/\(.*\)/wp\/gpml\/Human\/\1.ngttl/' }
 NEWGPMLEVAL := ${shell cat pathways.txt | sed -e 's/\(.*\)/wp\/gpml\/Human\/\1.ng.eval.txt/' }
 REPORTS := ${shell cat pathways.txt | sed -e 's/\(.*\)/reports\/\1.md/' }
+NEWREPORTS := ${shell cat pathways.txt | sed -e 's/\(.*\)/reports\/\1.ng.md/' }
 SBMLS := ${shell cat pathways.txt | sed -e 's/\(.*\)/sbml\/\1.sbml/' } ${shell cat pathways.txt | sed -e 's/\(.*\)/sbml\/\1.txt/' }
 SVGS := ${shell cat pathways.txt | sed -e 's/\(.*\)/sbml\/\1.svg/' }
 BS := ${shell cat pathways.txt | sed -e 's/\(.*\)/bioschemas\/\1.json/' }
@@ -94,12 +95,21 @@ src/java/main/org/wikipathways/curator/CheckRDF.class: src/java/main/org/wikipat
 	@echo "Compiling $@ ..."
 	@javac -cp libs/wikipathways.curator-1-SNAPSHOT.jar src/java/main/org/wikipathways/curator/CheckRDF.java
 
-check: ${REPORTS} index.md
+src/java/main/org/wikipathways/curator/CheckNGRDF.class: src/java/main/org/wikipathways/curator/CheckNGRDF.java libs/wikipathways.curator-1-SNAPSHOT.jar
+	@echo "Compiling $@ ..."
+	@javac -cp libs/wikipathways.curator-1-SNAPSHOT.jar src/java/main/org/wikipathways/curator/CheckNGRDF.java
+
+check: ${REPORTS} ${NEWREPORTS} index.md
 
 reports/%.md: wp/Human/%.ttl wp/gpml/Human/%.ttl src/java/main/org/wikipathways/curator/CheckRDF.class tests.txt
 	@echo "Checking curation status of $@ ..."
 	@mkdir -p reports
 	@java -cp libs/slf4j-simple-1.7.32.jar:libs/jena-arq-${JENAVERSION}.jar:src/java/main/:libs/wikipathways.curator-1-SNAPSHOT.jar org.wikipathways.curator.CheckRDF $< $@
+
+reports/%.ng.md: wp/Human/%.ngttl wp/gpml/Human/%.ngttl src/java/main/org/wikipathways/curator/CheckNGRDF.class tests.txt
+	@echo "Checking curation status of $@ ..."
+	@mkdir -p reports
+	@java -cp libs/slf4j-simple-1.7.32.jar:libs/jena-arq-${JENAVERSION}.jar:src/java/main/:libs/wikipathways.curator-1-SNAPSHOT.jar org.wikipathways.curator.CheckNGRDF $< $@
 
 index.md: ${REPORTS}
 	@echo "<img style=\"float: right; width: 200px\" src=\"logo.png\" />" > index.md

@@ -1,0 +1,4 @@
+SELECT ?type (COUNT(DISTINCT ?item) AS ?count) WHERE {
+  ?item a ?type .
+} GROUP BY ?type
+  ORDER BY DESC(?count)
