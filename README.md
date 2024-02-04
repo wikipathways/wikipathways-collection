@@ -14,7 +14,7 @@ The following tools are needed:
 
 ```shell
 make updateGPMLS
-make pathways.txt
+make -B pathways.txt
 make rdf
 make check
 ```
