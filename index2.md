@@ -1,4 +1,4 @@
-<img style="float: right; width: 200px" src="reports/logo.png" />
+<img style="float: right; width: 200px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Wplogo_with_text_500.png/640px-Wplogo_with_text_500.png" />
 # Validation Reports
 
 ## DataNodesTests.dataNodesWithoutIdentifier
