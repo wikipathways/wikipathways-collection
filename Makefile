@@ -121,6 +121,9 @@ index.md: ${REPORTS}
 		echo ".json\">" >> index.md ; \
 	done
 
+index2.md: ${REPORTS}
+	@groovy summarizeFails.groovy > index2.md
+
 updateTests:
 	@jar tf libs/wikipathways.curator-1-SNAPSHOT.jar | grep '.class' \
 	  | grep 'nl.unimaas.bigcat.wikipathways.curator.tests' | tr / . \
