@@ -99,7 +99,8 @@ src/java/main/org/wikipathways/curator/CheckNGRDF.class: src/java/main/org/wikip
 	@echo "Compiling $@ ..."
 	@javac -cp libs/wikipathways.curator-1-SNAPSHOT.jar src/java/main/org/wikipathways/curator/CheckNGRDF.java
 
-check: ${REPORTS} ${NEWREPORTS} index.md
+check: ${REPORTS} index.md index2.md
+# ${NEWREPORTS} index.md
 
 reports/%.md: wp/Human/%.ttl wp/gpml/Human/%.ttl src/java/main/org/wikipathways/curator/CheckRDF.class tests.txt
 	@echo "Checking curation status of $@ ..."
