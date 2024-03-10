@@ -9,11 +9,14 @@ import static groovy.io.FileType.FILES
 Set testsWithDescription = new HashSet<>();
 testsWithDescription.add("DataNodesTests.dataNodesWithoutIdentifier")
 testsWithDescription.add("InteractionTests.possibleTranslocations")
+testsWithDescription.add("ReferencesTests.atLeastOneReference")
+// testsWithDescription.add("")
 
 Map<String,String> testNames = new HashMap<>();
 testNames.put("DataNodesTests.dataNodesWithoutIdentifier", "Data nodes without an identifier")
 testNames.put("DataNodesTests.unknownTypes", "Data nodes with type 'Unknown'")
 testNames.put("InteractionTests.possibleTranslocations", "Possible MIM translocation")
+testNames.put("ReferencesTests.atLeastOneReference", "At least one reference")
 // testNames.put("", "")
 
 Map<String,List> failedTests = new HashMap<>();
@@ -52,7 +55,7 @@ failedTests.keySet().sort().each { key ->
   println "## ${testname}\n"
   if (testsWithDescription.contains(key)) {
     descriptionURL = "https://www.wikipathways.org/WikiPathwaysCurator/" + key.replace(".", "/")
-    println "\n[Instructions](${descriptionURL})\n"
+    println "\nRead more about why these fails happen and how to fix them in these [instructions](${descriptionURL}).\n"
   }
 
   failedTests.get(key).sort().each { pathway ->
