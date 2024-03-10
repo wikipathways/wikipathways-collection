@@ -52,7 +52,7 @@ failedTests.keySet().sort().each { key ->
   }
 
   failedTests.get(key).sort().each { pathway ->
-    hashcode = key.replace(" ","-").toLowerCase()
+    hashcode = key.replace(".", "").replace(" ","-").toLowerCase()
     print "[${pathway}](reports/${pathway}#${hashcode}) "
   }
   println "\n"
