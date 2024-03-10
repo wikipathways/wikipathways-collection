@@ -76,7 +76,7 @@ public class CheckRDF {
         String errors = "";
         int assertionsFailed = 0;
         for (IAssertion assertion : assertions) {
-            if (assertion.getTestClass() != currentTestClass) {
+            if (assertion.getTest().getClassName() != currentTestClass) {
                 // is there report output to finish?
                 if (testClasses > 0) {
                   // wrap up last test of the previous test class
@@ -93,7 +93,7 @@ public class CheckRDF {
                 }
 
                 // reset properties for new test
-                currentTestClass = assertion.getTestClass();
+                currentTestClass = assertion.getTest().getClassName();
                 currentTest = "";
                 testClasses++;
                 currentTestClassMessages = "";
@@ -105,8 +105,8 @@ public class CheckRDF {
             }
 
             // new test ?
-            if (assertion.getTest() != currentTest) {
-                currentTest = assertion.getTest();
+            if (assertion.getTest().getTestName() != currentTest) {
+                currentTest = assertion.getTest().getTestName();
                 if (!message.isEmpty()) {
                   if (assertionsFailed == 0) { message += " all OK!"; } else { message += " we found " + assertionsFailed + " problem(s):"; }
                   if (!errors.isEmpty()) message += "\n" + errors;
@@ -124,7 +124,7 @@ public class CheckRDF {
                 if (!typedAssertion.getExpectedValue().equals(typedAssertion.getValue())) {
                    message += "x";
                    assertionsFailed++;
-                   errors += "        * [" + typedAssertion.getMessage() + "](#" + getHashcode(assertion.getTestClass() + assertion.getTest() + assertion.getMessage()) + ")";
+                   errors += "        * [" + typedAssertion.getMessage() + "](#" + getHashcode(assertion.getTest().getClassName() + assertion.getTest().getTestName() + assertion.getMessage()) + ")";
                    failedAssertions.add(assertion);
                    currentTestClassHasFails = true;
                 } else {
@@ -135,7 +135,7 @@ public class CheckRDF {
                 if (typedAssertion.getExpectedValue().equals(typedAssertion.getValue())) {
                    message += "x";
                    assertionsFailed++;
-                   errors += "        * [" + typedAssertion.getMessage() + "](#" + getHashcode(assertion.getTestClass() + assertion.getTest() + assertion.getMessage()) + ")";
+                   errors += "        * [" + typedAssertion.getMessage() + "](#" + getHashcode(assertion.getTest().getClassName() + assertion.getTest().getTestName() + assertion.getMessage()) + ")";
                    failedAssertions.add(assertion);
                    currentTestClassHasFails = true;
                 } else {
@@ -192,8 +192,8 @@ public class CheckRDF {
 
         report.println("\n## Fails\n");
         for (IAssertion assertion : failedAssertions) {
-            report.println("<a name=\"" + getHashcode(assertion.getTestClass() + assertion.getTest() + assertion.getMessage()) + "\" />\n");
-            report.println("## " + assertion.getTestClass() + "." + assertion.getTest());
+            report.println("<a name=\"" + getHashcode(assertion.getTest().getClassName() + assertion.getTest().getTestName() + assertion.getMessage()) + "\" />\n");
+            report.println("## " + assertion.getTest().getTitle());
             report.println("\n" + assertion.getMessage());
             if (assertion.getDetails() != null && !assertion.getDetails().isEmpty()) {
                 if ("text/markdown".equals(assertion.getDetailsFormat())) {
@@ -201,8 +201,8 @@ public class CheckRDF {
                 } else {
                   report.println("```\n" + assertion.getDetails() + "```\n");
                 }
-                if (assertion.hasLinkToDocs()) {
-                    report.println("More details at [" + assertion.getLinkToDocs() + "](" + assertion.getLinkToDocs() + ")\n");
+                if (assertion.getTest().hasLinkToDocs()) {
+                    report.println("More details at [" + assertion.getTest().getLinkToDocs() + "](" + assertion.getTest().getLinkToDocs() + ")\n");
                 }
             }
         }
