@@ -5,6 +5,8 @@ import java.io.FileInputStream;
 import java.io.Writer;
 import java.io.PrintWriter;
 
+import java.lang.reflect.Method;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -47,7 +49,15 @@ public class CheckRDF {
             if (!testConfig.startsWith("#")) { // comment lines start with #
                 String[] config = testConfig.split("\\.");
                 Class testClass = Class.forName("nl.unimaas.bigcat.wikipathways.curator.tests." + config[0]);
-                assertions.addAll((List<IAssertion>)testClass.getDeclaredMethod(config[1], SPARQLHelper.class).invoke(null, helper));
+                Method declaredMethod = null;
+                try {
+                    declaredMethod = testClass.getDeclaredMethod(config[1], SPARQLHelper.class);
+                    assertions.addAll((List<IAssertion>)declaredMethod.invoke(null, helper));
+                } catch (NoSuchMethodException exception) {
+                    // try the new method that takes an extra format parameters
+                    declaredMethod = testClass.getDeclaredMethod(config[1], SPARQLHelper.class, String.class);
+                    assertions.addAll((List<IAssertion>)declaredMethod.invoke(null, helper, "text/markdown"));
+                }
             }
         }
 
@@ -186,7 +196,11 @@ public class CheckRDF {
             report.println("## " + assertion.getTestClass() + "." + assertion.getTest());
             report.println("\n" + assertion.getMessage());
             if (assertion.getDetails() != null && !assertion.getDetails().isEmpty()) {
-                report.println("```\n" + assertion.getDetails() + "```\n");
+                if ("text/markdown".equals(assertion.getDetailsFormat())) {
+                  report.println("\n" + assertion.getDetails() + "\n");
+                } else {
+                  report.println("```\n" + assertion.getDetails() + "```\n");
+                }
                 if (assertion.hasLinkToDocs()) {
                     report.println("More details at [" + assertion.getLinkToDocs() + "](" + assertion.getLinkToDocs() + ")\n");
                 }
