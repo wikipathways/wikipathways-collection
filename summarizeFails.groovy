@@ -6,18 +6,7 @@ import java.util.HashSet
 
 import static groovy.io.FileType.FILES
 
-Set testsWithDescription = new HashSet<>();
-testsWithDescription.add("DataNodesTests.dataNodesWithoutIdentifier")
-testsWithDescription.add("InteractionTests.possibleTranslocations")
-testsWithDescription.add("ReferencesTests.atLeastOneReference")
-// testsWithDescription.add("")
-
-Map<String,String> testNames = new HashMap<>();
-testNames.put("DataNodesTests.dataNodesWithoutIdentifier", "Data nodes without an identifier")
-testNames.put("DataNodesTests.unknownTypes", "Data nodes with type 'Unknown'")
-testNames.put("InteractionTests.possibleTranslocations", "Possible MIM translocation")
-testNames.put("ReferencesTests.atLeastOneReference", "At least one reference")
-// testNames.put("", "")
+Map testsWithDescription = new HashMap<>();
 
 Map<String,List> failedTests = new HashMap<>();
 
@@ -42,6 +31,10 @@ files.each { file ->
          if (pathways == null) pathways = new ArrayList()
          pathways.add(wpid)
          failedTests.put(failedTest, pathways)
+       } else if (line.startsWith("More details at [https://www.wikipathways.org/WikiPathwaysCurator/")) {
+         link = line.substring(line.indexOf('[') + 1, line.indexOf(']'))
+         link = link.replace("https://www.wikipathways.org/WikiPathwaysCurator/", "")
+         testsWithDescription.put(failedTest, link)
        }
      }
   }
@@ -51,15 +44,15 @@ println "<img style=\"float: right; width: 200px\" src=\"https://upload.wikimedi
 println "# Validation Reports\n"
 
 failedTests.keySet().sort().each { key ->
-  testname = testNames.containsKey(key) ? testNames.get(key) : key
+  testname = key
   println "## ${testname}\n"
-  if (testsWithDescription.contains(key)) {
-    descriptionURL = "https://www.wikipathways.org/WikiPathwaysCurator/" + key.replace(".", "/")
+  if (testsWithDescription.containsKey(key)) {
+    descriptionURL = "https://www.wikipathways.org/WikiPathwaysCurator/" + testsWithDescription.get(key)
     println "\nRead more about why these fails happen and how to fix them in these [instructions](${descriptionURL}).\n"
   }
 
   failedTests.get(key).sort().each { pathway ->
-    hashcode = key.replace(".","").toLowerCase()
+    hashcode = key.replace(" ","-").toLowerCase()
     print "[${pathway}](reports/${pathway}#${hashcode}) "
   }
   println "\n"
