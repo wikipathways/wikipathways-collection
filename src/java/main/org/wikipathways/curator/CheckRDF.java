@@ -34,7 +34,7 @@ public class CheckRDF {
         report.println("<img style=\"float: right; width: 200px\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Wplogo_with_text_500.png/640px-Wplogo_with_text_500.png\" />");
 
         report.println("# WikiPathways " + wpid + "\n");
-        report.println("* WikiPathways: [" + wpid + "](https://wikipathways.org/pathways/" + wpid + ")");
+        report.println("* WikiPathways: [" + wpid + "](https://wikipathways.org/pathways/" + wpid + ") ([classic](https://classic.wikipathways.org/instance/" + wpid + "))");
         report.println("* Scholia: [" + wpid + "](https://scholia.toolforge.org/wikipathways/" + wpid + ")");
         List<IAssertion> assertions = new ArrayList<IAssertion>();
         Model loadedData = ModelFactory.createDefaultModel();
