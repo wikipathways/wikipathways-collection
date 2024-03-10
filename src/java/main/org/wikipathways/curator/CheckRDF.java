@@ -13,6 +13,7 @@ import java.util.Scanner;
 
 import nl.unimaas.bigcat.wikipathways.curator.assertions.*;
 import nl.unimaas.bigcat.wikipathways.curator.SPARQLHelper;
+import nl.unimaas.bigcat.wikipathways.curator.StringMatrix;
 
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
@@ -33,15 +34,22 @@ public class CheckRDF {
 
         report.println("<img style=\"float: right; width: 200px\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Wplogo_with_text_500.png/640px-Wplogo_with_text_500.png\" />");
 
-        report.println("# WikiPathways " + wpid + "\n");
-        report.println("* WikiPathways: [" + wpid + "](https://wikipathways.org/pathways/" + wpid + ") ([classic](https://classic.wikipathways.org/instance/" + wpid + "))");
-        report.println("* Scholia: [" + wpid + "](https://scholia.toolforge.org/wikipathways/" + wpid + ")");
         List<IAssertion> assertions = new ArrayList<IAssertion>();
         Model loadedData = ModelFactory.createDefaultModel();
         loadedData.read(new FileInputStream(new File(wpFile)), "", "TURTLE");
         loadedData.read(new FileInputStream(new File(gpmlFile)), "", "TURTLE");
 
         SPARQLHelper helper = new SPARQLHelper(loadedData);
+
+        // determind the species of the pathway
+        StringMatrix results = helper.sparql("PREFIX wp: <http://vocabularies.wikipathways.org/wp#> SELECT DISTINCT ?species WHERE { ?pathway wp:organismName ?species }");
+        String species = results.getColumn("species").get(0);
+        boolean isHuman = "Homo sapiens".equals(species.trim());
+
+        report.println("# WikiPathways " + wpid + "\n");
+        report.println("* WikiPathways: [" + wpid + "](https://wikipathways.org/pathways/" + wpid + ") ([classic](https://classic.wikipathways.org/instance/" + wpid + "))");
+        report.println("* Species: " + species);
+        if (isHuman) report.println("* Scholia: [" + wpid + "](https://scholia.toolforge.org/wikipathways/" + wpid + ")");
 
         Scanner testConfigFile = new Scanner(new FileInputStream("tests.txt"));
         while (testConfigFile.hasNextLine()) {
