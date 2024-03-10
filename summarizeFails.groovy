@@ -2,8 +2,19 @@ import java.util.ArrayList
 import java.util.List
 import java.util.Map
 import java.util.HashMap
+import java.util.HashSet
 
 import static groovy.io.FileType.FILES
+
+Set testsWithDescription = new HashSet<>();
+testsWithDescription.add("DataNodesTests.dataNodesWithoutIdentifier")
+testsWithDescription.add("InteractionTests.possibleTranslocations")
+
+Map<String,String> testNames = new HashMap<>();
+testNames.put("DataNodesTests.dataNodesWithoutIdentifier", "Data nodes without an identifier")
+testNames.put("DataNodesTests.unknownTypes", "Data nodes with type 'Unknown'")
+testNames.put("InteractionTests.possibleTranslocations", "Possible MIM translocation")
+// testNames.put("", "")
 
 Map<String,List> failedTests = new HashMap<>();
 
@@ -37,7 +48,13 @@ println "<img style=\"float: right; width: 200px\" src=\"https://upload.wikimedi
 println "# Validation Reports\n"
 
 failedTests.keySet().sort().each { key ->
-  println "## ${key}\n"
+  testname = testNames.containsKey(key) ? testNames.get(key) : key
+  println "## ${testname}\n"
+  if (testsWithDescription.contains(key)) {
+    descriptionURL = "https://www.wikipathways.org/WikiPathwaysCurator/" + key.replace(".", "/")
+    println "\n[Instructions](${descriptionURL})\n"
+  }
+
   failedTests.get(key).sort().each { pathway ->
     hashcode = key.replace(".","").toLowerCase()
     print "[${pathway}](reports/${pathway}#${hashcode}) "
