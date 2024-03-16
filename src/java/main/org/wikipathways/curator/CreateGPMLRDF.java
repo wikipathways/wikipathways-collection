@@ -27,7 +27,10 @@ public class CreateGPMLRDF {
         String wpid     = gpmlFile.substring(5,11);
         String outFile  = args[1];
         String rev      = "1";
-        if (args.length > 2) rev = args[2];
+        if (args.length > 2) {
+            rev = args[2];
+            if (rev.startsWith("r")) rev = rev.substring(1);
+        }
 
         InputStream input = new FileInputStream(gpmlFile);
         Pathway pathway = PathwayReader.readPathway(input);
