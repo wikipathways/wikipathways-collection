@@ -25,7 +25,7 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 ## InteractionTests.noNonMetaboliteToMetaboliteConversions
 
-[WP1533](reports/WP1533#interactiontestsnononmetabolitetometaboliteconversions) [WP3193](reports/WP3193#interactiontestsnononmetabolitetometaboliteconversions) [WP3538](reports/WP3538#interactiontestsnononmetabolitetometaboliteconversions) [WP4673](reports/WP4673#interactiontestsnononmetabolitetometaboliteconversions) [WP4962](reports/WP4962#interactiontestsnononmetabolitetometaboliteconversions) [WP5258](reports/WP5258#interactiontestsnononmetabolitetometaboliteconversions) 
+[WP3193](reports/WP3193#interactiontestsnononmetabolitetometaboliteconversions) [WP3538](reports/WP3538#interactiontestsnononmetabolitetometaboliteconversions) [WP4673](reports/WP4673#interactiontestsnononmetabolitetometaboliteconversions) [WP4962](reports/WP4962#interactiontestsnononmetabolitetometaboliteconversions) [WP5258](reports/WP5258#interactiontestsnononmetabolitetometaboliteconversions) 
 
 ## InteractionTests.noProteinProteinConversions
 
@@ -36,7 +36,11 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/InteractionTests/noMetaboliteToNonMetaboliteConversions).
 
-[WP1075](reports/WP1075#no-metabolite-to-non-metabolite-conversions) [WP1533](reports/WP1533#no-metabolite-to-non-metabolite-conversions) [WP176](reports/WP176#no-metabolite-to-non-metabolite-conversions) [WP2571](reports/WP2571#no-metabolite-to-non-metabolite-conversions) [WP3193](reports/WP3193#no-metabolite-to-non-metabolite-conversions) [WP4222](reports/WP4222#no-metabolite-to-non-metabolite-conversions) [WP5258](reports/WP5258#no-metabolite-to-non-metabolite-conversions) 
+[WP1075](reports/WP1075#no-metabolite-to-non-metabolite-conversions) [WP176](reports/WP176#no-metabolite-to-non-metabolite-conversions) [WP2571](reports/WP2571#no-metabolite-to-non-metabolite-conversions) [WP3193](reports/WP3193#no-metabolite-to-non-metabolite-conversions) [WP4222](reports/WP4222#no-metabolite-to-non-metabolite-conversions) [WP5258](reports/WP5258#no-metabolite-to-non-metabolite-conversions) 
+
+## PathwayTests.testRoundedRectangle
+
+[WP1533](reports/WP1533#pathwayteststestroundedrectangle) 
 
 ## Possible MIM translocation
 
