@@ -1,16 +1,12 @@
 package org.wikipathways.curator;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.util.Collections;
 
 import org.bridgedb.DataSource;
 import org.bridgedb.IDMapperException;
 import org.bridgedb.IDMapperStack;
+import org.bridgedb.Xref;
 import org.bridgedb.bio.DataSourceTxt;
 import org.pathvisio.core.model.ConverterException;
 import org.pathvisio.core.model.Pathway;
@@ -18,13 +14,14 @@ import org.wikipathways.wp2rdf.io.PathwayReader;
 import org.wikipathways.wp2rdf.GpmlConverter;
 import org.wikipathways.wp2rdf.WPREST2RDF;
 
-import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.*;
 
 public class CreateRDF {
 
     public static void main(String[] args) throws Exception {
         String gpmlFile = args[0];
         String wpid     = gpmlFile.substring(5,gpmlFile.indexOf("."));
+        String infoFile = wpid + "-datanodes.tsv";
         String outFile  = args[1];
         String rev      = "1";
         if (args.length > 2) {
@@ -37,12 +34,65 @@ public class CreateRDF {
         Pathway pathway = PathwayReader.readPathway(input);
         input.close();
 
-        IDMapperStack stack = WPREST2RDF.maps();
-        Model model = GpmlConverter.convertWp(pathway, wpid, rev, stack, Collections.<String>emptyList());
+        File infoFileObj = new File(infoFile);
+        Model model = null;
+        if (infoFileObj.exists()) {
+            IDMapperStack stack = WPREST2RDF.maps();
+            model = GpmlConverter.convertWp(pathway, wpid, rev, stack, Collections.<String>emptyList());
+        } else {
+            model = GpmlConverter.convertWp(pathway, wpid, rev, null, Collections.<String>emptyList());
+            BufferedReader br = new BufferedReader(new InputStreamReader(
+                new FileInputStream("gpml/" + infoFileObj)));
+            String line;
+            while ((line = br.readLine()) != null) {
+                String[] fields = line.split("\t");
+                if ("Label".equals(fields[0])) { // skip the header lins
+                } else {
+                    Xref root = Xref.fromBioregistryIdentifier(fields[2]);
+                    if (root != null) {
+                        mappings(model, root, "http://vocabularies.wikipathways.org/wp#bdbEnsembl", "https://identifiers.org/ensembl/", fields, 4); // Ensembl
+                        mappings(model, root, "http://vocabularies.wikipathways.org/wp#bdbEntrezGene", "https://identifiers.org/ncbigene/", fields, 5); // NCBI gene
+                        mappings(model, root, "http://vocabularies.wikipathways.org/wp#bdbHgncSymbol", "https://identifiers.org/hgnc.symbol/", fields, 6); // HGNC
+                        mappings(model, root, "http://vocabularies.wikipathways.org/wp#bdbUniprot", "https://identifiers.org/uniprot/", fields, 7); // UniProt
+                        mappings(model, root, "http://vocabularies.wikipathways.org/wp#bdbWikidata", "http://www.wikidata.org/entity/", fields, 8); // Wikidata
+                        mappings(model, root, "http://vocabularies.wikipathways.org/wp#bdbChEBI", "https://identifiers.org/chebi/", fields, 9); // ChEBI
+                        mappings(model, root, "http://vocabularies.wikipathways.org/wp#bdbInChIKey", "https://identifiers.org/inchikey/", fields, 10); // InChIKey
+                    }
+                }
+            }
+        }
+
         FileOutputStream output = new FileOutputStream(outFile);
         model.write(output, "TURTLE");
         output.flush();
         output.close();
+    }
+
+    private static void mappings(Model model, Xref root, String predicate, String iriPrefix, String[] fields, int position) {
+        if (position + 1 > fields.length) return;
+        String field = fields[position];
+        if (field == null || field.isEmpty()) return;
+        Resource rootRes = model.createResource(root.getDataSource().getIdentifiersOrgUri(root.getId()).replaceAll("http:/", "https:/"));
+        if (field != null && !field.isEmpty()) {
+            if (field.contains(";")) {
+               String[] ids = field.split(";");
+               for (String id : ids) {
+                   Xref mapping = Xref.fromBioregistryIdentifier(id);
+                   if (mapping != null) {
+                       Resource mappingRes = model.createResource(iriPrefix + mapping.getId());
+                       Property bdbProp = model.createProperty(predicate);
+                       rootRes.addProperty(bdbProp, mappingRes);
+                   }
+               }
+            } else {
+               Xref mapping = Xref.fromBioregistryIdentifier(field);
+               if (mapping != null) {
+                   Resource mappingRes = model.createResource(iriPrefix + mapping.getId());
+                   Property bdbProp = model.createProperty(predicate);
+                   rootRes.addProperty(bdbProp, mappingRes);
+               }
+            }
+        }
     }
 
 }
