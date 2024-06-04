@@ -39,7 +39,7 @@ public class CreateRDF {
 
         File infoFileObj = new File(infoFile);
         Model model = null;
-        if (infoFileObj.exists()) {
+        if (!infoFileObj.exists()) {
             IDMapperStack stack = WPREST2RDF.maps();
             model = GpmlConverter.convertWp(pathway, wpid, rev, stack, Collections.<String>emptyList());
         } else {
