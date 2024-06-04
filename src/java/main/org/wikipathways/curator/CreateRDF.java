@@ -1,7 +1,8 @@
 package org.wikipathways.curator;
 
 import java.io.*;
-import java.util.Collections;
+import java.util.*;
+import java.util.stream.*;
 
 import org.bridgedb.DataSource;
 import org.bridgedb.IDMapperException;
@@ -30,6 +31,8 @@ public class CreateRDF {
         }
 
         DataSourceTxt.init();
+        Map<String,List<String>> annotations = readOntologyAnnotation("../wikipathways-database/communities"); // not pretty, but will do for this month
+
         InputStream input = new FileInputStream(gpmlFile);
         Pathway pathway = PathwayReader.readPathway(input);
         input.close();
@@ -62,10 +65,46 @@ public class CreateRDF {
             }
         }
 
+        // add the community annotations
+        Property ontologyTag = model.createProperty("http://vocabularies.wikipathways.org/wp#ontologyTag");
+        Resource pwResource = model.createResource("https://identifiers.org/wikipathways/" + wpid + "_r" + rev);
+        pwResource.addProperty(ontologyTag, model.createResource("http://vocabularies.wikipathways.org/wp#Curation:AnalysisCollection"));
+        if (annotations.containsKey(wpid)) {
+            for (String community : annotations.get(wpid)) {
+                pwResource.addProperty(ontologyTag,
+                    model.createResource("http://vocabularies.wikipathways.org/wp#Curation:" + community.replace(".txt","")));
+            }
+        }
+
         FileOutputStream output = new FileOutputStream(outFile);
         model.write(output, "TURTLE");
         output.flush();
         output.close();
+    }
+
+    private static Map<String,List<String>> readOntologyAnnotation(String dir) throws Exception {
+        Map<String,List<String>> annotations = new HashMap<String,List<String>>();
+        Set<String> communityFiles = Stream.of(new File(dir).listFiles())
+          .filter(file -> file.getName().endsWith(".txt"))
+          .map(File::getName)
+          .collect(Collectors.toSet());
+        for (String commFile : communityFiles) {
+            BufferedReader br = new BufferedReader(new InputStreamReader(
+                new FileInputStream(dir + "/" + commFile)));
+            String line;
+            while ((line = br.readLine()) != null) {
+              // each line is one WP identifiers
+              String wpId = line.trim();
+              if (annotations.containsKey(wpId)) {
+                  annotations.get(wpId).add(commFile);
+              } else {
+                  List comms = new ArrayList<String>();
+                  comms.add(commFile);
+                  annotations.put(wpId, comms);
+              }
+            }
+        }
+        return annotations;
     }
 
     private static void mappings(Model model, Xref root, String predicate, String iriPrefix, String[] fields, int position) {
