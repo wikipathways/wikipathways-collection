@@ -38,10 +38,6 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 [WP1075](reports/WP1075#no-metabolite-to-non-metabolite-conversions) [WP176](reports/WP176#no-metabolite-to-non-metabolite-conversions) [WP3193](reports/WP3193#no-metabolite-to-non-metabolite-conversions) 
 
-## PathwayTests.testRoundedRectangle
-
-[WP5485](reports/WP5485#pathwayteststestroundedrectangle) 
-
 ## Possible MIM translocation
 
 
