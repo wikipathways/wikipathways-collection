@@ -59,12 +59,12 @@ public class CheckRDF {
                 Class testClass = Class.forName("nl.unimaas.bigcat.wikipathways.curator.tests." + config[0]);
                 Method declaredMethod = null;
                 try {
-                    declaredMethod = testClass.getDeclaredMethod(config[1], SPARQLHelper.class);
-                    assertions.addAll((List<IAssertion>)declaredMethod.invoke(null, helper));
-                } catch (NoSuchMethodException exception) {
-                    // try the new method that takes an extra format parameters
                     declaredMethod = testClass.getDeclaredMethod(config[1], SPARQLHelper.class, String.class);
                     assertions.addAll((List<IAssertion>)declaredMethod.invoke(null, helper, "text/markdown"));
+                } catch (NoSuchMethodException exception) {
+                    // try the old method, without the format parameter
+                    declaredMethod = testClass.getDeclaredMethod(config[1], SPARQLHelper.class);
+                    assertions.addAll((List<IAssertion>)declaredMethod.invoke(null, helper));
                 }
             }
         }
