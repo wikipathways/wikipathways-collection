@@ -43,6 +43,7 @@ GeneralTests.curationAndNeedsWork
 GeneralTests.curationAndReactome
 GeneralTests.dataNodeWithoutGraphId
 GeneralTests.duplicateTitles
+GeneralTests.emptyDataSources
 GeneralTests.emptyLabelOfNodeWithIdentifier
 GeneralTests.groupsHaveDetail
 GeneralTests.noTags
