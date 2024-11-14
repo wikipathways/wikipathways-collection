@@ -22,7 +22,7 @@ JENAVERSION=4.8.0
 
 WEBSITE := ${shell cat website.txt }
 
-all: updateGPMLS rdf
+all: updateGPMLS rdf index3.md
 
 install:
 	@wget -O libs/GPML2RDF-3.0.0-SNAPSHOT.jar https://github.com/wikipathways/wikipathways-curation-template/releases/download/${FRAMEWORKVERSION}/GPML2RDF-3.0.0-SNAPSHOT.jar
@@ -114,6 +114,9 @@ reports/%.ng.md: wp/Human/%.ngttl wp/gpml/Human/%.ngttl src/java/main/org/wikipa
 	@echo "Checking curation status of $@ ..."
 	@mkdir -p reports
 	@java -cp libs/slf4j-simple-1.7.32.jar:libs/jena-arq-${JENAVERSION}.jar:src/java/main/:libs/wikipathways.curator-1-SNAPSHOT.jar org.wikipathways.curator.CheckNGRDF $< $@
+
+index3.md: index.md
+	cp index.md index3.md
 
 index.md: ${REPORTS}
 	@echo "<img style=\"float: right; width: 200px\" src=\"logo.png\" />" > index.md
