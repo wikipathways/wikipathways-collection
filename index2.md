@@ -44,10 +44,6 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 [WP3193](reports/WP3193#no-non-metabolite-to-metabolite-conversions) [WP3538](reports/WP3538#no-non-metabolite-to-metabolite-conversions) [WP369](reports/WP369#no-non-metabolite-to-metabolite-conversions) [WP4673](reports/WP4673#no-non-metabolite-to-metabolite-conversions) [WP5258](reports/WP5258#no-non-metabolite-to-metabolite-conversions) [WP5318](reports/WP5318#no-non-metabolite-to-metabolite-conversions) 
 
-## OudatedDataSourcesTests.outdatedEnsemblHumanDataSourceFromGPML
-
-[WP5502](reports/WP5502#oudateddatasourcestestsoutdatedensemblhumandatasourcefromgpml) 
-
 ## Possible MIM translocation
 
 
