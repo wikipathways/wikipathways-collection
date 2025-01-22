@@ -9,7 +9,7 @@
 * ChemSpiderTests: all 2 tests OK!
 * DataNodesTests: all 5 tests OK!
 * EnsemblTests: all 4 tests OK!
-* GeneTests: all 4 tests OK!
+* GeneTests: all 5 tests OK!
 * GeneralTests: all 15 tests OK!
 * HMDBSecMetabolitesTests: all 3 tests OK!
 * InteractionTests: all 8 tests OK!
@@ -29,8 +29,8 @@
 ## Summary
 
 * Number of test classes: 20
-* Number of tests: 117
-* Number of assertions: 235
+* Number of tests: 118
+* Number of assertions: 237
 * Number of fails: 0
 
 ## Fails
