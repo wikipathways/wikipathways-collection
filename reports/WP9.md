@@ -9,13 +9,7 @@
 * ChemSpiderTests: all 2 tests OK!
 * DataNodesTests: all 5 tests OK!
 * EnsemblTests: all 4 tests OK!
-* GeneTests
-    * entrezGeneIdentifiersNotNumber: .. all OK!
-    * affyProbeIdentifiersNotCorrect: .. all OK!
-    * outdatedIdentifiers: .... all OK!
-    * nonNumericHGNCAccessionNumbers: .. all OK!
-    * genesWithoutEnsemblMapping: .x we found 1 problem(s):
-        * [The following genes with an identifier have been found but that do not have a mapping to Ensembl: 1](#40286d83)
+* GeneTests: all 5 tests OK!
 * GeneralTests: all 15 tests OK!
 * HMDBSecMetabolitesTests: all 3 tests OK!
 * InteractionTests: all 8 tests OK!
@@ -37,18 +31,7 @@
 * Number of test classes: 20
 * Number of tests: 118
 * Number of assertions: 237
-* Number of fails: 1
+* Number of fails: 0
 
 ## Fails
-
-<a name="40286d83" />
-
-## Genes with identifier but no Ensembl identifier mapping
-
-The following genes with an identifier have been found but that do not have a mapping to Ensembl: 1
-```
-http://classic.wikipathways.org/instance/WP9_r135923 3.1.3.27 with datasource Enzyme Nomenclature
-```
-
-More details at [https://www.wikipathways.org/WikiPathwaysCurator/GeneTests/genesWithoutEnsemblMapping](https://www.wikipathways.org/WikiPathwaysCurator/GeneTests/genesWithoutEnsemblMapping)
 
