@@ -71,3 +71,10 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 [WP3538](reports/WP3538#protein-converted-into-another-protein) [WP4183](reports/WP4183#protein-converted-into-another-protein) [WP5182](reports/WP5182#protein-converted-into-another-protein) [WP5318](reports/WP5318#protein-converted-into-another-protein) 
 
+## The pathway contains stock comments
+
+
+Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/GeneralTests/stockComments).
+
+[WP5506](reports/WP5506#the-pathway-contains-stock-comments) 
+
