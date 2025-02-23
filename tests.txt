@@ -34,6 +34,7 @@ EnsemblTests.wrongEnsemblIDForRatSpecies
 GeneTests.all
 #GeneTests.affyProbeIdentifiersNotCorrect
 #GeneTests.entrezGeneIdentifiersNotNumber
+#GeneTests.genesWithoutEnsemblMapping
 #GeneTests.nonNumericHGNCAccessionNumbers
 #GeneTests.numericHGNCIDs
 #GeneTests.outdatedIdentifiers
@@ -94,6 +95,7 @@ MetabolitesTests.PubChemIDsNotMarkedAsMetabolite
 MetabolitesTests.PubChemIDsNotNumbers
 MetabolitesTests.PubChemSubstanceIDsNotMarkedAsMetabolite
 MetabolitesTests.PubChemSubstanceIDsNotNumbers
+MetabolitesTests.achiralAminoAcids
 MetabolitesTests.casNumbersNotMarkedAsMetabolite
 MetabolitesTests.chemspiderIDsNotMarkedAsMetabolite
 MetabolitesTests.metaboliteAlsoOtherType
