@@ -133,6 +133,7 @@ PathwayTests.all
 #PathwayTests.deletedPathways
 #PathwayTests.linksToDeletedPathways
 #PathwayTests.linksToDeletedPathways_All
+#PathwayTests.mediawikiLinks
 #PathwayTests.oldLicenses
 #PathwayTests.speciesMismatch
 #PathwayTests.testRoundedRectangle
