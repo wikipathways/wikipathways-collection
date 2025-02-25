@@ -9,7 +9,13 @@
 * ChemSpiderTests: all 2 tests OK!
 * DataNodesTests: all 5 tests OK!
 * EnsemblTests: all 4 tests OK!
-* GeneTests: all 5 tests OK!
+* GeneTests
+    * entrezGeneIdentifiersNotNumber: .. all OK!
+    * affyProbeIdentifiersNotCorrect: .. all OK!
+    * outdatedIdentifiers: .... all OK!
+    * nonNumericHGNCAccessionNumbers: .. all OK!
+    * genesWithoutEnsemblMapping: .x we found 1 problem(s):
+        * [The following genes with an identifier have been found but that do not have a mapping to Ensembl: 20](#c4e5432c)
 * GeneralTests: all 15 tests OK!
 * HMDBSecMetabolitesTests: all 3 tests OK!
 * InteractionTests: all 8 tests OK!
@@ -40,9 +46,39 @@
 * Number of test classes: 20
 * Number of tests: 120
 * Number of assertions: 241
-* Number of fails: 1
+* Number of fails: 2
 
 ## Fails
+
+<a name="c4e5432c" />
+
+## Genes with identifier but no Ensembl identifier mapping
+
+The following genes with an identifier have been found but that do not have a mapping to Ensembl: 20
+```
+http://classic.wikipathways.org/instance/WP1_r134146 Dgat1 with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP1_r134146 Ldlr with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP1_r134146 Lcat with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP1_r134146 Lrp1 with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP1_r134146 Apoa4 with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP1_r134146 Lpl with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP1_r134146 Apoa1 with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP1_r134146 Apoc2 with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP1_r134146 Cyp7a1 with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP1_r134146 Apoe with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP1_r134146 Pltp with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP1_r134146 Scarb1 with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP1_r134146 Apoc1 with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP1_r134146 Apoc3 with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP1_r134146 Cetp with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP1_r134146 Soat1 with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP1_r134146 Hmgcr with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP1_r134146 Lipc with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP1_r134146 Abca1 with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP1_r134146 Mttp with datasource Entrez Gene
+```
+
+More details at [https://www.wikipathways.org/WikiPathwaysCurator/GeneTests/genesWithoutEnsemblMapping](https://www.wikipathways.org/WikiPathwaysCurator/GeneTests/genesWithoutEnsemblMapping)
 
 <a name="da69cf45" />
 
