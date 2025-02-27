@@ -25,16 +25,7 @@
 * MetaboliteStructureTests: all 1 tests OK!
 * MetabolitesTests: all 15 tests OK!
 * OudatedDataSourcesTests: all 24 tests OK!
-* PathwayTests
-    * deletedPathways: .. all OK!
-    * linksToDeletedPathways: .. all OK!
-    * linksToDeletedPathways_All: .. all OK!
-    * speciesMismatch: .. all OK!
-    * testRoundedRectangle: .. all OK!
-    * youMustCite: .. all OK!
-    * oldLicenses: .. all OK!
-    * mediawikiLinks: .x we found 1 problem(s):
-        * [Pathways of which the description may contain MediaWiki-style links: 1](#da69cf45)
+* PathwayTests: all 8 tests OK!
 * ProteinsTests: all 2 tests OK!
 * PubChemMetabolitesTests: all 3 tests OK!
 * ReferencesTests: all 6 tests OK!
@@ -47,7 +38,7 @@
 * Number of test classes: 20
 * Number of tests: 120
 * Number of assertions: 241
-* Number of fails: 2
+* Number of fails: 1
 
 ## Fails
 
@@ -57,32 +48,21 @@
 
 The following genes with an identifier have been found but that do not have a mapping to Ensembl: 14
 ```
-http://classic.wikipathways.org/instance/WP3_r127273 GSTA2 with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP3_r127273 KEAP1 with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP3_r127273 ERK with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP3_r127273 NQO1 with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP3_r127273 GCLC with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP3_r127273 JNK with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP3_r127273 HO-1 with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP3_r127273 NRF2 with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP3_r127273 P38 with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP3_r127273 MAF with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP3_r127273 GCLM with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP3_r127273 PI3K with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP3_r127273 C/EBP-beta with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP3_r127273 PKC with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP3_r137060 GSTA2 with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP3_r137060 KEAP1 with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP3_r137060 ERK with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP3_r137060 NQO1 with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP3_r137060 GCLC with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP3_r137060 JNK with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP3_r137060 HO-1 with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP3_r137060 NRF2 with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP3_r137060 P38 with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP3_r137060 MAF with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP3_r137060 GCLM with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP3_r137060 PI3K with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP3_r137060 C/EBP-beta with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP3_r137060 PKC with datasource Entrez Gene
 ```
 
 More details at [https://www.wikipathways.org/WikiPathwaysCurator/GeneTests/genesWithoutEnsemblMapping](https://www.wikipathways.org/WikiPathwaysCurator/GeneTests/genesWithoutEnsemblMapping)
-
-<a name="da69cf45" />
-
-## PathwayTests.mediawikiLinks
-
-Pathways of which the description may contain MediaWiki-style links: 1
-```
-[["homepage"],
-["http://classic.wikipathways.org/instance/WP3_r127273"]
-]
-```
 
