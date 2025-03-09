@@ -10,13 +10,7 @@
 * ChemSpiderTests: all 2 tests OK!
 * DataNodesTests: all 5 tests OK!
 * EnsemblTests: all 4 tests OK!
-* GeneTests
-    * entrezGeneIdentifiersNotNumber: .. all OK!
-    * affyProbeIdentifiersNotCorrect: .. all OK!
-    * outdatedIdentifiers: .... all OK!
-    * nonNumericHGNCAccessionNumbers: .. all OK!
-    * genesWithoutEnsemblMapping: .x we found 1 problem(s):
-        * [The following genes with an identifier have been found but that do not have a mapping to Ensembl: 14](#c4e54311)
+* GeneTests: all 5 tests OK!
 * GeneralTests: all 15 tests OK!
 * HMDBSecMetabolitesTests: all 3 tests OK!
 * InteractionTests: all 8 tests OK!
@@ -38,31 +32,7 @@
 * Number of test classes: 20
 * Number of tests: 120
 * Number of assertions: 241
-* Number of fails: 1
+* Number of fails: 0
 
 ## Fails
-
-<a name="c4e54311" />
-
-## Genes with identifier but no Ensembl identifier mapping
-
-The following genes with an identifier have been found but that do not have a mapping to Ensembl: 14
-```
-http://classic.wikipathways.org/instance/WP3_r137060 GSTA2 with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP3_r137060 KEAP1 with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP3_r137060 ERK with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP3_r137060 NQO1 with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP3_r137060 GCLC with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP3_r137060 JNK with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP3_r137060 HO-1 with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP3_r137060 NRF2 with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP3_r137060 P38 with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP3_r137060 MAF with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP3_r137060 GCLM with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP3_r137060 PI3K with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP3_r137060 C/EBP-beta with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP3_r137060 PKC with datasource Entrez Gene
-```
-
-More details at [https://www.wikipathways.org/WikiPathwaysCurator/GeneTests/genesWithoutEnsemblMapping](https://www.wikipathways.org/WikiPathwaysCurator/GeneTests/genesWithoutEnsemblMapping)
 

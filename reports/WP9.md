@@ -9,13 +9,7 @@
 * ChemSpiderTests: all 2 tests OK!
 * DataNodesTests: all 5 tests OK!
 * EnsemblTests: all 4 tests OK!
-* GeneTests
-    * entrezGeneIdentifiersNotNumber: .. all OK!
-    * affyProbeIdentifiersNotCorrect: .. all OK!
-    * outdatedIdentifiers: .... all OK!
-    * nonNumericHGNCAccessionNumbers: .. all OK!
-    * genesWithoutEnsemblMapping: .x we found 1 problem(s):
-        * [The following genes with an identifier have been found but that do not have a mapping to Ensembl: 8](#40286d8a)
+* GeneTests: all 5 tests OK!
 * GeneralTests: all 15 tests OK!
 * HMDBSecMetabolitesTests: all 3 tests OK!
 * InteractionTests: all 8 tests OK!
@@ -37,25 +31,7 @@
 * Number of test classes: 20
 * Number of tests: 120
 * Number of assertions: 241
-* Number of fails: 1
+* Number of fails: 0
 
 ## Fails
-
-<a name="40286d8a" />
-
-## Genes with identifier but no Ensembl identifier mapping
-
-The following genes with an identifier have been found but that do not have a mapping to Ensembl: 8
-```
-http://classic.wikipathways.org/instance/WP9_r135923 CHO1 with datasource SGD
-http://classic.wikipathways.org/instance/WP9_r135923 PSD1 with datasource SGD
-http://classic.wikipathways.org/instance/WP9_r135923 CHO2 with datasource SGD
-http://classic.wikipathways.org/instance/WP9_r135923 PGS1 with datasource SGD
-http://classic.wikipathways.org/instance/WP9_r135923 PSD2 with datasource SGD
-http://classic.wikipathways.org/instance/WP9_r135923 OPI3 with datasource SGD
-http://classic.wikipathways.org/instance/WP9_r135923 CDS1 with datasource SGD
-http://classic.wikipathways.org/instance/WP9_r135923 CRD1 with datasource SGD
-```
-
-More details at [https://www.wikipathways.org/WikiPathwaysCurator/GeneTests/genesWithoutEnsemblMapping](https://www.wikipathways.org/WikiPathwaysCurator/GeneTests/genesWithoutEnsemblMapping)
 

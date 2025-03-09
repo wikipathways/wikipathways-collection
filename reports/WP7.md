@@ -9,13 +9,7 @@
 * ChemSpiderTests: all 2 tests OK!
 * DataNodesTests: all 5 tests OK!
 * EnsemblTests: all 4 tests OK!
-* GeneTests
-    * entrezGeneIdentifiersNotNumber: .. all OK!
-    * affyProbeIdentifiersNotCorrect: .. all OK!
-    * outdatedIdentifiers: .... all OK!
-    * nonNumericHGNCAccessionNumbers: .. all OK!
-    * genesWithoutEnsemblMapping: .x we found 1 problem(s):
-        * [The following genes with an identifier have been found but that do not have a mapping to Ensembl: 14](#c4e54311)
+* GeneTests: all 5 tests OK!
 * GeneralTests: all 15 tests OK!
 * HMDBSecMetabolitesTests: all 3 tests OK!
 * InteractionTests: all 8 tests OK!
@@ -37,31 +31,7 @@
 * Number of test classes: 20
 * Number of tests: 120
 * Number of assertions: 241
-* Number of fails: 1
+* Number of fails: 0
 
 ## Fails
-
-<a name="c4e54311" />
-
-## Genes with identifier but no Ensembl identifier mapping
-
-The following genes with an identifier have been found but that do not have a mapping to Ensembl: 14
-```
-http://classic.wikipathways.org/instance/WP7_r134130 MET17 with datasource SGD
-http://classic.wikipathways.org/instance/WP7_r134130 SAM1 with datasource SGD
-http://classic.wikipathways.org/instance/WP7_r134130 STR2 with datasource SGD
-http://classic.wikipathways.org/instance/WP7_r134130 ECM17 with datasource SGD
-http://classic.wikipathways.org/instance/WP7_r134130 SAM2 with datasource SGD
-http://classic.wikipathways.org/instance/WP7_r134130 MET14 with datasource SGD
-http://classic.wikipathways.org/instance/WP7_r134130 MET10 with datasource SGD
-http://classic.wikipathways.org/instance/WP7_r134130 CYS4 with datasource SGD
-http://classic.wikipathways.org/instance/WP7_r134130 MET3 with datasource SGD
-http://classic.wikipathways.org/instance/WP7_r134130 MET6 with datasource SGD
-http://classic.wikipathways.org/instance/WP7_r134130 STR3 with datasource SGD
-http://classic.wikipathways.org/instance/WP7_r134130 MET16 with datasource SGD
-http://classic.wikipathways.org/instance/WP7_r134130 MET2 with datasource SGD
-http://classic.wikipathways.org/instance/WP7_r134130 CYS3 with datasource SGD
-```
-
-More details at [https://www.wikipathways.org/WikiPathwaysCurator/GeneTests/genesWithoutEnsemblMapping](https://www.wikipathways.org/WikiPathwaysCurator/GeneTests/genesWithoutEnsemblMapping)
 

@@ -15,7 +15,7 @@
     * outdatedIdentifiers: .... all OK!
     * nonNumericHGNCAccessionNumbers: .. all OK!
     * genesWithoutEnsemblMapping: .x we found 1 problem(s):
-        * [The following genes with an identifier have been found but that do not have a mapping to Ensembl: 23](#c4e5432f)
+        * [The following genes with an identifier have been found but that do not have a mapping to Ensembl: 3](#40286d85)
 * GeneralTests: all 15 tests OK!
 * HMDBSecMetabolitesTests: all 3 tests OK!
 * InteractionTests: all 8 tests OK!
@@ -41,35 +41,15 @@
 
 ## Fails
 
-<a name="c4e5432f" />
+<a name="40286d85" />
 
 ## Genes with identifier but no Ensembl identifier mapping
 
-The following genes with an identifier have been found but that do not have a mapping to Ensembl: 23
+The following genes with an identifier have been found but that do not have a mapping to Ensembl: 3
 ```
-http://classic.wikipathways.org/instance/WP8_r116988 Map2k1 with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP8_r116988 Socs3 with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP8_r116988 Grb2 with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP8_r116988 Stat5b with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP8_r116988 Il2rg with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP8_r116988 Akt1 with datasource Entrez Gene
 http://classic.wikipathways.org/instance/WP8_r116988 Map2k2 with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP8_r116988 Shc1 with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP8_r116988 Mapk1 with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP8_r116988 Stat3 with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP8_r116988 Irs2 with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP8_r116988 Ptpn11 with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP8_r116988 Pik3r1 with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP8_r116988 Stat5a with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP8_r116988 Il9 with datasource Entrez Gene
 http://classic.wikipathways.org/instance/WP8_r116988 Irs1 with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP8_r116988 Jak3 with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP8_r116988 Il9r with datasource Entrez Gene
 http://classic.wikipathways.org/instance/WP8_r116988 Stat1 with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP8_r116988 Kat5 with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP8_r116988 Mapk3 with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP8_r116988 Jak1 with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP8_r116988 Vcp with datasource Entrez Gene
 ```
 
 More details at [https://www.wikipathways.org/WikiPathwaysCurator/GeneTests/genesWithoutEnsemblMapping](https://www.wikipathways.org/WikiPathwaysCurator/GeneTests/genesWithoutEnsemblMapping)
