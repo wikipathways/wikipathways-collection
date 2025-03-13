@@ -49,7 +49,7 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 ## PathwayTests.mediawikiLinks
 
-[WP2806](reports/WP2806#pathwaytestsmediawikilinks) [WP4349](reports/WP4349#pathwaytestsmediawikilinks) 
+[WP2806](reports/WP2806#pathwaytestsmediawikilinks) 
 
 ## Possible MIM translocation
 
