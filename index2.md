@@ -50,10 +50,6 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 [WP3538](reports/WP3538#no-non-metabolite-to-metabolite-conversions) [WP369](reports/WP369#no-non-metabolite-to-metabolite-conversions) [WP4673](reports/WP4673#no-non-metabolite-to-metabolite-conversions) [WP5258](reports/WP5258#no-non-metabolite-to-metabolite-conversions) [WP5318](reports/WP5318#no-non-metabolite-to-metabolite-conversions) 
 
-## PathwayTests.mediawikiLinks
-
-[WP2806](reports/WP2806#pathwaytestsmediawikilinks) 
-
 ## Possible MIM translocation
 
 
