@@ -61,10 +61,6 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 [WP5534](reports/WP5534#pathwaytestsmediawikilinks) 
 
-## PathwayTests.testRoundedRectangle
-
-[WP5529](reports/WP5529#pathwayteststestroundedrectangle) [WP5530](reports/WP5530#pathwayteststestroundedrectangle) 
-
 ## Possible MIM translocation
 
 
