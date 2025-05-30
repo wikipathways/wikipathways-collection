@@ -1,5 +1,5 @@
 PREVIOUSDATE := ${shell git log -1 --date=format:"%Y-%m-%d" --format="%ad"}
-#PREVIOUSDATE := "2025-02-07"
+#PREVIOUSDATE := "2025-05-28"
 COLLECTION="Curation%3AAnalysisCollection"
 ORIGINALS := ${shell cd  ../wikipathways-database/ ; git diff --diff-filter=d --name-only HEAD@{${PREVIOUSDATE}} | grep .gpml$ | grep ^pathways/ | sort | uniq | sed -e 's/\(.*\)/..\/wikipathways-database\/\1/' }
 #ORIGINFOS := ${shell cd  ../wikipathways-database/ ; git diff --diff-filter=d --name-only HEAD@{${PREVIOUSDATE}} | grep datanodes.tsv$ | grep ^pathways/ | sort | uniq | sed -e 's/\(.*\)/..\/wikipathways-database\/\1/' }
