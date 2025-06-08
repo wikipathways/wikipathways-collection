@@ -1802,6 +1802,7 @@
 * [reports/WP553.md](reports/WP553.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://www.wikipathways.org/wikipathways-collection/reports/WP553.json">
 * [reports/WP5540.md](reports/WP5540.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://www.wikipathways.org/wikipathways-collection/reports/WP5540.json">
 * [reports/WP5545.md](reports/WP5545.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://www.wikipathways.org/wikipathways-collection/reports/WP5545.json">
+* [reports/WP5546.md](reports/WP5546.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://www.wikipathways.org/wikipathways-collection/reports/WP5546.json">
 * [reports/WP5548.md](reports/WP5548.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://www.wikipathways.org/wikipathways-collection/reports/WP5548.json">
 * [reports/WP5549.md](reports/WP5549.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://www.wikipathways.org/wikipathways-collection/reports/WP5549.json">
 * [reports/WP554.md](reports/WP554.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://www.wikipathways.org/wikipathways-collection/reports/WP554.json">
@@ -1810,6 +1811,7 @@
 * [reports/WP555.md](reports/WP555.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://www.wikipathways.org/wikipathways-collection/reports/WP555.json">
 * [reports/WP5560.md](reports/WP5560.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://www.wikipathways.org/wikipathways-collection/reports/WP5560.json">
 * [reports/WP5561.md](reports/WP5561.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://www.wikipathways.org/wikipathways-collection/reports/WP5561.json">
+* [reports/WP5563.md](reports/WP5563.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://www.wikipathways.org/wikipathways-collection/reports/WP5563.json">
 * [reports/WP556.md](reports/WP556.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://www.wikipathways.org/wikipathways-collection/reports/WP556.json">
 * [reports/WP557.md](reports/WP557.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://www.wikipathways.org/wikipathways-collection/reports/WP557.json">
 * [reports/WP558.md](reports/WP558.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://www.wikipathways.org/wikipathways-collection/reports/WP558.json">
