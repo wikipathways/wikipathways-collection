@@ -29,14 +29,15 @@
 * PubChemMetabolitesTests: all 3 tests OK!
 * ReferencesTests: all 6 tests OK!
 * UniProtTests: all 5 tests OK!
+* UnicodeTests: all 1 tests OK!
 * WikidataTests: all 4 tests OK!
 
 
 ## Summary
 
-* Number of test classes: 20
-* Number of tests: 121
-* Number of assertions: 243
+* Number of test classes: 21
+* Number of tests: 122
+* Number of assertions: 245
 * Number of fails: 1
 
 ## Fails
