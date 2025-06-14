@@ -159,6 +159,8 @@ UniProtTests.all
 #UniProtTests.incorrectIdentifiers
 #UniProtTests.outdatedIdentifiers
 #UniProtTests.unreviewedIdentifiers
+UnicodeTests.all
+#UnicodeTests.water
 #WikidataTests.all
 #WikidataTests.casWithoutMapping
 #WikidataTests.chebiWithoutMapping
