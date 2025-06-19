@@ -47,9 +47,9 @@ title: WP9 curation report
 ## Water chemical formula can use Unicode
 
 Metabolite can use H₂O instead of H2O: 1
-```
+
 * [http://classic.wikipathways.org/instance/WP9_r135923](http://classic.wikipathways.org/instance/WP9_r135923)
-```
+
 
 More details at [https://www.wikipathways.org/WikiPathwaysCurator/UnicodeTests/water](https://www.wikipathways.org/WikiPathwaysCurator/UnicodeTests/water)
 
