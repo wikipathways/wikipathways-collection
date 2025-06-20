@@ -1943,7 +1943,6 @@
 * [reports/WP860.md](reports/WP860.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://www.wikipathways.org/wikipathways-collection/reports/WP860.json">
 * [reports/WP863.md](reports/WP863.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://www.wikipathways.org/wikipathways-collection/reports/WP863.json">
 * [reports/WP869.md](reports/WP869.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://www.wikipathways.org/wikipathways-collection/reports/WP869.json">
-* [reports/WP86.md](reports/WP86.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://www.wikipathways.org/wikipathways-collection/reports/WP86.json">
 * [reports/WP878.md](reports/WP878.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://www.wikipathways.org/wikipathways-collection/reports/WP878.json">
 * [reports/WP879.md](reports/WP879.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://www.wikipathways.org/wikipathways-collection/reports/WP879.json">
 * [reports/WP880.md](reports/WP880.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://www.wikipathways.org/wikipathways-collection/reports/WP880.json">
@@ -1998,7 +1997,6 @@
 * [reports/WP972.md](reports/WP972.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://www.wikipathways.org/wikipathways-collection/reports/WP972.json">
 * [reports/WP973.md](reports/WP973.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://www.wikipathways.org/wikipathways-collection/reports/WP973.json">
 * [reports/WP974.md](reports/WP974.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://www.wikipathways.org/wikipathways-collection/reports/WP974.json">
-* [reports/WP976.md](reports/WP976.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://www.wikipathways.org/wikipathways-collection/reports/WP976.json">
 * [reports/WP977.md](reports/WP977.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://www.wikipathways.org/wikipathways-collection/reports/WP977.json">
 * [reports/WP978.md](reports/WP978.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://www.wikipathways.org/wikipathways-collection/reports/WP978.json">
 * [reports/WP979.md](reports/WP979.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://www.wikipathways.org/wikipathways-collection/reports/WP979.json">
