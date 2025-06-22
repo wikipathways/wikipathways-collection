@@ -160,6 +160,7 @@ UniProtTests.all
 #UniProtTests.outdatedIdentifiers
 #UniProtTests.unreviewedIdentifiers
 UnicodeTests.all
+#UnicodeTests.calcium
 #UnicodeTests.water
 #WikidataTests.all
 #WikidataTests.casWithoutMapping
