@@ -131,6 +131,8 @@ OutdatedDataSourcesTests.all
 #OutdatedDataSourcesTests.wrongPubChem
 #OutdatedDataSourcesTests.wrongWikipathwaysSpelling
 PathwayTests.all
+#PathwayTests.allEmptyDescriptions
+#PathwayTests.allShortDescriptions
 #PathwayTests.deletedPathways
 #PathwayTests.linksToDeletedPathways
 #PathwayTests.linksToDeletedPathways_All
