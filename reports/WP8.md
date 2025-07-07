@@ -75,8 +75,8 @@ More details at [https://www.wikipathways.org/WikiPathwaysCurator/GeneTests/gene
 ## Pathway description is empty
 
 Pathways of with an empty description: 1
-```
-* [http://classic.wikipathways.org/instance/WP8_r116988](http://classic.wikipathways.org/instance/WP8_r116988)```
+
+* [http://classic.wikipathways.org/instance/WP8_r116988](http://classic.wikipathways.org/instance/WP8_r116988)
 
 More details at [https://www.wikipathways.org/WikiPathwaysCurator/PathwayTests/allEmptyDescriptions](https://www.wikipathways.org/WikiPathwaysCurator/PathwayTests/allEmptyDescriptions)
 
