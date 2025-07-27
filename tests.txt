@@ -137,6 +137,7 @@ PathwayTests.all
 #PathwayTests.linksToDeletedPathways
 #PathwayTests.linksToDeletedPathways_All
 #PathwayTests.mediawikiLinks
+#PathwayTests.multipleDescriptions
 #PathwayTests.oldLicenses
 #PathwayTests.speciesMismatch
 #PathwayTests.testRoundedRectangle
@@ -163,6 +164,9 @@ UniProtTests.all
 #UniProtTests.unreviewedIdentifiers
 UnicodeTests.all
 #UnicodeTests.calcium
+#UnicodeTests.hydron
+#UnicodeTests.potassium
+#UnicodeTests.sodium
 #UnicodeTests.water
 #WikidataTests.all
 #WikidataTests.casWithoutMapping
