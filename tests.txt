@@ -38,6 +38,8 @@ GeneTests.all
 #GeneTests.nonNumericHGNCAccessionNumbers
 #GeneTests.numericHGNCIDs
 #GeneTests.outdatedIdentifiers
+#GeneTests.outdatedIdentifiers2
+#GeneTests.outdatedIdentifiers3
 #GeneralTests.all
 GeneralTests.curationAndHypothetical
 GeneralTests.curationAndNeedsWork
