@@ -40,6 +40,7 @@ GeneTests.all
 #GeneTests.outdatedIdentifiers
 #GeneTests.outdatedIdentifiers2
 #GeneTests.outdatedIdentifiers3
+#GeneTests.outdatedNCBIIdentifiers
 #GeneralTests.all
 GeneralTests.curationAndHypothetical
 GeneralTests.curationAndNeedsWork
