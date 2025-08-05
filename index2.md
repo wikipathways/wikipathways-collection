@@ -72,6 +72,13 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 [WP369](reports/WP369#no-non-metabolite-to-metabolite-conversions) [WP4673](reports/WP4673#no-non-metabolite-to-metabolite-conversions) [WP5258](reports/WP5258#no-non-metabolite-to-metabolite-conversions) 
 
+## P62805 matches 14 genes
+
+
+Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/UniProtTests/allP62805).
+
+[WP3391](reports/WP3391#p62805-matches-14-genes) [WP5366](reports/WP5366#p62805-matches-14-genes) 
+
 ## Pathway description is empty
 
 
@@ -106,4 +113,15 @@ Read more about why these fails happen and how to fix them in these [instruction
 Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/UnicodeTests/sodium).
 
 [WP1007](reports/WP1007#sodium-chemical-formula-can-use-unicode) [WP1074](reports/WP1074#sodium-chemical-formula-can-use-unicode) [WP3165](reports/WP3165#sodium-chemical-formula-can-use-unicode) [WP3192](reports/WP3192#sodium-chemical-formula-can-use-unicode) [WP3217](reports/WP3217#sodium-chemical-formula-can-use-unicode) [WP322](reports/WP322#sodium-chemical-formula-can-use-unicode) [WP3679](reports/WP3679#sodium-chemical-formula-can-use-unicode) [WP4698](reports/WP4698#sodium-chemical-formula-can-use-unicode) [WP4746](reports/WP4746#sodium-chemical-formula-can-use-unicode) [WP4760](reports/WP4760#sodium-chemical-formula-can-use-unicode) [WP4917](reports/WP4917#sodium-chemical-formula-can-use-unicode) [WP5029](reports/WP5029#sodium-chemical-formula-can-use-unicode) [WP5200](reports/WP5200#sodium-chemical-formula-can-use-unicode) [WP5222](reports/WP5222#sodium-chemical-formula-can-use-unicode) [WP5224](reports/WP5224#sodium-chemical-formula-can-use-unicode) [WP5238](reports/WP5238#sodium-chemical-formula-can-use-unicode) [WP5298](reports/WP5298#sodium-chemical-formula-can-use-unicode) [WP5313](reports/WP5313#sodium-chemical-formula-can-use-unicode) [WP5314](reports/WP5314#sodium-chemical-formula-can-use-unicode) [WP5380](reports/WP5380#sodium-chemical-formula-can-use-unicode) [WP5396](reports/WP5396#sodium-chemical-formula-can-use-unicode) [WP553](reports/WP553#sodium-chemical-formula-can-use-unicode) [WP5558](reports/WP5558#sodium-chemical-formula-can-use-unicode) [WP808](reports/WP808#sodium-chemical-formula-can-use-unicode) [WP923](reports/WP923#sodium-chemical-formula-can-use-unicode) 
+
+## UniProtKB identifier has been retracted
+
+[WP117](reports/WP117#uniprotkb-identifier-has-been-retracted) [WP1984](reports/WP1984#uniprotkb-identifier-has-been-retracted) [WP2491](reports/WP2491#uniprotkb-identifier-has-been-retracted) [WP2563](reports/WP2563#uniprotkb-identifier-has-been-retracted) [WP2564](reports/WP2564#uniprotkb-identifier-has-been-retracted) [WP2566](reports/WP2566#uniprotkb-identifier-has-been-retracted) [WP2637](reports/WP2637#uniprotkb-identifier-has-been-retracted) [WP2853](reports/WP2853#uniprotkb-identifier-has-been-retracted) [WP32](reports/WP32#uniprotkb-identifier-has-been-retracted) [WP3585](reports/WP3585#uniprotkb-identifier-has-been-retracted) [WP3830](reports/WP3830#uniprotkb-identifier-has-been-retracted) [WP3863](reports/WP3863#uniprotkb-identifier-has-been-retracted) [WP3890](reports/WP3890#uniprotkb-identifier-has-been-retracted) [WP3953](reports/WP3953#uniprotkb-identifier-has-been-retracted) [WP41](reports/WP41#uniprotkb-identifier-has-been-retracted) [WP4288](reports/WP4288#uniprotkb-identifier-has-been-retracted) [WP4506](reports/WP4506#uniprotkb-identifier-has-been-retracted) [WP4861](reports/WP4861#uniprotkb-identifier-has-been-retracted) [WP5115](reports/WP5115#uniprotkb-identifier-has-been-retracted) [WP5298](reports/WP5298#uniprotkb-identifier-has-been-retracted) [WP97](reports/WP97#uniprotkb-identifier-has-been-retracted) 
+
+## Unreviewed UniProtKB identifiers
+
+
+Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/UniProtTests/unreviewedIdentifiers).
+
+[WP117](reports/WP117#unreviewed-uniprotkb-identifiers) [WP3591](reports/WP3591#unreviewed-uniprotkb-identifiers) 
 

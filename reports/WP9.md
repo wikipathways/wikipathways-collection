@@ -26,7 +26,7 @@ title: WP9 curation report
 * ProteinsTests: all 2 tests OK!
 * PubChemMetabolitesTests: all 3 tests OK!
 * ReferencesTests: all 6 tests OK!
-* UniProtTests: all 5 tests OK!
+* UniProtTests: all 6 tests OK!
 * UnicodeTests
     * water: .. all OK!
     * calcium: .. all OK!
@@ -40,8 +40,8 @@ title: WP9 curation report
 ## Summary
 
 * Number of test classes: 21
-* Number of tests: 133
-* Number of assertions: 265
+* Number of tests: 134
+* Number of assertions: 267
 * Number of fails: 1
 
 ## Fails

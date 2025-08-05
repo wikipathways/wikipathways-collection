@@ -164,6 +164,7 @@ UniProtTests.all
 #UniProtTests.deletedIdentifiers
 #UniProtTests.incorrectIdentifiers
 #UniProtTests.outdatedIdentifiers
+#UniProtTests.outdatedUniProtKBIdentifiers
 #UniProtTests.unreviewedIdentifiers
 UnicodeTests.all
 #UnicodeTests.calcium
