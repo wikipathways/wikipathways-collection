@@ -38,9 +38,6 @@ GeneTests.all
 #GeneTests.nonNumericHGNCAccessionNumbers
 #GeneTests.numericHGNCIDs
 #GeneTests.outdatedIdentifiers
-#GeneTests.outdatedIdentifiers2
-#GeneTests.outdatedIdentifiers3
-#GeneTests.outdatedNCBIIdentifiers
 #GeneralTests.all
 GeneralTests.curationAndHypothetical
 GeneralTests.curationAndNeedsWork
@@ -159,6 +156,13 @@ ReferencesTests.all
 #ReferencesTests.outdatedPubMedIdentifiers
 #ReferencesTests.unexpectedPubMedIdentifier
 #ReferencesTests.zeroPubMedIDs
+Sec2PriProjectTests.all
+#Sec2PriProjectTests.outdatedChEBIIdentifiers
+#Sec2PriProjectTests.outdatedHMDBIdentifiers
+#Sec2PriProjectTests.outdatedIdentifiers2
+#Sec2PriProjectTests.outdatedIdentifiers3
+#Sec2PriProjectTests.outdatedNCBIIdentifiers
+#Sec2PriProjectTests.outdatedUniProtKBIdentifiers
 UniProtTests.all
 #UniProtTests.allP62805
 #UniProtTests.deletedIdentifiers
@@ -168,7 +172,11 @@ UniProtTests.all
 #UniProtTests.unreviewedIdentifiers
 UnicodeTests.all
 #UnicodeTests.calcium
+#UnicodeTests.carbondioxide
 #UnicodeTests.hydron
+#UnicodeTests.iron2
+#UnicodeTests.iron3
+#UnicodeTests.oxygen
 #UnicodeTests.potassium
 #UnicodeTests.sodium
 #UnicodeTests.water
