@@ -90,7 +90,7 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/InteractionTests/noNonMetaboliteToMetaboliteConversions).
 
-[WP369](reports/WP369#no-non-metabolite-to-metabolite-conversions) [WP4673](reports/WP4673#no-non-metabolite-to-metabolite-conversions) [WP5258](reports/WP5258#no-non-metabolite-to-metabolite-conversions) 
+[WP4673](reports/WP4673#no-non-metabolite-to-metabolite-conversions) [WP5258](reports/WP5258#no-non-metabolite-to-metabolite-conversions) 
 
 ## P62805 matches 14 genes
 
@@ -133,13 +133,6 @@ Read more about why these fails happen and how to fix them in these [instruction
 Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/UnicodeTests/carbondioxide).
 
 [WP1461](reports/WP1461#the-carbon-dioxide-chemical-formula-can-use-unicode) [WP2212](reports/WP2212#the-carbon-dioxide-chemical-formula-can-use-unicode) [WP250](reports/WP250#the-carbon-dioxide-chemical-formula-can-use-unicode) [WP2624](reports/WP2624#the-carbon-dioxide-chemical-formula-can-use-unicode) [WP2638](reports/WP2638#the-carbon-dioxide-chemical-formula-can-use-unicode) [WP287](reports/WP287#the-carbon-dioxide-chemical-formula-can-use-unicode) [WP290](reports/WP290#the-carbon-dioxide-chemical-formula-can-use-unicode) [WP296](reports/WP296#the-carbon-dioxide-chemical-formula-can-use-unicode) [WP301](reports/WP301#the-carbon-dioxide-chemical-formula-can-use-unicode) [WP3245](reports/WP3245#the-carbon-dioxide-chemical-formula-can-use-unicode) [WP345](reports/WP345#the-carbon-dioxide-chemical-formula-can-use-unicode) [WP354](reports/WP354#the-carbon-dioxide-chemical-formula-can-use-unicode) [WP380](reports/WP380#the-carbon-dioxide-chemical-formula-can-use-unicode) [WP4206](reports/WP4206#the-carbon-dioxide-chemical-formula-can-use-unicode) [WP4259](reports/WP4259#the-carbon-dioxide-chemical-formula-can-use-unicode) [WP4317](reports/WP4317#the-carbon-dioxide-chemical-formula-can-use-unicode) [WP4504](reports/WP4504#the-carbon-dioxide-chemical-formula-can-use-unicode) [WP4742](reports/WP4742#the-carbon-dioxide-chemical-formula-can-use-unicode) [WP4949](reports/WP4949#the-carbon-dioxide-chemical-formula-can-use-unicode) [WP497](reports/WP497#the-carbon-dioxide-chemical-formula-can-use-unicode) [WP5028](reports/WP5028#the-carbon-dioxide-chemical-formula-can-use-unicode) [WP5314](reports/WP5314#the-carbon-dioxide-chemical-formula-can-use-unicode) [WP533](reports/WP533#the-carbon-dioxide-chemical-formula-can-use-unicode) [WP5352](reports/WP5352#the-carbon-dioxide-chemical-formula-can-use-unicode) [WP538](reports/WP538#the-carbon-dioxide-chemical-formula-can-use-unicode) [WP556](reports/WP556#the-carbon-dioxide-chemical-formula-can-use-unicode) [WP78](reports/WP78#the-carbon-dioxide-chemical-formula-can-use-unicode) [WP92](reports/WP92#the-carbon-dioxide-chemical-formula-can-use-unicode) [WP999](reports/WP999#the-carbon-dioxide-chemical-formula-can-use-unicode) 
-
-## The copper ion formula can use Unicode
-
-
-Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/UnicodeTests/copper2).
-
-[WP5124](reports/WP5124#the-copper-ion-formula-can-use-unicode) [WP5189](reports/WP5189#the-copper-ion-formula-can-use-unicode) [WP5189](reports/WP5189#the-copper-ion-formula-can-use-unicode) 
 
 ## The oxygen chemical formula can use Unicode
 
