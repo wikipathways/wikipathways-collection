@@ -139,7 +139,7 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/UnicodeTests/oxygen).
 
-[WP3193](reports/WP3193#the-oxygen-chemical-formula-can-use-unicode) [WP3257](reports/WP3257#the-oxygen-chemical-formula-can-use-unicode) [WP3680](reports/WP3680#the-oxygen-chemical-formula-can-use-unicode) [WP4156](reports/WP4156#the-oxygen-chemical-formula-can-use-unicode) [WP4466](reports/WP4466#the-oxygen-chemical-formula-can-use-unicode) 
+[WP3257](reports/WP3257#the-oxygen-chemical-formula-can-use-unicode) [WP3680](reports/WP3680#the-oxygen-chemical-formula-can-use-unicode) [WP4156](reports/WP4156#the-oxygen-chemical-formula-can-use-unicode) [WP4466](reports/WP4466#the-oxygen-chemical-formula-can-use-unicode) 
 
 ## UniProtKB identifier has been retracted
 
