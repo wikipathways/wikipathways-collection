@@ -50,13 +50,6 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 [WP1000](reports/WP1000#hmdb-identifier-has-been-retracted) [WP1027](reports/WP1027#hmdb-identifier-has-been-retracted) [WP1250](reports/WP1250#hmdb-identifier-has-been-retracted) [WP1293](reports/WP1293#hmdb-identifier-has-been-retracted) [WP1358](reports/WP1358#hmdb-identifier-has-been-retracted) [WP157](reports/WP157#hmdb-identifier-has-been-retracted) [WP2562](reports/WP2562#hmdb-identifier-has-been-retracted) [WP28](reports/WP28#hmdb-identifier-has-been-retracted) [WP349](reports/WP349#hmdb-identifier-has-been-retracted) [WP3580](reports/WP3580#hmdb-identifier-has-been-retracted) [WP3604](reports/WP3604#hmdb-identifier-has-been-retracted) [WP3622](reports/WP3622#hmdb-identifier-has-been-retracted) [WP3869](reports/WP3869#hmdb-identifier-has-been-retracted) [WP3925](reports/WP3925#hmdb-identifier-has-been-retracted) [WP4290](reports/WP4290#hmdb-identifier-has-been-retracted) [WP4292](reports/WP4292#hmdb-identifier-has-been-retracted) [WP4504](reports/WP4504#hmdb-identifier-has-been-retracted) [WP533](reports/WP533#hmdb-identifier-has-been-retracted) [WP534](reports/WP534#hmdb-identifier-has-been-retracted) [WP5355](reports/WP5355#hmdb-identifier-has-been-retracted) [WP5420](reports/WP5420#hmdb-identifier-has-been-retracted) [WP662](reports/WP662#hmdb-identifier-has-been-retracted) [WP678](reports/WP678#hmdb-identifier-has-been-retracted) 
 
-## Hydron chemical formula can use Unicode
-
-
-Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/UnicodeTests/hydron).
-
-[WP18](reports/WP18#hydron-chemical-formula-can-use-unicode) 
-
 ## Identifier used of a amino acid with undefined stereochemistry
 
 
@@ -140,13 +133,6 @@ Read more about why these fails happen and how to fix them in these [instruction
 Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/UnicodeTests/chloride).
 
 [WP2571](reports/WP2571#the-chloride-ion-formula-can-use-unicode) [WP3217](reports/WP3217#the-chloride-ion-formula-can-use-unicode) [WP4159](reports/WP4159#the-chloride-ion-formula-can-use-unicode) [WP4917](reports/WP4917#the-chloride-ion-formula-can-use-unicode) [WP4932](reports/WP4932#the-chloride-ion-formula-can-use-unicode) [WP5029](reports/WP5029#the-chloride-ion-formula-can-use-unicode) [WP5298](reports/WP5298#the-chloride-ion-formula-can-use-unicode) [WP5470](reports/WP5470#the-chloride-ion-formula-can-use-unicode) 
-
-## The iron ion formula can use Unicode
-
-
-Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/UnicodeTests/iron2).
-
-[WP18](reports/WP18#the-iron-ion-formula-can-use-unicode) 
 
 ## UniProtKB identifier has been retracted
 
