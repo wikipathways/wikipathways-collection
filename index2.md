@@ -118,14 +118,14 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/UnicodeTests/ammonia).
 
-[WP1086](reports/WP1086#the-ammonia-formula-can-use-unicode) [WP1221](reports/WP1221#the-ammonia-formula-can-use-unicode) [WP1314](reports/WP1314#the-ammonia-formula-can-use-unicode) [WP191](reports/WP191#the-ammonia-formula-can-use-unicode) [WP2185](reports/WP2185#the-ammonia-formula-can-use-unicode) [WP256](reports/WP256#the-ammonia-formula-can-use-unicode) [WP3165](reports/WP3165#the-ammonia-formula-can-use-unicode) [WP3192](reports/WP3192#the-ammonia-formula-can-use-unicode) [WP3245](reports/WP3245#the-ammonia-formula-can-use-unicode) [WP328](reports/WP328#the-ammonia-formula-can-use-unicode) [WP3602](reports/WP3602#the-ammonia-formula-can-use-unicode) [WP4290](reports/WP4290#the-ammonia-formula-can-use-unicode) [WP5026](reports/WP5026#the-ammonia-formula-can-use-unicode) [WP5028](reports/WP5028#the-ammonia-formula-can-use-unicode) [WP5213](reports/WP5213#the-ammonia-formula-can-use-unicode) [WP848](reports/WP848#the-ammonia-formula-can-use-unicode) 
+[WP1086](reports/WP1086#the-ammonia-formula-can-use-unicode) [WP1221](reports/WP1221#the-ammonia-formula-can-use-unicode) [WP1314](reports/WP1314#the-ammonia-formula-can-use-unicode) [WP191](reports/WP191#the-ammonia-formula-can-use-unicode) [WP2185](reports/WP2185#the-ammonia-formula-can-use-unicode) [WP256](reports/WP256#the-ammonia-formula-can-use-unicode) [WP3165](reports/WP3165#the-ammonia-formula-can-use-unicode) [WP3245](reports/WP3245#the-ammonia-formula-can-use-unicode) [WP328](reports/WP328#the-ammonia-formula-can-use-unicode) [WP3602](reports/WP3602#the-ammonia-formula-can-use-unicode) [WP4290](reports/WP4290#the-ammonia-formula-can-use-unicode) [WP5026](reports/WP5026#the-ammonia-formula-can-use-unicode) [WP5028](reports/WP5028#the-ammonia-formula-can-use-unicode) [WP5213](reports/WP5213#the-ammonia-formula-can-use-unicode) [WP848](reports/WP848#the-ammonia-formula-can-use-unicode) 
 
 ## The ammonium formula can use Unicode
 
 
 Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/UnicodeTests/ammonium).
 
-[WP3192](reports/WP3192#the-ammonium-formula-can-use-unicode) [WP4225](reports/WP4225#the-ammonium-formula-can-use-unicode) [WP4259](reports/WP4259#the-ammonium-formula-can-use-unicode) [WP4504](reports/WP4504#the-ammonium-formula-can-use-unicode) [WP4583](reports/WP4583#the-ammonium-formula-can-use-unicode) [WP4595](reports/WP4595#the-ammonium-formula-can-use-unicode) 
+[WP4504](reports/WP4504#the-ammonium-formula-can-use-unicode) [WP4583](reports/WP4583#the-ammonium-formula-can-use-unicode) [WP4595](reports/WP4595#the-ammonium-formula-can-use-unicode) 
 
 ## UniProtKB identifier has been retracted
 
