@@ -118,11 +118,7 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/PathwayTests/allShortDescriptions).
 
-[WP1396](reports/WP1396#pathway-description-is-too-short) [WP1398](reports/WP1398#pathway-description-is-too-short) [WP2231](reports/WP2231#pathway-description-is-too-short) [WP2360](reports/WP2360#pathway-description-is-too-short) [WP2541](reports/WP2541#pathway-description-is-too-short) [WP2634](reports/WP2634#pathway-description-is-too-short) [WP291](reports/WP291#pathway-description-is-too-short) [WP2943](reports/WP2943#pathway-description-is-too-short) [WP3152](reports/WP3152#pathway-description-is-too-short) [WP3189](reports/WP3189#pathway-description-is-too-short) [WP3620](reports/WP3620#pathway-description-is-too-short) [WP3924](reports/WP3924#pathway-description-is-too-short) [WP4364](reports/WP4364#pathway-description-is-too-short) [WP4707](reports/WP4707#pathway-description-is-too-short) [WP4946](reports/WP4946#pathway-description-is-too-short) [WP5038](reports/WP5038#pathway-description-is-too-short) [WP5063](reports/WP5063#pathway-description-is-too-short) [WP5066](reports/WP5066#pathway-description-is-too-short) [WP5070](reports/WP5070#pathway-description-is-too-short) [WP5074](reports/WP5074#pathway-description-is-too-short) [WP5093](reports/WP5093#pathway-description-is-too-short) [WP5098](reports/WP5098#pathway-description-is-too-short) [WP5128](reports/WP5128#pathway-description-is-too-short) [WP5137](reports/WP5137#pathway-description-is-too-short) [WP5154](reports/WP5154#pathway-description-is-too-short) [WP5155](reports/WP5155#pathway-description-is-too-short) [WP5202](reports/WP5202#pathway-description-is-too-short) [WP5241](reports/WP5241#pathway-description-is-too-short) [WP5256](reports/WP5256#pathway-description-is-too-short) [WP5392](reports/WP5392#pathway-description-is-too-short) [WP5393](reports/WP5393#pathway-description-is-too-short) [WP5461](reports/WP5461#pathway-description-is-too-short) [WP5472](reports/WP5472#pathway-description-is-too-short) [WP5475](reports/WP5475#pathway-description-is-too-short) [WP5588](reports/WP5588#pathway-description-is-too-short) [WP5590](reports/WP5590#pathway-description-is-too-short) [WP5591](reports/WP5591#pathway-description-is-too-short) 
-
-## Pathway has more than one GPML description
-
-[WP4584](reports/WP4584#pathway-has-more-than-one-gpml-description) 
+[WP2360](reports/WP2360#pathway-description-is-too-short) [WP2541](reports/WP2541#pathway-description-is-too-short) [WP2634](reports/WP2634#pathway-description-is-too-short) [WP291](reports/WP291#pathway-description-is-too-short) [WP2943](reports/WP2943#pathway-description-is-too-short) [WP3152](reports/WP3152#pathway-description-is-too-short) [WP3189](reports/WP3189#pathway-description-is-too-short) [WP3620](reports/WP3620#pathway-description-is-too-short) [WP3924](reports/WP3924#pathway-description-is-too-short) [WP4364](reports/WP4364#pathway-description-is-too-short) [WP4707](reports/WP4707#pathway-description-is-too-short) [WP4946](reports/WP4946#pathway-description-is-too-short) [WP5038](reports/WP5038#pathway-description-is-too-short) [WP5063](reports/WP5063#pathway-description-is-too-short) [WP5066](reports/WP5066#pathway-description-is-too-short) [WP5070](reports/WP5070#pathway-description-is-too-short) [WP5074](reports/WP5074#pathway-description-is-too-short) [WP5093](reports/WP5093#pathway-description-is-too-short) [WP5098](reports/WP5098#pathway-description-is-too-short) [WP5128](reports/WP5128#pathway-description-is-too-short) [WP5137](reports/WP5137#pathway-description-is-too-short) [WP5154](reports/WP5154#pathway-description-is-too-short) [WP5155](reports/WP5155#pathway-description-is-too-short) [WP5202](reports/WP5202#pathway-description-is-too-short) [WP5241](reports/WP5241#pathway-description-is-too-short) [WP5256](reports/WP5256#pathway-description-is-too-short) [WP5392](reports/WP5392#pathway-description-is-too-short) [WP5393](reports/WP5393#pathway-description-is-too-short) [WP5461](reports/WP5461#pathway-description-is-too-short) [WP5472](reports/WP5472#pathway-description-is-too-short) [WP5475](reports/WP5475#pathway-description-is-too-short) [WP5588](reports/WP5588#pathway-description-is-too-short) [WP5590](reports/WP5590#pathway-description-is-too-short) [WP5591](reports/WP5591#pathway-description-is-too-short) 
 
 ## Possible MIM translocation
 
@@ -143,7 +139,7 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/UnicodeTests/ammonia).
 
-[WP3245](reports/WP3245#the-ammonia-formula-can-use-unicode) [WP3602](reports/WP3602#the-ammonia-formula-can-use-unicode) [WP4290](reports/WP4290#the-ammonia-formula-can-use-unicode) [WP5026](reports/WP5026#the-ammonia-formula-can-use-unicode) [WP5028](reports/WP5028#the-ammonia-formula-can-use-unicode) [WP5213](reports/WP5213#the-ammonia-formula-can-use-unicode) 
+[WP3602](reports/WP3602#the-ammonia-formula-can-use-unicode) [WP5026](reports/WP5026#the-ammonia-formula-can-use-unicode) [WP5028](reports/WP5028#the-ammonia-formula-can-use-unicode) 
 
 ## UniProtKB identifier has been retracted
 
@@ -158,11 +154,4 @@ Read more about why these fails happen and how to fix them in these [instruction
 Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/UniProtTests/unreviewedIdentifiers).
 
 [WP117](reports/WP117#unreviewed-uniprotkb-identifiers) [WP3591](reports/WP3591#unreviewed-uniprotkb-identifiers) 
-
-## Water chemical formula can use Unicode
-
-
-Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/UnicodeTests/water).
-
-[WP256](reports/WP256#water-chemical-formula-can-use-unicode) 
 
