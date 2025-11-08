@@ -29,19 +29,7 @@ title: WP8 curation report
 * MetaboliteStructureTests: all 1 tests OK!
 * MetabolitesTests: all 15 tests OK!
 * OudatedDataSourcesTests: all 24 tests OK!
-* PathwayTests
-    * deletedPathways: .. all OK!
-    * linksToDeletedPathways: .. all OK!
-    * linksToDeletedPathways_All: .. all OK!
-    * speciesMismatch: .. all OK!
-    * testRoundedRectangle: .. all OK!
-    * youMustCite: .. all OK!
-    * oldLicenses: .. all OK!
-    * mediawikiLinks: .. all OK!
-    * allEmptyDescriptions: .x we found 1 problem(s):
-        * [Pathways of with an empty description: 1](#798a4967)
-    * allShortDescriptions: .. all OK!
-    * multipleDescriptions: .. all OK!
+* PathwayTests: all 11 tests OK!
 * ProteinsTests: all 2 tests OK!
 * PubChemMetabolitesTests: all 3 tests OK!
 * ReferencesTests: all 6 tests OK!
@@ -56,7 +44,7 @@ title: WP8 curation report
 * Number of test classes: 22
 * Number of tests: 148
 * Number of assertions: 295
-* Number of fails: 2
+* Number of fails: 1
 
 ## Fails
 
@@ -66,20 +54,10 @@ title: WP8 curation report
 
 The following genes with an identifier have been found but that do not have a mapping to Ensembl: 3
 ```
-http://classic.wikipathways.org/instance/WP8_r116988 Map2k2 with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP8_r116988 Irs1 with datasource Entrez Gene
-http://classic.wikipathways.org/instance/WP8_r116988 Stat1 with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP8_r141252 Map2k2 with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP8_r141252 Irs1 with datasource Entrez Gene
+http://classic.wikipathways.org/instance/WP8_r141252 Stat1 with datasource Entrez Gene
 ```
 
 More details at [https://www.wikipathways.org/WikiPathwaysCurator/GeneTests/genesWithoutEnsemblMapping](https://www.wikipathways.org/WikiPathwaysCurator/GeneTests/genesWithoutEnsemblMapping)
-
-<a name="798a4967" />
-
-## Pathway description is empty
-
-Pathways of with an empty description: 1
-
-* [http://classic.wikipathways.org/instance/WP8_r116988](http://classic.wikipathways.org/instance/WP8_r116988)
-
-More details at [https://www.wikipathways.org/WikiPathwaysCurator/PathwayTests/allEmptyDescriptions](https://www.wikipathways.org/WikiPathwaysCurator/PathwayTests/allEmptyDescriptions)
 
