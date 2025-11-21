@@ -15,6 +15,7 @@ The following tools are needed:
 * make
 * curl
 * jq
+* xpath (Debian: libxml-xpath-perl)
 
 ### Setting up BridgeDb
 
