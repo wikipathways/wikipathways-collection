@@ -15,10 +15,6 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 [WP4932](reports/WP4932#chebi-identifier-has-been-retracted) [WP5269](reports/WP5269#chebi-identifier-has-been-retracted) [WP5346](reports/WP5346#chebi-identifier-has-been-retracted) 
 
-## Data nodes with an identifier but an empty data source
-
-[WP2630](reports/WP2630#data-nodes-with-an-identifier-but-an-empty-data-source) 
-
 ## Data nodes without an identifier
 
 
@@ -101,18 +97,14 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/PathwayTests/allEmptyDescriptions).
 
-[WP1397](reports/WP1397#pathway-description-is-empty) [WP2108](reports/WP2108#pathway-description-is-empty) [WP2132](reports/WP2132#pathway-description-is-empty) [WP2293](reports/WP2293#pathway-description-is-empty) [WP3177](reports/WP3177#pathway-description-is-empty) [WP3209](reports/WP3209#pathway-description-is-empty) [WP3583](reports/WP3583#pathway-description-is-empty) 
+[WP2108](reports/WP2108#pathway-description-is-empty) [WP2132](reports/WP2132#pathway-description-is-empty) [WP2293](reports/WP2293#pathway-description-is-empty) [WP3177](reports/WP3177#pathway-description-is-empty) [WP3209](reports/WP3209#pathway-description-is-empty) 
 
 ## Pathway description is too short
 
 
 Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/PathwayTests/allShortDescriptions).
 
-[WP234](reports/WP234#pathway-description-is-too-short) [WP2943](reports/WP2943#pathway-description-is-too-short) [WP3152](reports/WP3152#pathway-description-is-too-short) [WP3189](reports/WP3189#pathway-description-is-too-short) [WP4364](reports/WP4364#pathway-description-is-too-short) [WP4707](reports/WP4707#pathway-description-is-too-short) [WP4946](reports/WP4946#pathway-description-is-too-short) [WP5038](reports/WP5038#pathway-description-is-too-short) [WP5063](reports/WP5063#pathway-description-is-too-short) [WP5070](reports/WP5070#pathway-description-is-too-short) [WP5074](reports/WP5074#pathway-description-is-too-short) [WP5093](reports/WP5093#pathway-description-is-too-short) [WP5098](reports/WP5098#pathway-description-is-too-short) [WP5128](reports/WP5128#pathway-description-is-too-short) [WP5137](reports/WP5137#pathway-description-is-too-short) [WP5154](reports/WP5154#pathway-description-is-too-short) [WP5155](reports/WP5155#pathway-description-is-too-short) [WP5241](reports/WP5241#pathway-description-is-too-short) [WP5392](reports/WP5392#pathway-description-is-too-short) [WP5393](reports/WP5393#pathway-description-is-too-short) [WP5461](reports/WP5461#pathway-description-is-too-short) [WP5472](reports/WP5472#pathway-description-is-too-short) [WP5475](reports/WP5475#pathway-description-is-too-short) [WP5588](reports/WP5588#pathway-description-is-too-short) [WP5590](reports/WP5590#pathway-description-is-too-short) 
-
-## PathwayTests.testRoundedRectangle
-
-[WP5600](reports/WP5600#pathwayteststestroundedrectangle) 
+[WP234](reports/WP234#pathway-description-is-too-short) [WP2943](reports/WP2943#pathway-description-is-too-short) [WP3152](reports/WP3152#pathway-description-is-too-short) [WP3189](reports/WP3189#pathway-description-is-too-short) [WP3583](reports/WP3583#pathway-description-is-too-short) [WP4364](reports/WP4364#pathway-description-is-too-short) [WP4707](reports/WP4707#pathway-description-is-too-short) [WP4946](reports/WP4946#pathway-description-is-too-short) [WP5038](reports/WP5038#pathway-description-is-too-short) [WP5063](reports/WP5063#pathway-description-is-too-short) [WP5070](reports/WP5070#pathway-description-is-too-short) [WP5074](reports/WP5074#pathway-description-is-too-short) [WP5093](reports/WP5093#pathway-description-is-too-short) [WP5098](reports/WP5098#pathway-description-is-too-short) [WP5128](reports/WP5128#pathway-description-is-too-short) [WP5137](reports/WP5137#pathway-description-is-too-short) [WP5154](reports/WP5154#pathway-description-is-too-short) [WP5155](reports/WP5155#pathway-description-is-too-short) [WP5241](reports/WP5241#pathway-description-is-too-short) [WP5392](reports/WP5392#pathway-description-is-too-short) [WP5393](reports/WP5393#pathway-description-is-too-short) [WP5461](reports/WP5461#pathway-description-is-too-short) [WP5472](reports/WP5472#pathway-description-is-too-short) [WP5475](reports/WP5475#pathway-description-is-too-short) [WP5588](reports/WP5588#pathway-description-is-too-short) [WP5590](reports/WP5590#pathway-description-is-too-short) 
 
 ## Possible MIM translocation
 
