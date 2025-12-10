@@ -104,5 +104,5 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/UnicodeTests/ozone).
 
-[WP1075](reports/WP1075#the-ozone-chemical-formula-can-use-unicode) [WP15](reports/WP15#the-ozone-chemical-formula-can-use-unicode) [WP1533](reports/WP1533#the-ozone-chemical-formula-can-use-unicode) [WP176](reports/WP176#the-ozone-chemical-formula-can-use-unicode) [WP3193](reports/WP3193#the-ozone-chemical-formula-can-use-unicode) [WP3257](reports/WP3257#the-ozone-chemical-formula-can-use-unicode) 
+[WP1075](reports/WP1075#the-ozone-chemical-formula-can-use-unicode) [WP15](reports/WP15#the-ozone-chemical-formula-can-use-unicode) [WP1533](reports/WP1533#the-ozone-chemical-formula-can-use-unicode) [WP3193](reports/WP3193#the-ozone-chemical-formula-can-use-unicode) [WP3257](reports/WP3257#the-ozone-chemical-formula-can-use-unicode) 
 
