@@ -7,7 +7,7 @@ jobs:
   pubmed:
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v6
         with:
           submodules: true
           fetch-depth: 0
