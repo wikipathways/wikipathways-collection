@@ -29,15 +29,34 @@ title: WP9 curation report
 * Sec2PriProjectTests: all 6 tests OK!
 * UniProtTests: all 5 tests OK!
 * UnicodeTests: all 19 tests OK!
-* WikidataTests: all 4 tests OK!
+* WikidataTests
+    * inchikeyWithoutMapping: .. all OK!
+    * keggWithoutMapping: .x we found 1 problem(s):
+        * [KEGG Compound identifiers without Wikidata mappings: 1](#76796b44)
+    * lipidMapsWithoutMapping: .. all OK!
+    * noWikidataForGenes: .. all OK!
+    * pubchemCIDWithoutMapping: .. all OK!
+    * replaceWikipedia: .. all OK!
+    * retiredIdentifiers: .. all OK!
+    * wikDataTypo: .. all OK!
+    * wikidataIdentifiersWrong: .. all OK!
 
 
 ## Summary
 
 * Number of test classes: 22
-* Number of tests: 150
-* Number of assertions: 299
-* Number of fails: 0
+* Number of tests: 155
+* Number of assertions: 309
+* Number of fails: 1
 
 ## Fails
+
+<a name="76796b44" />
+
+## KEGG Compound identifier without a match in Wikidata
+
+KEGG Compound identifiers without Wikidata mappings: 1
+```
+https://identifiers.org/kegg.compound/C01241 (phosphatidyl-N-methylethanolamine) does not have a Wikidata mapping in http://classic.wikipathways.org/instance/WP9_r140564 ; 
+```
 

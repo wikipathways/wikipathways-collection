@@ -195,12 +195,12 @@ UnicodeTests.all
 #WikidataTests.chemspiderCIDWithoutMapping
 #WikidataTests.duplicateWikidataMappings
 #WikidataTests.hmdbWithoutMapping
-#WikidataTests.inchikeyWithoutMapping
+WikidataTests.inchikeyWithoutMapping
 #WikidataTests.kNApSAcKWithoutMapping
-#WikidataTests.keggWithoutMapping
-#WikidataTests.lipidMapsWithoutMapping
-#WikidataTests.noWikidataForGenes
-#WikidataTests.pubchemCIDWithoutMapping
+WikidataTests.keggWithoutMapping
+WikidataTests.lipidMapsWithoutMapping
+WikidataTests.noWikidataForGenes
+WikidataTests.pubchemCIDWithoutMapping
 WikidataTests.replaceWikipedia
 WikidataTests.retiredIdentifiers
 WikidataTests.wikDataTypo
