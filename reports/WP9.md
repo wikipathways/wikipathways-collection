@@ -34,7 +34,6 @@ title: WP9 curation report
     * keggWithoutMapping: .x we found 1 problem(s):
         * [KEGG Compound identifiers without Wikidata mappings: 1](#76796b44)
     * lipidMapsWithoutMapping: .. all OK!
-    * noWikidataForGenes: .. all OK!
     * pubchemCIDWithoutMapping: .. all OK!
     * replaceWikipedia: .. all OK!
     * retiredIdentifiers: .. all OK!
@@ -45,8 +44,8 @@ title: WP9 curation report
 ## Summary
 
 * Number of test classes: 22
-* Number of tests: 155
-* Number of assertions: 309
+* Number of tests: 154
+* Number of assertions: 307
 * Number of fails: 1
 
 ## Fails

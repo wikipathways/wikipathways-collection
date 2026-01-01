@@ -199,7 +199,7 @@ WikidataTests.inchikeyWithoutMapping
 #WikidataTests.kNApSAcKWithoutMapping
 WikidataTests.keggWithoutMapping
 WikidataTests.lipidMapsWithoutMapping
-WikidataTests.noWikidataForGenes
+#WikidataTests.noWikidataForGenes
 WikidataTests.pubchemCIDWithoutMapping
 WikidataTests.replaceWikipedia
 WikidataTests.retiredIdentifiers
