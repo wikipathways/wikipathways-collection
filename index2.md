@@ -59,7 +59,7 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 ## InChIKey without a match in Wikidata
 
-[WP4190](reports/WP4190#inchikey-without-a-match-in-wikidata) [WP4238](reports/WP4238#inchikey-without-a-match-in-wikidata) [WP5179](reports/WP5179#inchikey-without-a-match-in-wikidata) [WP5432](reports/WP5432#inchikey-without-a-match-in-wikidata) [WP5506](reports/WP5506#inchikey-without-a-match-in-wikidata) [WP5600](reports/WP5600#inchikey-without-a-match-in-wikidata) 
+[WP4190](reports/WP4190#inchikey-without-a-match-in-wikidata) [WP4238](reports/WP4238#inchikey-without-a-match-in-wikidata) [WP5179](reports/WP5179#inchikey-without-a-match-in-wikidata) [WP5432](reports/WP5432#inchikey-without-a-match-in-wikidata) [WP5506](reports/WP5506#inchikey-without-a-match-in-wikidata) 
 
 ## Interactions with Labels
 
@@ -91,7 +91,7 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/Sec2PriProjectTests/outdatedNCBIIdentifiers).
 
-[WP117](reports/WP117#ncbi-gene-identifier-has-been-retracted) [WP2272](reports/WP2272#ncbi-gene-identifier-has-been-retracted) [WP2328](reports/WP2328#ncbi-gene-identifier-has-been-retracted) [WP259](reports/WP259#ncbi-gene-identifier-has-been-retracted) [WP289](reports/WP289#ncbi-gene-identifier-has-been-retracted) [WP35](reports/WP35#ncbi-gene-identifier-has-been-retracted) [WP3888](reports/WP3888#ncbi-gene-identifier-has-been-retracted) [WP3998](reports/WP3998#ncbi-gene-identifier-has-been-retracted) [WP474](reports/WP474#ncbi-gene-identifier-has-been-retracted) [WP4808](reports/WP4808#ncbi-gene-identifier-has-been-retracted) [WP5093](reports/WP5093#ncbi-gene-identifier-has-been-retracted) [WP5097](reports/WP5097#ncbi-gene-identifier-has-been-retracted) [WP5347](reports/WP5347#ncbi-gene-identifier-has-been-retracted) [WP722](reports/WP722#ncbi-gene-identifier-has-been-retracted) 
+[WP2272](reports/WP2272#ncbi-gene-identifier-has-been-retracted) [WP2328](reports/WP2328#ncbi-gene-identifier-has-been-retracted) [WP259](reports/WP259#ncbi-gene-identifier-has-been-retracted) [WP289](reports/WP289#ncbi-gene-identifier-has-been-retracted) [WP35](reports/WP35#ncbi-gene-identifier-has-been-retracted) [WP3888](reports/WP3888#ncbi-gene-identifier-has-been-retracted) [WP3998](reports/WP3998#ncbi-gene-identifier-has-been-retracted) [WP474](reports/WP474#ncbi-gene-identifier-has-been-retracted) [WP4808](reports/WP4808#ncbi-gene-identifier-has-been-retracted) [WP5093](reports/WP5093#ncbi-gene-identifier-has-been-retracted) [WP5097](reports/WP5097#ncbi-gene-identifier-has-been-retracted) [WP5347](reports/WP5347#ncbi-gene-identifier-has-been-retracted) [WP722](reports/WP722#ncbi-gene-identifier-has-been-retracted) 
 
 ## No non-metabolite to metabolite conversions
 
@@ -130,12 +130,5 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/Sec2PriProjectTests/outdatedUniProtKBIdentifiers2).
 
-[WP117](reports/WP117#uniprotkb-identifier-has-been-retracted) [WP1984](reports/WP1984#uniprotkb-identifier-has-been-retracted) [WP2491](reports/WP2491#uniprotkb-identifier-has-been-retracted) [WP2563](reports/WP2563#uniprotkb-identifier-has-been-retracted) [WP2564](reports/WP2564#uniprotkb-identifier-has-been-retracted) [WP2566](reports/WP2566#uniprotkb-identifier-has-been-retracted) [WP2637](reports/WP2637#uniprotkb-identifier-has-been-retracted) [WP2853](reports/WP2853#uniprotkb-identifier-has-been-retracted) [WP32](reports/WP32#uniprotkb-identifier-has-been-retracted) [WP3585](reports/WP3585#uniprotkb-identifier-has-been-retracted) [WP3830](reports/WP3830#uniprotkb-identifier-has-been-retracted) [WP3863](reports/WP3863#uniprotkb-identifier-has-been-retracted) [WP3890](reports/WP3890#uniprotkb-identifier-has-been-retracted) [WP3953](reports/WP3953#uniprotkb-identifier-has-been-retracted) [WP41](reports/WP41#uniprotkb-identifier-has-been-retracted) [WP4288](reports/WP4288#uniprotkb-identifier-has-been-retracted) [WP4506](reports/WP4506#uniprotkb-identifier-has-been-retracted) [WP4861](reports/WP4861#uniprotkb-identifier-has-been-retracted) [WP5298](reports/WP5298#uniprotkb-identifier-has-been-retracted) [WP97](reports/WP97#uniprotkb-identifier-has-been-retracted) 
-
-## Unreviewed UniProtKB identifiers
-
-
-Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/UniProtTests/unreviewedIdentifiers).
-
-[WP117](reports/WP117#unreviewed-uniprotkb-identifiers) [WP3591](reports/WP3591#unreviewed-uniprotkb-identifiers) 
+[WP1984](reports/WP1984#uniprotkb-identifier-has-been-retracted) [WP2491](reports/WP2491#uniprotkb-identifier-has-been-retracted) [WP2563](reports/WP2563#uniprotkb-identifier-has-been-retracted) [WP2564](reports/WP2564#uniprotkb-identifier-has-been-retracted) [WP2566](reports/WP2566#uniprotkb-identifier-has-been-retracted) [WP2637](reports/WP2637#uniprotkb-identifier-has-been-retracted) [WP2853](reports/WP2853#uniprotkb-identifier-has-been-retracted) [WP32](reports/WP32#uniprotkb-identifier-has-been-retracted) [WP3585](reports/WP3585#uniprotkb-identifier-has-been-retracted) [WP3830](reports/WP3830#uniprotkb-identifier-has-been-retracted) [WP3863](reports/WP3863#uniprotkb-identifier-has-been-retracted) [WP3890](reports/WP3890#uniprotkb-identifier-has-been-retracted) [WP3953](reports/WP3953#uniprotkb-identifier-has-been-retracted) [WP41](reports/WP41#uniprotkb-identifier-has-been-retracted) [WP4288](reports/WP4288#uniprotkb-identifier-has-been-retracted) [WP4506](reports/WP4506#uniprotkb-identifier-has-been-retracted) [WP4861](reports/WP4861#uniprotkb-identifier-has-been-retracted) [WP5298](reports/WP5298#uniprotkb-identifier-has-been-retracted) [WP97](reports/WP97#uniprotkb-identifier-has-been-retracted) 
 
