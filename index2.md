@@ -77,14 +77,14 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 ## KEGG Compound identifier without a match in Wikidata
 
-[WP171](reports/WP171#kegg-compound-identifier-without-a-match-in-wikidata) [WP3602](reports/WP3602#kegg-compound-identifier-without-a-match-in-wikidata) [WP5395](reports/WP5395#kegg-compound-identifier-without-a-match-in-wikidata) [WP5434](reports/WP5434#kegg-compound-identifier-without-a-match-in-wikidata) [WP9](reports/WP9#kegg-compound-identifier-without-a-match-in-wikidata) [WP91](reports/WP91#kegg-compound-identifier-without-a-match-in-wikidata) 
+[WP3602](reports/WP3602#kegg-compound-identifier-without-a-match-in-wikidata) [WP5395](reports/WP5395#kegg-compound-identifier-without-a-match-in-wikidata) [WP5434](reports/WP5434#kegg-compound-identifier-without-a-match-in-wikidata) [WP9](reports/WP9#kegg-compound-identifier-without-a-match-in-wikidata) [WP91](reports/WP91#kegg-compound-identifier-without-a-match-in-wikidata) 
 
 ## LIPID MAPS identifier without a match in Wikidata
 
 
 Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/WikidataTests/lipidMapsWithoutMapping).
 
-[WP5275](reports/WP5275#lipid-maps-identifier-without-a-match-in-wikidata) [WP5432](reports/WP5432#lipid-maps-identifier-without-a-match-in-wikidata) [WP5584](reports/WP5584#lipid-maps-identifier-without-a-match-in-wikidata) 
+[WP5275](reports/WP5275#lipid-maps-identifier-without-a-match-in-wikidata) [WP5584](reports/WP5584#lipid-maps-identifier-without-a-match-in-wikidata) 
 
 ## NCBI Gene identifier has been retracted
 
