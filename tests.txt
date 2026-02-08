@@ -183,6 +183,7 @@ UnicodeTests.all
 #UnicodeTests.iron3
 #UnicodeTests.magnesium
 #UnicodeTests.manganese
+#UnicodeTests.nitrate
 #UnicodeTests.oxygen
 #UnicodeTests.ozone
 #UnicodeTests.potassium
