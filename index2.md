@@ -123,7 +123,7 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 ## PubChem Compound identifier without a match in Wikidata
 
-[WP2360](reports/WP2360#pubchem-compound-identifier-without-a-match-in-wikidata) [WP4657](reports/WP4657#pubchem-compound-identifier-without-a-match-in-wikidata) [WP5348](reports/WP5348#pubchem-compound-identifier-without-a-match-in-wikidata) [WP5395](reports/WP5395#pubchem-compound-identifier-without-a-match-in-wikidata) [WP5424](reports/WP5424#pubchem-compound-identifier-without-a-match-in-wikidata) [WP5425](reports/WP5425#pubchem-compound-identifier-without-a-match-in-wikidata) [WP555](reports/WP555#pubchem-compound-identifier-without-a-match-in-wikidata) [WP5584](reports/WP5584#pubchem-compound-identifier-without-a-match-in-wikidata) [WP5609](reports/WP5609#pubchem-compound-identifier-without-a-match-in-wikidata) 
+[WP5348](reports/WP5348#pubchem-compound-identifier-without-a-match-in-wikidata) [WP5395](reports/WP5395#pubchem-compound-identifier-without-a-match-in-wikidata) [WP5424](reports/WP5424#pubchem-compound-identifier-without-a-match-in-wikidata) [WP5425](reports/WP5425#pubchem-compound-identifier-without-a-match-in-wikidata) [WP555](reports/WP555#pubchem-compound-identifier-without-a-match-in-wikidata) [WP5584](reports/WP5584#pubchem-compound-identifier-without-a-match-in-wikidata) [WP5609](reports/WP5609#pubchem-compound-identifier-without-a-match-in-wikidata) 
 
 ## UniProtKB identifier has been retracted
 
