@@ -81,7 +81,7 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 ## KEGG Compound identifier without a match in Wikidata
 
-[WP3602](reports/WP3602#kegg-compound-identifier-without-a-match-in-wikidata) [WP4597](reports/WP4597#kegg-compound-identifier-without-a-match-in-wikidata) [WP5395](reports/WP5395#kegg-compound-identifier-without-a-match-in-wikidata) [WP5434](reports/WP5434#kegg-compound-identifier-without-a-match-in-wikidata) [WP9](reports/WP9#kegg-compound-identifier-without-a-match-in-wikidata) [WP91](reports/WP91#kegg-compound-identifier-without-a-match-in-wikidata) 
+[WP3602](reports/WP3602#kegg-compound-identifier-without-a-match-in-wikidata) [WP5395](reports/WP5395#kegg-compound-identifier-without-a-match-in-wikidata) [WP5434](reports/WP5434#kegg-compound-identifier-without-a-match-in-wikidata) [WP9](reports/WP9#kegg-compound-identifier-without-a-match-in-wikidata) [WP91](reports/WP91#kegg-compound-identifier-without-a-match-in-wikidata) 
 
 ## LIPID MAPS identifier without a match in Wikidata
 
@@ -120,7 +120,7 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 ## PubChem Compound identifier without a match in Wikidata
 
-[WP4597](reports/WP4597#pubchem-compound-identifier-without-a-match-in-wikidata) [WP5154](reports/WP5154#pubchem-compound-identifier-without-a-match-in-wikidata) [WP5395](reports/WP5395#pubchem-compound-identifier-without-a-match-in-wikidata) [WP5424](reports/WP5424#pubchem-compound-identifier-without-a-match-in-wikidata) [WP5425](reports/WP5425#pubchem-compound-identifier-without-a-match-in-wikidata) [WP555](reports/WP555#pubchem-compound-identifier-without-a-match-in-wikidata) [WP5584](reports/WP5584#pubchem-compound-identifier-without-a-match-in-wikidata) [WP5609](reports/WP5609#pubchem-compound-identifier-without-a-match-in-wikidata) [WP699](reports/WP699#pubchem-compound-identifier-without-a-match-in-wikidata) 
+[WP4597](reports/WP4597#pubchem-compound-identifier-without-a-match-in-wikidata) [WP5154](reports/WP5154#pubchem-compound-identifier-without-a-match-in-wikidata) [WP5395](reports/WP5395#pubchem-compound-identifier-without-a-match-in-wikidata) [WP5424](reports/WP5424#pubchem-compound-identifier-without-a-match-in-wikidata) [WP5425](reports/WP5425#pubchem-compound-identifier-without-a-match-in-wikidata) [WP555](reports/WP555#pubchem-compound-identifier-without-a-match-in-wikidata) [WP5584](reports/WP5584#pubchem-compound-identifier-without-a-match-in-wikidata) [WP5609](reports/WP5609#pubchem-compound-identifier-without-a-match-in-wikidata) 
 
 ## UniProtKB identifier has been retracted
 

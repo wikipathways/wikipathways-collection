@@ -2,10 +2,10 @@
 title: WP6 curation report
 ---
 
-<img style="float: right; width: 200px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Wplogo_with_text_500.png/640px-Wplogo_with_text_500.png" />
+<img style="float: right; width: 200px" src="https://upload.wikimedia.org/wikipedia/commons/8/83/Wplogo_with_text_500.png" />
 # WikiPathways WP6
 
-* WikiPathways: [WP6](https://wikipathways.org/pathways/WP6) ([classic](https://classic.wikipathways.org/instance/WP6))
+* WikiPathways: [WP6](https://wikipathways.org/pathways/WP6) ([gpml source](https://github.com/wikipathways/wikipathways-database/blob/main/pathways/WP6/WP6.gpml))
 * Species: Mus musculus
 ## Tests
 * CASMetabolitesTests: all 2 tests OK!
