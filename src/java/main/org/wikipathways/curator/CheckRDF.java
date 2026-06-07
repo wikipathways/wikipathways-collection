@@ -34,7 +34,7 @@ public class CheckRDF {
 
         report.println("---\ntitle: " + wpid + " curation report\n---\n");
 
-        report.println("<img style=\"float: right; width: 200px\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Wplogo_with_text_500.png/640px-Wplogo_with_text_500.png\" />");
+        report.println("<img style=\"float: right; width: 200px\" src=\"https://upload.wikimedia.org/wikipedia/commons/8/83/Wplogo_with_text_500.png\" />");
 
         List<IAssertion> assertions = new ArrayList<IAssertion>();
         Model loadedData = ModelFactory.createDefaultModel();
