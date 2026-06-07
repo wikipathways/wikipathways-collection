@@ -49,7 +49,7 @@ public class CheckRDF {
         boolean isHuman = "Homo sapiens".equals(species.trim());
 
         report.println("# WikiPathways " + wpid + "\n");
-        report.println("* WikiPathways: [" + wpid + "](https://wikipathways.org/pathways/" + wpid + ") ([classic](https://classic.wikipathways.org/instance/" + wpid + "))");
+        report.println("* WikiPathways: [" + wpid + "](https://wikipathways.org/pathways/" + wpid + ") ([gpml source](https://github.com/wikipathways/wikipathways-database/blob/main/pathways/" + wpid + "/" + wpid + ".gpml))");
         report.println("* Species: " + species);
         if (isHuman) report.println("* Scholia: [" + wpid + "](https://scholia.toolforge.org/wikipathways/" + wpid + ")");
 
