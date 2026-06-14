@@ -109,7 +109,7 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/PathwayTests/allShortDescriptions).
 
-[WP5063](reports/WP5063#pathway-description-is-too-short) [WP5074](reports/WP5074#pathway-description-is-too-short) [WP5093](reports/WP5093#pathway-description-is-too-short) [WP5098](reports/WP5098#pathway-description-is-too-short) [WP5137](reports/WP5137#pathway-description-is-too-short) [WP5155](reports/WP5155#pathway-description-is-too-short) [WP5392](reports/WP5392#pathway-description-is-too-short) [WP5393](reports/WP5393#pathway-description-is-too-short) [WP5461](reports/WP5461#pathway-description-is-too-short) [WP5472](reports/WP5472#pathway-description-is-too-short) [WP5475](reports/WP5475#pathway-description-is-too-short) [WP5588](reports/WP5588#pathway-description-is-too-short) 
+[WP5098](reports/WP5098#pathway-description-is-too-short) [WP5137](reports/WP5137#pathway-description-is-too-short) [WP5155](reports/WP5155#pathway-description-is-too-short) [WP5392](reports/WP5392#pathway-description-is-too-short) [WP5393](reports/WP5393#pathway-description-is-too-short) [WP5461](reports/WP5461#pathway-description-is-too-short) [WP5472](reports/WP5472#pathway-description-is-too-short) [WP5475](reports/WP5475#pathway-description-is-too-short) [WP5588](reports/WP5588#pathway-description-is-too-short) 
 
 ## Possible MIM translocation
 
