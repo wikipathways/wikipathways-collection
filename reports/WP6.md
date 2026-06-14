@@ -54,7 +54,7 @@ title: WP6 curation report
 
 The following genes with an identifier have been found but that do not have a mapping to Ensembl: 1
 ```
-http://classic.wikipathways.org/instance/WP6_r136997 Myo with datasource UniProtKB
+http://www.wikipathways.org/instance/WP6_r136997 Myo with datasource UniProtKB
 ```
 
 More details at [https://www.wikipathways.org/WikiPathwaysCurator/GeneTests/genesWithoutEnsemblMapping](https://www.wikipathways.org/WikiPathwaysCurator/GeneTests/genesWithoutEnsemblMapping)

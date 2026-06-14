@@ -56,6 +56,6 @@ title: WP9 curation report
 
 KEGG Compound identifiers without Wikidata mappings: 1
 ```
-https://identifiers.org/kegg.compound/C01241 (phosphatidyl-N-methylethanolamine) does not have a Wikidata mapping in http://classic.wikipathways.org/instance/WP9_r140564 ; 
+https://identifiers.org/kegg.compound/C01241 (phosphatidyl-N-methylethanolamine) does not have a Wikidata mapping in http://www.wikipathways.org/instance/WP9_r140564 ; 
 ```
 
