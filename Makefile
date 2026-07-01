@@ -1,9 +1,6 @@
-PREVIOUSDATE := ${shell git log -1 --date=format:"%Y-%m-%d" --format="%ad"}
-#PREVIOUSDATE := "2025-10-17"
 COLLECTION="Curation%3AAnalysisCollection"
-ORIGINALS := ${shell cd  ../wikipathways-database/ ; git diff --diff-filter=d --name-only HEAD@{${PREVIOUSDATE}} | grep .gpml$ | grep ^pathways/ | sort | uniq | sed -e 's/\(.*\)/..\/wikipathways-database\/\1/' }
 #ORIGINFOS := ${shell cd  ../wikipathways-database/ ; git diff --diff-filter=d --name-only HEAD@{${PREVIOUSDATE}} | grep datanodes.tsv$ | grep ^pathways/ | sort | uniq | sed -e 's/\(.*\)/..\/wikipathways-database\/\1/' }
-GPMLS := ${shell cd  ../wikipathways-database/ ; git diff --diff-filter=d --name-only HEAD@{${PREVIOUSDATE}} | grep .gpml$ | grep ^pathways/ | sort | uniq | cut -d'/' -f3 | sed -e 's/\(.*\)/gpml\/\1/' }
+GPMLS := ${shell find wikipathways-database/pathways/ -name "WP*gpml" | sort | uniq | cut -d'/' -f4 | sed -e 's/\(.*\)/gpml\/\1/' }
 WPRDFS := ${shell cat pathways.txt | sed -e 's/\(.*\)/wp\/Human\/\1.ttl/' }
 GPMLRDFS := ${shell cat pathways.txt | sed -e 's/\(.*\)/wp\/gpml\/Human\/\1.ttl/' }
 PMIDS := ${shell cat pathways.txt | sed -e 's/\(.*\)/pmid\/\1.pmid/' }
@@ -22,7 +19,7 @@ JENAVERSION=4.8.0
 
 WEBSITE := ${shell cat website.txt }
 
-all: updateGPMLS rdf index3.md
+all: rdf index3.md
 
 install:
 	@wget -O libs/GPML2RDF-3.0.0-SNAPSHOT.jar https://github.com/wikipathways/wikipathways-curation-template/releases/download/${FRAMEWORKVERSION}/GPML2RDF-3.0.0-SNAPSHOT.jar
@@ -30,13 +27,14 @@ install:
 	@wget -O libs/slf4j-simple-1.7.32.jar https://search.maven.org/remotecontent?filepath=org/slf4j/slf4j-simple/1.7.32/slf4j-simple-1.7.32.jar
 	@wget -O libs/jena-arq-${JENAVERSION}.jar https://repo1.maven.org/maven2/org/apache/jena/jena-arq/${JENAVERSION}/jena-arq-${JENAVERSION}.jar
 
-updateGPMLS:
-	@echo "Fetch updates since ${PREVIOUSDATE} ..."
-	@mkdir -p gpml
-	@cp -u ${ORIGINALS} gpml/.
-#	@cp -u ${ORIGINFOS} gpml/.
+updateGPMLS: ${GPMLS}
 
-pathways.txt:
+gpml/%.gpml: wikipathways-database/pathways/%/*.gpml
+	@echo "Updating $@"
+	@cp $< $@
+
+pathways.txt: ${GPMLS}
+	@rm -f pathways.txt
 	@find gpml -name "*gpml" | cut -d'/' -f2 | sort | grep "WP" | cut -d'.' -f1 > pathways.txt
 
 ngeval: ${NEWWPEVAL} ${NEWGPMLEVAL}
