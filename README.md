@@ -27,9 +27,6 @@ coronavirus genes and proteins.
 ### How to run
 
 ```shell
-mkdir -p gpml
-make updateGPMLS
-make -B pathways.txt
-nice -20 make -j 4 rdf check
+nice -20 make -j 12 all
 ```
 
