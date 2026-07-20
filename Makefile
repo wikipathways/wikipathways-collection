@@ -1,8 +1,8 @@
 COLLECTION="Curation%3AAnalysisCollection"
 #ORIGINFOS := ${shell cd  ../wikipathways-database/ ; git diff --diff-filter=d --name-only HEAD@{${PREVIOUSDATE}} | grep datanodes.tsv$ | grep ^pathways/ | sort | uniq | sed -e 's/\(.*\)/..\/wikipathways-database\/\1/' }
 GPMLS := ${shell find wikipathways-database/pathways/ -name "WP*gpml" | sort | uniq | cut -d'/' -f4 | sed -e 's/\(.*\)/gpml\/\1/' }
-WPRDFS := ${shell cat pathways.txt | sed -e 's/\(.*\)/wp\/Human\/\1.ttl/' }
-GPMLRDFS := ${shell cat pathways.txt | sed -e 's/\(.*\)/wp\/gpml\/Human\/\1.ttl/' }
+WPRDFS := ${shell find wikipathways-database/pathways/ -name "WP*gpml" | sort | uniq | cut -d'/' -f4 | sed -e 's/\(WP[^.]*\).*/wp\/Human\/\1.ttl/' }
+GPMLRDFS := ${shell find wikipathways-database/pathways/ -name "WP*gpml" | sort | uniq | cut -d'/' -f4 | sed -e 's/\(WP[^.]*\).*/wp\/gpml\/Human\/\1.ttl/' }
 PMIDS := ${shell cat pathways.txt | sed -e 's/\(.*\)/pmid\/\1.pmid/' }
 NEWWPRDFS := ${shell cat pathways.txt | sed -e 's/\(.*\)/wp\/Human\/\1.ngttl/' }
 NEWWPEVAL := ${shell cat pathways.txt | sed -e 's/\(.*\)/wp\/Human\/\1.ng.eval.txt/' }
@@ -19,7 +19,7 @@ JENAVERSION=4.8.0
 
 WEBSITE := ${shell cat website.txt }
 
-all: rdf index3.md
+all: pathways.txt rdf index3.md index2.md
 
 install:
 	@wget -O libs/GPML2RDF-3.0.0-SNAPSHOT.jar https://github.com/wikipathways/wikipathways-curation-template/releases/download/${FRAMEWORKVERSION}/GPML2RDF-3.0.0-SNAPSHOT.jar
