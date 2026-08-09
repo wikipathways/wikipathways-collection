@@ -116,15 +116,11 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/PathwayTests/allShortDescriptions).
 
-[WP5155](reports/WP5155#pathway-description-is-too-short) [WP5392](reports/WP5392#pathway-description-is-too-short) [WP5393](reports/WP5393#pathway-description-is-too-short) [WP5461](reports/WP5461#pathway-description-is-too-short) [WP5472](reports/WP5472#pathway-description-is-too-short) [WP5475](reports/WP5475#pathway-description-is-too-short) [WP5588](reports/WP5588#pathway-description-is-too-short) 
+[WP5393](reports/WP5393#pathway-description-is-too-short) [WP5461](reports/WP5461#pathway-description-is-too-short) [WP5472](reports/WP5472#pathway-description-is-too-short) [WP5475](reports/WP5475#pathway-description-is-too-short) [WP5588](reports/WP5588#pathway-description-is-too-short) 
 
 ## PathwayTests.mediawikiLinks
 
 [WP5173](reports/WP5173#pathwaytestsmediawikilinks) 
-
-## PathwayTests.testRoundedRectangle
-
-[WP5639](reports/WP5639#pathwayteststestroundedrectangle) 
 
 ## Possible MIM translocation
 
@@ -136,13 +132,6 @@ Read more about why these fails happen and how to fix them in these [instruction
 ## PubChem Compound identifier without a match in Wikidata
 
 [WP4597](reports/WP4597#pubchem-compound-identifier-without-a-match-in-wikidata) [WP5154](reports/WP5154#pubchem-compound-identifier-without-a-match-in-wikidata) [WP5395](reports/WP5395#pubchem-compound-identifier-without-a-match-in-wikidata) [WP5424](reports/WP5424#pubchem-compound-identifier-without-a-match-in-wikidata) [WP5425](reports/WP5425#pubchem-compound-identifier-without-a-match-in-wikidata) [WP555](reports/WP555#pubchem-compound-identifier-without-a-match-in-wikidata) [WP5584](reports/WP5584#pubchem-compound-identifier-without-a-match-in-wikidata) [WP5609](reports/WP5609#pubchem-compound-identifier-without-a-match-in-wikidata) 
-
-## The pathway contains stock comments
-
-
-Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/GeneralTests/stockComments).
-
-[WP5639](reports/WP5639#the-pathway-contains-stock-comments) 
 
 ## UniProtKB identifier has been retracted
 
