@@ -1737,6 +1737,7 @@
 * [reports/WP541.md](reports/WP541.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://www.wikipathways.org/wikipathways-collection/reports/WP541.json">
 * [reports/WP5421.md](reports/WP5421.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://www.wikipathways.org/wikipathways-collection/reports/WP5421.json">
 * [reports/WP5422.md](reports/WP5422.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://www.wikipathways.org/wikipathways-collection/reports/WP5422.json">
+* [reports/WP5423.md](reports/WP5423.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://www.wikipathways.org/wikipathways-collection/reports/WP5423.json">
 * [reports/WP5424.md](reports/WP5424.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://www.wikipathways.org/wikipathways-collection/reports/WP5424.json">
 * [reports/WP5425.md](reports/WP5425.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://www.wikipathways.org/wikipathways-collection/reports/WP5425.json">
 * [reports/WP5426.md](reports/WP5426.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://www.wikipathways.org/wikipathways-collection/reports/WP5426.json">
