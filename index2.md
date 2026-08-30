@@ -92,7 +92,7 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/WikidataTests/lipidMapsWithoutMapping).
 
-[WP5275](reports/WP5275#lipid-maps-identifier-without-a-match-in-wikidata) [WP5423](reports/WP5423#lipid-maps-identifier-without-a-match-in-wikidata) [WP5584](reports/WP5584#lipid-maps-identifier-without-a-match-in-wikidata) 
+[WP5275](reports/WP5275#lipid-maps-identifier-without-a-match-in-wikidata) [WP5393](reports/WP5393#lipid-maps-identifier-without-a-match-in-wikidata) [WP5423](reports/WP5423#lipid-maps-identifier-without-a-match-in-wikidata) [WP5584](reports/WP5584#lipid-maps-identifier-without-a-match-in-wikidata) 
 
 ## NCBI Gene identifier has been retracted
 
@@ -100,10 +100,6 @@ Read more about why these fails happen and how to fix them in these [instruction
 Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/Sec2PriProjectTests/outdatedNCBIIdentifiers).
 
 [WP2272](reports/WP2272#ncbi-gene-identifier-has-been-retracted) [WP2328](reports/WP2328#ncbi-gene-identifier-has-been-retracted) [WP259](reports/WP259#ncbi-gene-identifier-has-been-retracted) [WP289](reports/WP289#ncbi-gene-identifier-has-been-retracted) [WP35](reports/WP35#ncbi-gene-identifier-has-been-retracted) [WP3888](reports/WP3888#ncbi-gene-identifier-has-been-retracted) [WP3998](reports/WP3998#ncbi-gene-identifier-has-been-retracted) [WP474](reports/WP474#ncbi-gene-identifier-has-been-retracted) [WP4808](reports/WP4808#ncbi-gene-identifier-has-been-retracted) [WP5093](reports/WP5093#ncbi-gene-identifier-has-been-retracted) [WP5097](reports/WP5097#ncbi-gene-identifier-has-been-retracted) [WP5347](reports/WP5347#ncbi-gene-identifier-has-been-retracted) [WP722](reports/WP722#ncbi-gene-identifier-has-been-retracted) 
-
-## OudatedDataSourcesTests.outdatedEnsemblMouseDataSourceFromGPML
-
-[WP5641](reports/WP5641#oudateddatasourcestestsoutdatedensemblmousedatasourcefromgpml) 
 
 ## P62805 matches 14 genes
 
