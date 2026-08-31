@@ -24,7 +24,7 @@ public class CreateGPMLRDF {
 
     public static void main(String[] args) throws Exception {
         String gpmlFile = args[0];
-        String wpid     = gpmlFile.substring(5,11);
+        String wpid     = gpmlFile.substring(5,gpmlFile.indexOf("."));
         String outFile  = args[1];
         String rev      = "1";
         if (args.length > 2) {
