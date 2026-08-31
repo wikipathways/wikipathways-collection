@@ -2,7 +2,7 @@
 title: WP3 curation report
 ---
 
-<img style="float: right; width: 200px" src="https://upload.wikimedia.org/wikipedia/commons/8/83/Wplogo_with_text_500.png" />
+<img style="float: right; width: 200px" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Wplogo_with_text_500.png/330px-Wplogo_with_text_500.png" />
 # WikiPathways WP3
 
 * WikiPathways: [WP3](https://wikipathways.org/pathways/WP3) ([gpml source](https://github.com/wikipathways/wikipathways-database/blob/main/pathways/WP3/WP3.gpml))
