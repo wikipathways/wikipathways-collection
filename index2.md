@@ -37,6 +37,10 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 [WP5644](reports/WP5644#generalteststitlesshortenough) [WP5645](reports/WP5645#generalteststitlesshortenough) [WP5650](reports/WP5650#generalteststitlesshortenough) [WP5651](reports/WP5651#generalteststitlesshortenough) [WP5659](reports/WP5659#generalteststitlesshortenough) [WP5674](reports/WP5674#generalteststitlesshortenough) [WP5675](reports/WP5675#generalteststitlesshortenough) [WP5676](reports/WP5676#generalteststitlesshortenough) [WP5677](reports/WP5677#generalteststitlesshortenough) [WP5682](reports/WP5682#generalteststitlesshortenough) [WP5687](reports/WP5687#generalteststitlesshortenough) [WP5699](reports/WP5699#generalteststitlesshortenough) [WP5701](reports/WP5701#generalteststitlesshortenough) [WP5707](reports/WP5707#generalteststitlesshortenough) [WP5710](reports/WP5710#generalteststitlesshortenough) [WP5711](reports/WP5711#generalteststitlesshortenough) [WP5713](reports/WP5713#generalteststitlesshortenough) [WP5715](reports/WP5715#generalteststitlesshortenough) [WP5717](reports/WP5717#generalteststitlesshortenough) [WP5722](reports/WP5722#generalteststitlesshortenough) [WP5724](reports/WP5724#generalteststitlesshortenough) [WP5726](reports/WP5726#generalteststitlesshortenough) [WP5727](reports/WP5727#generalteststitlesshortenough) 
 
+## GeneralTests.weirdCharacterTitles
+
+[WP5734](reports/WP5734#generaltestsweirdcharactertitles) 
+
 ## Genes with identifier but no Ensembl identifier mapping
 
 
@@ -100,10 +104,6 @@ Read more about why these fails happen and how to fix them in these [instruction
 Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/Sec2PriProjectTests/outdatedNCBIIdentifiers).
 
 [WP2272](reports/WP2272#ncbi-gene-identifier-has-been-retracted) [WP2328](reports/WP2328#ncbi-gene-identifier-has-been-retracted) [WP259](reports/WP259#ncbi-gene-identifier-has-been-retracted) [WP289](reports/WP289#ncbi-gene-identifier-has-been-retracted) [WP35](reports/WP35#ncbi-gene-identifier-has-been-retracted) [WP3888](reports/WP3888#ncbi-gene-identifier-has-been-retracted) [WP3998](reports/WP3998#ncbi-gene-identifier-has-been-retracted) [WP474](reports/WP474#ncbi-gene-identifier-has-been-retracted) [WP4808](reports/WP4808#ncbi-gene-identifier-has-been-retracted) [WP5093](reports/WP5093#ncbi-gene-identifier-has-been-retracted) [WP5097](reports/WP5097#ncbi-gene-identifier-has-been-retracted) [WP5347](reports/WP5347#ncbi-gene-identifier-has-been-retracted) [WP722](reports/WP722#ncbi-gene-identifier-has-been-retracted) 
-
-## OudatedDataSourcesTests.outdatedChemSpiderDataSource
-
-[WP241](reports/WP241#oudateddatasourcestestsoutdatedchemspiderdatasource) 
 
 ## P62805 matches 14 genes
 
