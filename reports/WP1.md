@@ -16,7 +16,17 @@ title: WP1 curation report
 * GeneTests: all 6 tests OK!
 * GeneralTests: all 15 tests OK!
 * HMDBSecMetabolitesTests: all 3 tests OK!
-* InteractionTests: all 9 tests OK!
+* InteractionTests
+    * noMetaboliteToNonMetaboliteConversions: .. all OK!
+    * noNonMetaboliteToMetaboliteConversions: .. all OK!
+    * noGeneProteinConversions: .. all OK!
+    * nonNumericIDs: .. all OK!
+    * interactionsWithLabels: .x we found 1 problem(s):
+        * [Interactions found that involve Labels: 4](#630d267b)
+    * UnconnectedPoints: .. all OK!
+    * possibleTranslocations: .. all OK!
+    * noProteinProteinConversions: .. all OK!
+    * incorrectKEGGIdentifiers: .. all OK!
 * KEGGMetaboliteTests: all 2 tests OK!
 * LIPIDMAPSTests: all 1 tests OK!
 * MetaboliteStructureTests: all 1 tests OK!
@@ -37,7 +47,21 @@ title: WP1 curation report
 * Number of test classes: 22
 * Number of tests: 155
 * Number of assertions: 309
-* Number of fails: 0
+* Number of fails: 1
 
 ## Fails
+
+<a name="630d267b" />
+
+## Interactions with Labels
+
+Interactions found that involve Labels: 4
+
+* [http://www.wikipathways.org/instance/WP1_r137182](http://www.wikipathways.org/instance/WP1_r137182) "VLDL" with graphId fca
+* [http://www.wikipathways.org/instance/WP1_r137182](http://www.wikipathways.org/instance/WP1_r137182) "HDL" with graphId cdf
+* [http://www.wikipathways.org/instance/WP1_r137182](http://www.wikipathways.org/instance/WP1_r137182) "IDL" with graphId c83
+* [http://www.wikipathways.org/instance/WP1_r137182](http://www.wikipathways.org/instance/WP1_r137182) "LDL" with graphId d57
+
+
+More details at [https://www.wikipathways.org/WikiPathwaysCurator/InteractionTests/interactionsWithLabels](https://www.wikipathways.org/WikiPathwaysCurator/InteractionTests/interactionsWithLabels)
 

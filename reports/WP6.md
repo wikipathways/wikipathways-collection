@@ -11,7 +11,13 @@ title: WP6 curation report
 * CASMetabolitesTests: all 2 tests OK!
 * ChEBIMetabolitesTests: all 5 tests OK!
 * ChemSpiderTests: all 2 tests OK!
-* DataNodesTests: all 5 tests OK!
+* DataNodesTests
+    * dataNodesWithoutIdentifier: .x we found 1 problem(s):
+        * [The following DataNodes have no identifier: 3](#d2d32fa2)
+    * unknownTypes_knownDatasource: .. all OK!
+    * unknownTypes: .. all OK!
+    * unknownTypes_Reactome: .. all OK!
+    * otherDataSource: .. all OK!
 * EnsemblTests: all 4 tests OK!
 * GeneTests
     * entrezGeneIdentifiersNotNumber: .. all OK!
@@ -44,9 +50,22 @@ title: WP6 curation report
 * Number of test classes: 22
 * Number of tests: 155
 * Number of assertions: 309
-* Number of fails: 1
+* Number of fails: 2
 
 ## Fails
+
+<a name="d2d32fa2" />
+
+## Data nodes without an identifier
+
+The following DataNodes have no identifier: 3
+
+* [http://www.wikipathways.org/instance/WP6_r136997](http://www.wikipathways.org/instance/WP6_r136997) http://rdf.wikipathways.org/Pathway/WP6_r136997/DataNode/ab0 (MYO-P)
+* [http://www.wikipathways.org/instance/WP6_r136997](http://www.wikipathways.org/instance/WP6_r136997) http://rdf.wikipathways.org/Pathway/WP6_r136997/DataNode/e6a (PI5K)
+* [http://www.wikipathways.org/instance/WP6_r136997](http://www.wikipathways.org/instance/WP6_r136997) http://rdf.wikipathways.org/Pathway/WP6_r136997/DataNode/f05 (p110)
+
+
+More details at [https://www.wikipathways.org/WikiPathwaysCurator/DataNodesTests/dataNodesWithoutIdentifier](https://www.wikipathways.org/WikiPathwaysCurator/DataNodesTests/dataNodesWithoutIdentifier)
 
 <a name="40286d83" />
 
