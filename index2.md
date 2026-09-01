@@ -17,7 +17,7 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 ## Data nodes with an identifier but an empty data source
 
-[WP209](reports/WP209#data-nodes-with-an-identifier-but-an-empty-data-source) [WP25](reports/WP25#data-nodes-with-an-identifier-but-an-empty-data-source) [WP5637](reports/WP5637#data-nodes-with-an-identifier-but-an-empty-data-source) [WP615](reports/WP615#data-nodes-with-an-identifier-but-an-empty-data-source) 
+[WP5637](reports/WP5637#data-nodes-with-an-identifier-but-an-empty-data-source) 
 
 ## Data nodes without an identifier
 
