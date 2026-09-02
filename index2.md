@@ -120,7 +120,7 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 ## PathwayTests.testRoundedRectangle
 
-[WP203](reports/WP203#pathwayteststestroundedrectangle) [WP218](reports/WP218#pathwayteststestroundedrectangle) [WP220](reports/WP220#pathwayteststestroundedrectangle) [WP29](reports/WP29#pathwayteststestroundedrectangle) [WP459](reports/WP459#pathwayteststestroundedrectangle) [WP497](reports/WP497#pathwayteststestroundedrectangle) [WP55](reports/WP55#pathwayteststestroundedrectangle) 
+[WP220](reports/WP220#pathwayteststestroundedrectangle) [WP459](reports/WP459#pathwayteststestroundedrectangle) [WP497](reports/WP497#pathwayteststestroundedrectangle) [WP55](reports/WP55#pathwayteststestroundedrectangle) 
 
 ## Possible MIM translocation
 
