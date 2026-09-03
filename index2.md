@@ -118,10 +118,6 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 [WP5393](reports/WP5393#pathway-description-is-too-short) [WP5461](reports/WP5461#pathway-description-is-too-short) [WP5472](reports/WP5472#pathway-description-is-too-short) [WP5475](reports/WP5475#pathway-description-is-too-short) [WP5588](reports/WP5588#pathway-description-is-too-short) 
 
-## PathwayTests.testRoundedRectangle
-
-[WP220](reports/WP220#pathwayteststestroundedrectangle) [WP459](reports/WP459#pathwayteststestroundedrectangle) [WP497](reports/WP497#pathwayteststestroundedrectangle) [WP55](reports/WP55#pathwayteststestroundedrectangle) 
-
 ## Possible MIM translocation
 
 
