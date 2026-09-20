@@ -118,14 +118,6 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 [WP5393](reports/WP5393#pathway-description-is-too-short) [WP5461](reports/WP5461#pathway-description-is-too-short) [WP5472](reports/WP5472#pathway-description-is-too-short) [WP5475](reports/WP5475#pathway-description-is-too-short) [WP5588](reports/WP5588#pathway-description-is-too-short) 
 
-## Pathway has more than one GPML description
-
-[WP5622](reports/WP5622#pathway-has-more-than-one-gpml-description) 
-
-## PathwayTests.testRoundedRectangle
-
-[WP5624](reports/WP5624#pathwayteststestroundedrectangle) 
-
 ## Possible MIM translocation
 
 
@@ -143,13 +135,6 @@ Read more about why these fails happen and how to fix them in these [instruction
 Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/UnicodeTests/ammonia).
 
 [WP5629](reports/WP5629#the-ammonia-formula-can-use-unicode) 
-
-## The pathway contains stock comments
-
-
-Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/GeneralTests/stockComments).
-
-[WP5623](reports/WP5623#the-pathway-contains-stock-comments) 
 
 ## UniProtKB identifier has been retracted
 
