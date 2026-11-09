@@ -88,7 +88,7 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/WikidataTests/lipidMapsWithoutMapping).
 
-[WP5275](reports/WP5275#lipid-maps-identifier-without-a-match-in-wikidata) [WP5393](reports/WP5393#lipid-maps-identifier-without-a-match-in-wikidata) [WP5423](reports/WP5423#lipid-maps-identifier-without-a-match-in-wikidata) [WP5584](reports/WP5584#lipid-maps-identifier-without-a-match-in-wikidata) 
+[WP5275](reports/WP5275#lipid-maps-identifier-without-a-match-in-wikidata) [WP5423](reports/WP5423#lipid-maps-identifier-without-a-match-in-wikidata) [WP5584](reports/WP5584#lipid-maps-identifier-without-a-match-in-wikidata) 
 
 ## NCBI Gene identifier has been retracted
 
