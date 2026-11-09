@@ -9,3 +9,4 @@ generate-references/node_modules
 tests.tmp*
 .vscode/
 wikipathways-database
+config.properties
