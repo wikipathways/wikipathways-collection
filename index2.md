@@ -129,24 +129,10 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 [WP4597](reports/WP4597#pubchem-compound-identifier-without-a-match-in-wikidata) [WP5154](reports/WP5154#pubchem-compound-identifier-without-a-match-in-wikidata) [WP5395](reports/WP5395#pubchem-compound-identifier-without-a-match-in-wikidata) [WP5424](reports/WP5424#pubchem-compound-identifier-without-a-match-in-wikidata) [WP5425](reports/WP5425#pubchem-compound-identifier-without-a-match-in-wikidata) [WP555](reports/WP555#pubchem-compound-identifier-without-a-match-in-wikidata) [WP5584](reports/WP5584#pubchem-compound-identifier-without-a-match-in-wikidata) [WP5609](reports/WP5609#pubchem-compound-identifier-without-a-match-in-wikidata) 
 
-## The ammonia formula can use Unicode
-
-
-Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/UnicodeTests/ammonia).
-
-[WP5629](reports/WP5629#the-ammonia-formula-can-use-unicode) [WP95](reports/WP95#the-ammonia-formula-can-use-unicode) 
-
 ## UniProtKB identifier has been retracted
 
 
 Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/Sec2PriProjectTests/outdatedUniProtKBIdentifiers2).
 
 [WP1984](reports/WP1984#uniprotkb-identifier-has-been-retracted) [WP2491](reports/WP2491#uniprotkb-identifier-has-been-retracted) [WP2563](reports/WP2563#uniprotkb-identifier-has-been-retracted) [WP2564](reports/WP2564#uniprotkb-identifier-has-been-retracted) [WP2566](reports/WP2566#uniprotkb-identifier-has-been-retracted) [WP2637](reports/WP2637#uniprotkb-identifier-has-been-retracted) [WP2853](reports/WP2853#uniprotkb-identifier-has-been-retracted) [WP32](reports/WP32#uniprotkb-identifier-has-been-retracted) [WP3585](reports/WP3585#uniprotkb-identifier-has-been-retracted) [WP3830](reports/WP3830#uniprotkb-identifier-has-been-retracted) [WP3863](reports/WP3863#uniprotkb-identifier-has-been-retracted) [WP3890](reports/WP3890#uniprotkb-identifier-has-been-retracted) [WP3953](reports/WP3953#uniprotkb-identifier-has-been-retracted) [WP41](reports/WP41#uniprotkb-identifier-has-been-retracted) [WP4288](reports/WP4288#uniprotkb-identifier-has-been-retracted) [WP4506](reports/WP4506#uniprotkb-identifier-has-been-retracted) [WP4861](reports/WP4861#uniprotkb-identifier-has-been-retracted) [WP5298](reports/WP5298#uniprotkb-identifier-has-been-retracted) [WP97](reports/WP97#uniprotkb-identifier-has-been-retracted) 
-
-## Water chemical formula can use Unicode
-
-
-Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/UnicodeTests/water).
-
-[WP95](reports/WP95#water-chemical-formula-can-use-unicode) 
 
